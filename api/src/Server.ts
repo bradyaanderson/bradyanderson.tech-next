@@ -7,7 +7,6 @@ import express, { NextFunction, Request, Response } from 'express';
 import StatusCodes from 'http-status-codes';
 import 'express-async-errors';
 
-import BaseRouter from './routes';
 import logger from '@shared/Logger';
 
 const app = express();
@@ -34,7 +33,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Add APIs
-app.use('/api', BaseRouter);
+// app.use('/api', BaseRouter);
 
 // Print API errors
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -55,6 +54,12 @@ const viewsDir = path.join(__dirname, 'views');
 app.set('views', viewsDir);
 const staticDir = path.join(__dirname, 'public');
 app.use(express.static(staticDir));
+
+app.get('/test', (request: Request,  response: Response) => {
+    const testResponse = {test: 'testResponse'};
+    response.status(StatusCodes.OK).json(testResponse);
+});
+
 app.get('*', (req: Request, res: Response) => {
     res.sendFile('index.html', {root: viewsDir});
 });
