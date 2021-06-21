@@ -1,0 +1,21 @@
+{
+  "name": "bradyanderson.tech-next",
+  "version": "0.0.1",
+  "description": "Next version of bradyanderson.tech",
+  "scripts": {
+    "start": "cd server/ && npm start",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client/ && npm install && INLINE_RUNTIME_CHUNK=false npm run build && cd ..",
+    "build:server": "cd server/ && npm install && npm run build && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradyaanderson/bradyanderson.tech-next.git"
+  },
+  "author": "Brady Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradyaanderson/bradyanderson.tech-next/issues"
+  },
+  "homepage": "https://github.com/bradyaanderson/bradyanderson.tech-next#readme"
+}

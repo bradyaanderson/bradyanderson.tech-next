@@ -1,7 +1,7 @@
 {
   "name": "api.bradyanderson.tech",
   "version": "0.0.1",
-  "license" : "MIT",
+  "license" : "ISC",
   "scripts": {
     "build": "./node_modules/.bin/ts-node build.ts",
     "lint": "eslint . --ext .ts",
