@@ -49,19 +49,15 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 /************************************************************************************
  *                              Serve front-end content
  ***********************************************************************************/
-
-const viewsDir = path.join(__dirname, 'views');
-app.set('views', viewsDir);
-const staticDir = path.join(__dirname, 'public');
-app.use(express.static(staticDir));
+app.use(express.static(path.resolve(__dirname, '../../client/build')))
 
 app.get('/test', (request: Request,  response: Response) => {
-    const testResponse = {test: 'testResponse'};
+    const testResponse = {test: 'This is a test response'};
     response.status(StatusCodes.OK).json(testResponse);
 });
 
-app.get('*', (req: Request, res: Response) => {
-    res.sendFile('index.html', {root: viewsDir});
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../../client/build', 'index.html'));
 });
 
 // Export express instance
