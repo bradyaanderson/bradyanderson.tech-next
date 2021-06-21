@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/bradyaanderson/bradyanderson.tech-next/issues"
   },
-  "homepage": "https://github.com/bradyaanderson/bradyanderson.tech-next#readme"
+  "homepage": "https://github.com/bradyaanderson/bradyanderson.tech-next#readme",
+  "engines": {
+    "node": "16.3.0"
+  }
 }
