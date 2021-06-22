@@ -22,7 +22,7 @@ function App() {
           <Col>
             <Image
               className="rounded mx-auto d-block"
-              src="/Logos/logo1024-3D-invert.png"
+              src="/Logos/logo1024-3D-Blue.png"
               style={{
                 width: '170px',
                 padding: '15px 0'
