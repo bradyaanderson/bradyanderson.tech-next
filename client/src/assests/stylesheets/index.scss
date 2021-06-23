@@ -1,0 +1,21 @@
+@import "./variables";
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #263238;
+  color: $primary-text-color;
+  padding: 15px 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.main-container {
+  justify-content: center;
+  align-items: center;
+}

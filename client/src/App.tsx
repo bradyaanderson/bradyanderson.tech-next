@@ -1,38 +1,21 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image'
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './assests/stylesheets/App.css';
+import './assests/stylesheets/App.scss';
 
 function App() {
   return (
-    <>
-      <Container
-        fluid
-        className="App"
-        style={{
-          background: '#263238',
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <Row className="justify-content-center text-center">
-          <Col>
-            <Image
-              className="rounded mx-auto d-block"
-              src="/Logos/logo1024-3D-Blue.png"
-              style={{
-                width: '170px',
-                padding: '15px 0'
-              }}/>
-            <h1>Welcome to the new bradyanderson.tech</h1>
-            <p>More coming soon...</p>
-          </Col>
-        </Row>
-      </Container>
-    </>
+      <Row className="justify-content-center text-center">
+        <Col>
+          <Image
+            className="logo rounded mx-auto d-block"
+            src="/Logos/logo1024-3D-Blue.png"
+          />
+          <h1>Welcome to the new bradyanderson.tech.</h1>
+          <p>More coming soon...</p>
+        </Col>
+      </Row>
   );
 }
 
