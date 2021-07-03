@@ -3,7 +3,13 @@
 .landing-nav {
   font-size: 1.35rem;
 
-  a {
+  hr {
+    border: 0 #ffffff;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  }
+
+  a, a:link, a:hover, a:active {
     color: $primary-text-color;
   }
 }

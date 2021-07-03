@@ -1,0 +1,24 @@
+@import "../../variables";
+
+.sidebar {
+  padding-left: 15px;
+}
+
+.sidebar-category {
+  padding: 10px 0;
+  font-size: 16px;
+
+  a {
+    color: $primary-text-color;
+  }
+
+  span {
+    display: block;
+  }
+
+  .sidebar-sub-category {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}
+
