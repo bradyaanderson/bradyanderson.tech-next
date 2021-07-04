@@ -1,18 +1,14 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Sidebar from "./sidebar/Sidebar";
+import BlogPage from "./BlogPage";
+import { blogLandingText0 } from "./text/landingText";
+import "../assests/stylesheets/blog/Blog.scss";
 
 /** Blog landing page */
 function Landing() {
   return (
-    <Row>
-      <Col className="col-3 d-flex">
-        <Sidebar />
-      </Col>
-      <Col className="col-9 d-flex justify-content-center">
-        This is where the blog content goes...
-      </Col>
-    </Row>
+    <BlogPage>
+      <h1>Welcome</h1>
+      <pre>{blogLandingText0}</pre>
+    </BlogPage>
   );
 }
 

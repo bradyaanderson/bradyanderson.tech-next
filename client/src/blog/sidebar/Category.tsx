@@ -20,7 +20,7 @@ function Category({ name, path, subCategories }: Props) {
   return (
     <div className="sidebar-category">
       {/* Main category display */}
-      <Link to={path}>
+      <Link to={`/blog${path}`}>
         <span>{name}</span>
       </Link>
       {/* Sub-category displays */}

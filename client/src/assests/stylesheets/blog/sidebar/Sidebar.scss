@@ -1,12 +1,19 @@
 @import "../../variables";
+@import "../Blog";
 
 .sidebar {
-  padding-left: 15px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  margin-left: $sidebar-margin-left;
+  margin-right: $blog-post-margin;
+  width: $sidebar-width;
 }
 
 .sidebar-category {
   padding: 10px 0;
-  font-size: 16px;
+  font-size: 14px;
 
   a {
     color: $primary-text-color;
@@ -17,8 +24,7 @@
   }
 
   .sidebar-sub-category {
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 10px;
   }
 }
-

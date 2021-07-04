@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+$sidebar-width: 160px;
+$sidebar-margin-left: 15px;
+$blog-post-margin: 15px;
+
+pre {
+  white-space: pre-wrap;
+  color: $primary-text-color;
+  font-size: 16px;
+}
+
+.blog-content {
+  margin-left: $sidebar-margin-left + $sidebar-width + $blog-post-margin;
+  margin-right: $blog-post-margin;
+}

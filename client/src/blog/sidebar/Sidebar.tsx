@@ -6,20 +6,12 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <Category
-        name="Category 1"
-        path="/category1"
-        subCategories={{ "link 1": "/test", "link 2": "/test2" }}
+        name="bradyanderson.tech"
+        path="/bradyanderson.tech"
+        subCategories={{}}
       />
-      <Category
-        name="Category 2"
-        path="/category2"
-        subCategories={{ "link 1": "/test", "link 2": "/test2" }}
-      />
-      <Category
-        name="Category 3"
-        path="/category3"
-        subCategories={{ "link 1": "/test", "link 2": "/test2" }}
-      />
+      <Category name="Macintosh" path="/macintosh" subCategories={{}} />
+      <Category name="Buzz GB" path="/buzz-gb" subCategories={{}} />
     </div>
   );
 }
