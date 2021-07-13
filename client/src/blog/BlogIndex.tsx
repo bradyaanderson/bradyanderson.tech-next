@@ -1,12 +1,12 @@
 import BlogPost from "./BlogPost";
-import { blogLandingText0 } from "./text/landingText";
+import { blogLandingText } from "./text/blogIndexText";
 import React from "react";
 
 /** Index for blog. */
 function BlogIndex() {
   return (
     <BlogPost title="Welcome">
-      <pre>{blogLandingText0}</pre>
+      <pre>{blogLandingText}</pre>
     </BlogPost>
   );
 }

@@ -1,4 +1,4 @@
-export const blogLandingText0 = `
+export const blogLandingText = `
 I think it's about time I start a blog, or at least attempt one. Knowing me, I'll probably write a few posts and then get carried away with something else. But I might as well give it a shot. This blog will mostly be about computers but in the broad sense. Programming, vintage hardware, and game consoles all fall under the term 'computer'.
 
 Computers are the rabbit-hole I fell into a decade ago when I searched, "How to program a computer?" into Google a decade ago for the first time. They continue to fascinate me despite using them every day for years. The more I learn, the more I realize how little I actually know.
