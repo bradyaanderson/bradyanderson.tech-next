@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assests/stylesheets/index.scss";
 import App from "./App";
-import BlogLanding from "./blog/Landing";
+import BlogLanding from "./blog/Blog";
 
 /** Application root */
 ReactDOM.render(

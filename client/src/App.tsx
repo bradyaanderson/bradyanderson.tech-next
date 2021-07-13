@@ -14,7 +14,6 @@ function App() {
           src="/Logos/logo1024-3D-Blue.png"
         />
         <h1>Welcome to the new bradyanderson.tech.</h1>
-        <p>More coming soon...</p>
       </Col>
     </Row>
   );

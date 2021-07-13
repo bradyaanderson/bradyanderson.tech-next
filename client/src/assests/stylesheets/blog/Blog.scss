@@ -14,3 +14,17 @@ pre {
   margin-left: $sidebar-margin-left + $sidebar-width + $blog-post-margin;
   margin-right: $blog-post-margin;
 }
+
+.blog-title {
+  font-size: 32px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.blog-date {
+  font-size: 12px;
+  display: block;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
