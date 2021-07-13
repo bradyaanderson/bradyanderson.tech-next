@@ -16,11 +16,12 @@ interface Props {
 /** Main category in sidebar nav. Contains children subcategories. Routes to category root when clicked. */
 function Category({ name, path, subCategories }: Props) {
   const subCategoryKeys = Object.keys(subCategories);
+  const categoryPath = `/blog${path}`;
 
   return (
     <div className="sidebar-category">
       {/* Main category display */}
-      <Link to={`/blog${path}`}>
+      <Link to={categoryPath}>
         <span>{name}</span>
       </Link>
       {/* Sub-category displays */}
@@ -28,6 +29,7 @@ function Category({ name, path, subCategories }: Props) {
         <SubCategory
           name={subCategoryName}
           path={subCategories[subCategoryName]}
+          categoryPath={categoryPath}
           key={index}
         />
       ))}

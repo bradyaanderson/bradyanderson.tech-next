@@ -8,10 +8,10 @@ function Sidebar() {
       <Category
         name="bradyanderson.tech"
         path="/bradyanderson.tech"
-        subCategories={{}}
+        subCategories={{ test: "/test" }}
       />
-      <Category name="Macintosh" path="/macintosh" subCategories={{}} />
-      <Category name="Buzz GB" path="/buzz-gb" subCategories={{}} />
+      {/*<Category name="Macintosh" path="/macintosh" subCategories={{}} />*/}
+      {/*<Category name="Buzz GB" path="/buzz-gb" subCategories={{}} />*/}
     </div>
   );
 }

@@ -5,16 +5,17 @@ import Switch from "react-bootstrap/Switch";
 import { Route, useRouteMatch } from "react-router-dom";
 import BlogIndex from "./BlogIndex";
 import BradyAndersonTechIndex from "./posts/bradyanderson-tech/BradyAndersonTechIndex";
+import BradyAndersonTechCategory from "./posts/bradyanderson-tech/BradyAndersonTech";
 
-/** Blog landing page */
+/** Routing and skeleton for blog. */
 function Blog() {
   const match = useRouteMatch();
   return (
     <>
       <Sidebar />
       <Switch>
-        <Route exact path={`${match.path}/bradyanderson.tech`}>
-          <BradyAndersonTechIndex />
+        <Route path={`${match.path}/bradyanderson.tech`}>
+          <BradyAndersonTechCategory />
         </Route>
         <Route exact path={`${match.path}/`}>
           <BlogIndex />
