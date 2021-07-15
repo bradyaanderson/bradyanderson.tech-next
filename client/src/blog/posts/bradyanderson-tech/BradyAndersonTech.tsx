@@ -7,8 +7,6 @@ import TestPage from "./posts/Test";
 /** Routing for bradyanderson.tech blog category. */
 function BradyAndersonTechCategory() {
   const match = useRouteMatch();
-  console.log("Hello!");
-  console.log(`${match.path}/test`);
   return (
     <>
       <Switch className="blog-category-switch">

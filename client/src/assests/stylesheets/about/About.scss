@@ -1,0 +1,20 @@
+@import '../variables.scss';
+
+.about-profile {
+  width: 225px;
+  padding: 0 0 25px;
+}
+
+.about-text pre {
+  font-size: 18px;
+}
+
+a .about-icon {
+  font-size: 48px;
+  margin: 10px 30px;
+  color: $primary-text-color;
+
+  :hover {
+    color: #000a12;
+  }
+}

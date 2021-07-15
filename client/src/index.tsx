@@ -8,7 +8,8 @@ import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assests/stylesheets/index.scss";
 import App from "./App";
-import BlogLanding from "./blog/Blog";
+import Blog from "./blog/Blog";
+import About from "./about/About";
 
 /** Application root */
 ReactDOM.render(
@@ -24,10 +25,10 @@ ReactDOM.render(
         {/* Router Switch */}
         <Switch>
           <Route path="/about">
-            <p>About coming soon...</p>
+            <About />
           </Route>
           <Route path="/blog">
-            <BlogLanding />
+            <Blog />
           </Route>
           <Route path="/">
             <App />
