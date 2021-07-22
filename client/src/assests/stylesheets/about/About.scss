@@ -1,17 +1,21 @@
 @import '../variables.scss';
 
+.about-container {
+  margin-top: 0.625rem;
+}
+
 .about-profile {
-  width: 225px;
-  padding: 0 0 25px;
+  width: 14rem;
+  padding: 0 0 1.5rem;
 }
 
 .about-text pre {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 a .about-icon {
-  font-size: 48px;
-  margin: 10px 30px;
+  font-size: 3em;
+  margin: 0.625rem 1.875rem;
   color: $primary-text-color;
 
   :hover {

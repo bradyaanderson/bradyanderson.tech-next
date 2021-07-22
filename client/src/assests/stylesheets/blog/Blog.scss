@@ -1,28 +1,42 @@
 @import '../variables.scss';
 
-$sidebar-width: 160px;
-$sidebar-margin-left: 15px;
-$blog-post-margin: 15px;
+.blog-container {
+  display: flex;
+  flex-flow: row;
+  min-height: calc(92.5vh - 1px);
+  overflow: auto;
+}
+
+.blog-content {
+  margin-top: 0.625rem;
+
+  @media screen and (max-width: $tablet) {
+    padding: 0 3%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 4%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 6%;
+  }
+}
 
 pre {
   white-space: pre-wrap;
   color: $primary-text-color;
-  font-size: 16px;
-}
-
-.blog-content {
-  margin-left: $sidebar-margin-left + $sidebar-width + $blog-post-margin;
-  margin-right: $blog-post-margin;
+  font-size: 1em;
 }
 
 .blog-title {
-  font-size: 32px;
+  font-size: 2em;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 .blog-date {
-  font-size: 12px;
+  font-size: 0.75em;
   display: block;
   padding-top: 0;
   margin-top: 0;

@@ -10,17 +10,19 @@ import BradyAndersonTechCategory from "./posts/bradyanderson-tech/BradyAndersonT
 function Blog() {
   const match = useRouteMatch();
   return (
-    <>
+    <div className="blog-container">
       <Sidebar />
-      <Switch>
-        <Route path={`${match.path}/bradyanderson.tech`}>
-          <BradyAndersonTechCategory />
-        </Route>
-        <Route exact path={`${match.path}/`}>
-          <BlogIndex />
-        </Route>
-      </Switch>
-    </>
+      <div className="blog-content">
+        <Switch>
+          <Route path={`${match.path}/bradyanderson.tech`}>
+            <BradyAndersonTechCategory />
+          </Route>
+          <Route exact path={`${match.path}/`}>
+            <BlogIndex />
+          </Route>
+        </Switch>
+      </div>
+    </div>
   );
 }
 

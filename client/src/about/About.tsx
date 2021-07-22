@@ -11,7 +11,7 @@ import { Container } from "react-bootstrap";
 /** About Page */
 function About() {
   return (
-    <Container>
+    <Container className="about-container">
       <Row className="justify-content-center text-center">
         <Col>
           <h1>About</h1>

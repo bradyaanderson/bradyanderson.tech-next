@@ -2,18 +2,16 @@
 @import "../Blog";
 
 .sidebar {
-  height: 100%;
-  position: fixed;
-  z-index: 999;
-  overflow-x: hidden;
-  margin-left: $sidebar-margin-left;
-  margin-right: $blog-post-margin;
-  width: $sidebar-width;
+  flex: auto;
+  padding: 0.625rem 1.25rem;
+  max-width: 12.5rem;
+  background-color: $primary-dark;
+
 }
 
 .sidebar-category {
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 0.625rem 0;
+  font-size: 0.875em;
 
   a {
     color: $primary-text-color;
@@ -24,7 +22,7 @@
   }
 
   .sidebar-sub-category {
-    font-size: 12px;
-    padding-left: 10px;
+    font-size: 0.75em;
+    padding-left: 0.625rem;
   }
 }

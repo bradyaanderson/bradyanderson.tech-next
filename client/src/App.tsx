@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 /** Root Content **/
 function App() {
   return (
-    <Container>
+    <Container className="home-container">
       <Row className="justify-content-center text-center">
         <Col>
           <Image

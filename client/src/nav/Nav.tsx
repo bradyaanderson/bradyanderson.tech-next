@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../assests/stylesheets/nav/LandingNav.scss";
+import "../assests/stylesheets/nav/Nav.scss";
 
 /** Main navbar **/
 function Nav() {
   return (
-    <span className="landing-nav">
-      <Link to="/">Home</Link> | <Link to="/blog">Blog</Link> |{" "}
-      <Link to="/about">About</Link>
-      <hr className="landing-nav-hr" />
-    </span>
+    <>
+      <span className="nav-links">
+        <Link to="/">Home</Link> | <Link to="/blog">Blog</Link> |{" "}
+        <Link to="/about">About</Link>
+      </span>
+    </>
   );
 }
 
