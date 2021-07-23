@@ -2,7 +2,7 @@ import React from "react";
 import Switch from "react-bootstrap/Switch";
 import { Route, useRouteMatch } from "react-router-dom";
 import BradyAndersonTechIndex from "./BradyAndersonTechIndex";
-import TestPage from "./posts/Test";
+import GettingStartedPost from "./posts/Getting-Started";
 
 /** Routing for bradyanderson.tech blog category. */
 function BradyAndersonTechCategory() {
@@ -10,8 +10,8 @@ function BradyAndersonTechCategory() {
   return (
     <>
       <Switch className="blog-category-switch">
-        <Route path={`${match.path}/test/`}>
-          <TestPage />
+        <Route path={`${match.path}/getting-started/`}>
+          <GettingStartedPost />
         </Route>
         <Route exact path={`${match.path}/`}>
           <BradyAndersonTechIndex />

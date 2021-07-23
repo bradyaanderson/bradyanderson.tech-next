@@ -32,11 +32,12 @@ function Sidebar() {
         </button>
       </div>
       <div className={sidebarNavigationClasses}>
+        <Category name="Welcome" path="/" subCategories={{}} />
         <Category
           name="bradyanderson.tech"
           path="/bradyanderson.tech"
           subCategories={{
-            Test: "/test",
+            "Getting Started": "/getting-started",
           }}
         />
         {/*<Category name="Macintosh" path="/macintosh" subCategories={{}} />*/}

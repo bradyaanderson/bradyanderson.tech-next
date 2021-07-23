@@ -7,6 +7,7 @@ function BlogIndex() {
   return (
     <BlogPost title="Welcome">
       <pre>{blogLandingText}</pre>
+      <pre>-Brady</pre>
     </BlogPost>
   );
 }

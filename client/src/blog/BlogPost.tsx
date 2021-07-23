@@ -18,7 +18,7 @@ const BlogPost: React.FunctionComponent<Props> = ({
       <div className="blog-content">
         <h1 className="blog-title">{title}</h1>
         {date ? <span className="blog-date">{date}</span> : null}
-        {children}
+        <div className="blog-children">{children}</div>
       </div>
     </>
   );
