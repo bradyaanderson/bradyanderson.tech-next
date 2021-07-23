@@ -7,7 +7,7 @@ interface Props {
   date?: string;
 }
 
-/** Blog post skeleton. */
+/** blog post skeleton. */
 const BlogPost: React.FunctionComponent<Props> = ({
   title,
   date,

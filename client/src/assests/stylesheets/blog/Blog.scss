@@ -26,12 +26,17 @@
 
 .blog-children {
   padding-top: 0.625rem;
-}
 
-pre {
-  white-space: pre-wrap;
-  color: $primary-text-color;
-  font-size: 1em;
+  pre, div, span {
+    white-space: pre-wrap;
+    color: $primary-text-color;
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    text-decoration: underline;
+  }
 }
 
 .blog-title {
@@ -43,7 +48,7 @@ pre {
 .blog-date {
   font-size: 0.75em;
   display: block;
-  padding-top: 0;
+  padding-top: .2rem;
   margin-top: 0;
 }
 

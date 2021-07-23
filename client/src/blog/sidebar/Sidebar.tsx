@@ -5,7 +5,7 @@ import classNames from "classnames";
 import "../../assests/stylesheets/blog/sidebar/Sidebar.scss";
 import React, { useState } from "react";
 
-/** Blog sidebar. Used for navigating blog. */
+/** blog sidebar. Used for navigating blog. */
 function Sidebar() {
   const startSidebarOpen = window.innerWidth > 640;
   const [open, setOpen] = useState(startSidebarOpen);

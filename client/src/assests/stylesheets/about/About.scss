@@ -22,3 +22,9 @@ a .about-icon {
     color: #000a12;
   }
 }
+
+pre {
+  white-space: pre-wrap;
+  color: $primary-text-color;
+  font-size: 1em;
+}

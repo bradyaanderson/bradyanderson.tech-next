@@ -13,7 +13,7 @@ function App() {
         <Col>
           <Image
             className="logo rounded mx-auto d-block"
-            src="/Logos/logo1024-3D-Blue.png"
+            src="/logos/logo1024-3D-Blue.png"
           />
           <h1 className="title">Welcome to the new bradyanderson.tech</h1>
         </Col>

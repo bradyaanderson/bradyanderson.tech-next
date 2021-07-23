@@ -8,7 +8,7 @@ import "../assests/stylesheets/about/About.scss";
 import aboutText from "./aboutText";
 import { Container } from "react-bootstrap";
 
-/** About Page */
+/** about Page */
 function About() {
   return (
     <Container className="about-container">
@@ -17,7 +17,7 @@ function About() {
           <h1>About</h1>
           <Image
             className="about-profile rounded mx-auto d-block"
-            src="/About/Profile.jpg"
+            src="/about/Profile.jpg"
           />
         </Col>
       </Row>
