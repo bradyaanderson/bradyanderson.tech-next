@@ -4,11 +4,12 @@
   display: flex;
   flex-flow: row;
   min-height: calc(92.5vh - 1px);
-  overflow: auto;
 }
 
 .blog-content {
   margin-top: 0.625rem;
+  flex-grow: 1;
+  word-wrap: anywhere;
 
   @media screen and (max-width: $tablet) {
     padding: 0 3%;

@@ -5,15 +5,17 @@ import { bradyAndersonTechIndexText } from "../../text/bradyanderson-tech/bradyA
 function BradyAndersonTechIndex() {
   return (
     <BlogPost title="bradyanderson.tech">
-      <pre>{bradyAndersonTechIndexText}</pre>
-      <pre>
-        If you want to check out any of the code for this website, it can be
-        found here:{" "}
-        <a href="https://github.com/bradyaanderson/bradyanderson.tech-next">
-          https://github.com/bradyaanderson/bradyanderson.tech-next
-        </a>
-        .
-      </pre>
+      <div>
+        <pre>{bradyAndersonTechIndexText}</pre>
+        <pre>
+          If you want to check out any of the code for this website, it can be
+          found here:{" "}
+          <a href="https://github.com/bradyaanderson/bradyanderson.tech-next">
+            https://github.com/bradyaanderson/bradyanderson.tech-next
+          </a>
+          .
+        </pre>
+      </div>
     </BlogPost>
   );
 }
