@@ -38,6 +38,7 @@ function Sidebar() {
           path="/bradyanderson.tech"
           subCategories={{
             "Getting Started": "/getting-started",
+            "Using My Custom Domain": "/custom-hover-domain-for-heroku-app",
           }}
         />
         {/*<Category name="Macintosh" path="/macintosh" subCategories={{}} />*/}
