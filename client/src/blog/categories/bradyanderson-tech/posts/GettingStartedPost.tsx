@@ -8,7 +8,7 @@ function GettingStartedPost() {
   return (
     <BlogPost title="Getting Started" date="07/25/2021">
       <ImageWithCaption
-        src="/blog/bradyanderson-tech/getting-started/homepage.png"
+        src="/blog/categories/bradyanderson-tech/posts/getting-started/homepage.png"
         caption="The homepage on 07/25/2021."
         maxWidth="32rem"
       />

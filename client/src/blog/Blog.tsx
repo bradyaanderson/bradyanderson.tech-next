@@ -4,8 +4,8 @@ import React from "react";
 import Switch from "react-bootstrap/Switch";
 import { Route, useRouteMatch } from "react-router-dom";
 import BlogIndex from "./BlogIndex";
-import BradyAndersonTechCategory from "./posts/bradyanderson-tech/BradyAndersonTech";
-import RetroComputingCategory from "./posts/retro-computing/RetroComputing";
+import BradyAndersonTechCategory from "./categories/bradyanderson-tech/BradyAndersonTech";
+import RetroComputingCategory from "./categories/retro-computing/RetroComputing";
 
 /** Routing and skeleton for blog. */
 function Blog() {

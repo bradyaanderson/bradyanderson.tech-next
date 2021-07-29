@@ -36,7 +36,7 @@ function customHoverDomainForHerokuAppPost() {
         within the settings tab.
       </pre>
       <ImageWithCaption
-        src="/blog/bradyanderson-tech/custom-hover-domain-for-heroku-app/herokuDomainSettings.png"
+        src="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/herokuDomainSettings.png"
         caption="Heroku domain settings."
         maxWidth="48rem"
       />
@@ -53,7 +53,7 @@ function customHoverDomainForHerokuAppPost() {
         the Hover control panel in the DNS tab.
       </pre>
       <ImageWithCaption
-        src="/blog/bradyanderson-tech/custom-hover-domain-for-heroku-app/hoverDNSSettings.png"
+        src="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/hoverDNSSettings.png"
         caption="Hover DNS Settings."
         maxWidth="48rem"
       />
@@ -73,7 +73,7 @@ function customHoverDomainForHerokuAppPost() {
         configured the DNS.
       </pre>
       <ImageWithCaption
-        src="/blog/bradyanderson-tech/custom-hover-domain-for-heroku-app/hoverForward.png"
+        src="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/hoverForward.png"
         caption="Hover Forward Settings."
         maxWidth="48rem"
       />
