@@ -5,6 +5,7 @@ import Switch from "react-bootstrap/Switch";
 import { Route, useRouteMatch } from "react-router-dom";
 import BlogIndex from "./BlogIndex";
 import BradyAndersonTechCategory from "./posts/bradyanderson-tech/BradyAndersonTech";
+import RetroComputingCategory from "./posts/retro-computing/RetroComputing";
 
 /** Routing and skeleton for blog. */
 function Blog() {
@@ -16,6 +17,9 @@ function Blog() {
         <Switch>
           <Route path={`${match.path}/bradyanderson.tech`}>
             <BradyAndersonTechCategory />
+          </Route>
+          <Route path={`${match.path}/retro-computing`}>
+            <RetroComputingCategory />
           </Route>
           <Route exact path={`${match.path}/`}>
             <BlogIndex />

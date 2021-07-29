@@ -41,7 +41,15 @@ function Sidebar() {
             "Using My Custom Domain": "/custom-hover-domain-for-heroku-app",
           }}
         />
-        {/*<Category name="Macintosh" path="/macintosh" subCategories={{}} />*/}
+        <Category
+          name="Retro Computing"
+          path="/retro-computing"
+          subCategories={
+            {
+              // "Opening up a Macintosh SE/30": "/opening-a-mac-se30",
+            }
+          }
+        />
         {/*<Category name="Buzz GB" path="/buzz-gb" subCategories={{}} />*/}
       </div>
     </div>
