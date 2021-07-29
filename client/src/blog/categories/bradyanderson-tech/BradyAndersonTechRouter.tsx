@@ -6,7 +6,7 @@ import GettingStartedPost from "./posts/GettingStartedPost";
 import CustomHoverDomainForHerokuApp from "./posts/CustomHoverDomainForHerokuAppPost";
 
 /** Routing for bradyanderson.tech blog category. */
-function BradyAndersonTechCategory() {
+function BradyAndersonTechRouter() {
   const match = useRouteMatch();
   return (
     <Switch className="blog-category-switch">
@@ -23,4 +23,4 @@ function BradyAndersonTechCategory() {
   );
 }
 
-export default BradyAndersonTechCategory;
+export default BradyAndersonTechRouter;

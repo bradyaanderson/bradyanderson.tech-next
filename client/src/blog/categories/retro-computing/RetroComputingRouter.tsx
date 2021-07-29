@@ -5,7 +5,7 @@ import RetroComputingIndex from "./RetroComputingIndex";
 import OpeningAMacSE30Post from "./posts/OpeningAMacSE30Post";
 
 /** Routing for Retro Computing blog category. */
-function BradyAndersonTechCategory() {
+function RetroComputingRouter() {
   const match = useRouteMatch();
   return (
     <Switch className="blog-category-switch">
@@ -19,4 +19,4 @@ function BradyAndersonTechCategory() {
   );
 }
 
-export default BradyAndersonTechCategory;
+export default RetroComputingRouter;

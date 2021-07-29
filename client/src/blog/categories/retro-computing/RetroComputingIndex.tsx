@@ -1,5 +1,6 @@
 import BlogPost from "../../BlogPost";
 
+/** Index for Retro Computing blog category */
 function RetroComputingIndex() {
   return (
     <BlogPost title="Retro Computing">

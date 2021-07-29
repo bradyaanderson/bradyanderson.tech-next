@@ -1,7 +1,7 @@
 import BlogPost from "../../BlogPost";
 import { bradyAndersonTechIndexText } from "../../text/bradyanderson-tech/bradyAndersonTechIndexText";
 
-/** Index for bradyanderson.tech blog section */
+/** Index for bradyanderson.tech blog category */
 function BradyAndersonTechIndex() {
   return (
     <BlogPost title="bradyanderson.tech">

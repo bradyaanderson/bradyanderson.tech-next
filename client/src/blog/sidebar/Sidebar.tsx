@@ -50,7 +50,16 @@ function Sidebar() {
             }
           }
         />
-        {/*<Category name="Buzz GB" path="/buzz-gb" subCategories={{}} />*/}
+        <Category
+          name="Retro Gaming"
+          path="/retro-gaming"
+          subCategories={
+            {
+              // "Replacing a Game Boy Color Speaker":
+              //   "/replacing-game-boy-color-speaker",
+            }
+          }
+        />
       </div>
     </div>
   );

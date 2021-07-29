@@ -4,8 +4,9 @@ import React from "react";
 import Switch from "react-bootstrap/Switch";
 import { Route, useRouteMatch } from "react-router-dom";
 import BlogIndex from "./BlogIndex";
-import BradyAndersonTechCategory from "./categories/bradyanderson-tech/BradyAndersonTech";
-import RetroComputingCategory from "./categories/retro-computing/RetroComputing";
+import BradyAndersonTechRouter from "./categories/bradyanderson-tech/BradyAndersonTechRouter";
+import RetroComputingRouter from "./categories/retro-computing/RetroComputingRouter";
+import RetroGamingRouter from "./categories/retro-gaming/RetroGamingRouter";
 
 /** Routing and skeleton for blog. */
 function Blog() {
@@ -16,10 +17,13 @@ function Blog() {
       <div className="blog-content">
         <Switch>
           <Route path={`${match.path}/bradyanderson.tech`}>
-            <BradyAndersonTechCategory />
+            <BradyAndersonTechRouter />
           </Route>
           <Route path={`${match.path}/retro-computing`}>
-            <RetroComputingCategory />
+            <RetroComputingRouter />
+          </Route>
+          <Route path={`${match.path}/retro-gaming`}>
+            <RetroGamingRouter />
           </Route>
           <Route exact path={`${match.path}/`}>
             <BlogIndex />
