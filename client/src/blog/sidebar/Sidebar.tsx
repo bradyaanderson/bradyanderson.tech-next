@@ -39,6 +39,7 @@ function Sidebar() {
           subCategories={{
             "Getting Started": "/getting-started",
             "Using My Custom Domain": "/custom-hover-domain-for-heroku-app",
+            "Moving to AWS": "/moving-to-aws",
           }}
         />
         <Category

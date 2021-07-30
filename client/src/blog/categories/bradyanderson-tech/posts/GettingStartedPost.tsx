@@ -25,6 +25,10 @@ function GettingStartedPost() {
 
       <h2>Heroku</h2>
       <pre>{heroku}</pre>
+      <pre>
+        <span style={{ textDecoration: "underline" }}>Edit (07/30/2021)</span>:
+        I pretty quickly moved from Heroku to AWS for hosting.
+      </pre>
 
       <h2>Links</h2>
       <ul>
