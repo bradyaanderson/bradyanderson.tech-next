@@ -1,4 +1,4 @@
-import BlogPost from "../../BlogPost";
+import BlogPost from "../../../common/BlogPost";
 import { bradyAndersonTechIndexText } from "../../text/bradyanderson-tech/bradyAndersonTechIndexText";
 
 /** Index for bradyanderson.tech blog category */

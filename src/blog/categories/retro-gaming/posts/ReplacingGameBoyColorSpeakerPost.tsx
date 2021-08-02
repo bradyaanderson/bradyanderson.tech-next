@@ -1,4 +1,4 @@
-import BlogPost from "../../../BlogPost";
+import BlogPost from "../../../../common/BlogPost";
 
 function ReplacingGameBoyColorSpeakerPost() {
   return (

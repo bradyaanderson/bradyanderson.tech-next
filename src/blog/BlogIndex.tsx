@@ -1,4 +1,4 @@
-import BlogPost from "./BlogPost";
+import BlogPost from "../common/BlogPost";
 import { blogLandingText } from "./text/blogIndexText";
 import React from "react";
 

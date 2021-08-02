@@ -1,4 +1,4 @@
-import BlogPost from "../../../BlogPost";
+import BlogPost from "../../../../common/BlogPost";
 import BlogImage from "../../../../common/BlogImage";
 
 function customHoverDomainForHerokuAppPost() {

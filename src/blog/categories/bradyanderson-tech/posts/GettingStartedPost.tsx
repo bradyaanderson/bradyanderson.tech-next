@@ -1,4 +1,4 @@
-import BlogPost from "../../../BlogPost";
+import BlogPost from "../../../../common/BlogPost";
 import { gettingStartedText } from "../../../text/bradyanderson-tech/gettingStartedText";
 import BlogImage from "../../../../common/BlogImage";
 

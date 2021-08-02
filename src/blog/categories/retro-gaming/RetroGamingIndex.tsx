@@ -1,4 +1,4 @@
-import BlogPost from "../../BlogPost";
+import BlogPost from "../../../common/BlogPost";
 
 /** Index for Retro Gaming blog section */
 function RetroGamingIndex() {
