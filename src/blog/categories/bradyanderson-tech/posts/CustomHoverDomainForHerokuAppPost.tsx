@@ -1,5 +1,5 @@
 import BlogPost from "../../../BlogPost";
-import ImageWithCaption from "../../../../common/ImageWithCaption";
+import BlogImage from "../../../../common/BlogImage";
 
 function customHoverDomainForHerokuAppPost() {
   return (
@@ -35,8 +35,8 @@ function customHoverDomainForHerokuAppPost() {
         application. Domain settings are found on the application dashboard
         within the settings tab.
       </pre>
-      <ImageWithCaption
-        src="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/herokuDomainSettings.png"
+      <BlogImage
+        path="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/herokuDomainSettings.png"
         caption="Heroku domain settings."
         maxWidth="48rem"
       />
@@ -52,8 +52,8 @@ function customHoverDomainForHerokuAppPost() {
         Next, I configured the Hover DNS settings. These settings are found in
         the Hover control panel in the DNS tab.
       </pre>
-      <ImageWithCaption
-        src="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/hoverDNSSettings.png"
+      <BlogImage
+        path="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/hoverDNSSettings.png"
         caption="Hover DNS Settings."
         maxWidth="48rem"
       />
@@ -72,8 +72,8 @@ function customHoverDomainForHerokuAppPost() {
         be reached. It's not surprising that this happens due to how I
         configured the DNS.
       </pre>
-      <ImageWithCaption
-        src="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/hoverForward.png"
+      <BlogImage
+        path="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/hoverForward.png"
         caption="Hover Forward Settings."
         maxWidth="48rem"
       />
