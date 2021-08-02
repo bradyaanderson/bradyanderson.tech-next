@@ -40,6 +40,7 @@ function Sidebar() {
             "Getting Started": "/getting-started",
             "Using My Custom Domain": "/custom-hover-domain-for-heroku-app",
             "Moving to AWS": "/moving-to-aws",
+            "Setting up Image Storage": "/setting-up-image-storage",
           }}
         />
         <Category

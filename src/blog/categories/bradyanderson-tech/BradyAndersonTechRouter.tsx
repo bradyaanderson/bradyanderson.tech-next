@@ -5,6 +5,7 @@ import BradyAndersonTechIndex from "./BradyAndersonTechIndex";
 import GettingStartedPost from "./posts/GettingStartedPost";
 import CustomHoverDomainForHerokuApp from "./posts/CustomHoverDomainForHerokuAppPost";
 import MovingToAwsPost from "./posts/MovingToAwsPost";
+import SettingUpImageStoragePost from "./posts/SettingUpImageStoragePost";
 
 /** Routing for bradyanderson.tech blog category. */
 function BradyAndersonTechRouter() {
@@ -19,6 +20,9 @@ function BradyAndersonTechRouter() {
       </Route>
       <Route path={`${path}/moving-to-aws/`}>
         <MovingToAwsPost />
+      </Route>
+      <Route path={`${path}/setting-up-image-storage/`}>
+        <SettingUpImageStoragePost />
       </Route>
       <Route exact path={`${path}/`}>
         <BradyAndersonTechIndex />
