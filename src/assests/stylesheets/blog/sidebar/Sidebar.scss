@@ -58,9 +58,14 @@
 .sidebar-navigation {
   padding: 0.1rem .75rem;
 
+  &.sidebar-invisible {
+    transition: visibility 1s;
+    visibility: hidden;
+  }
+
   &.sidebar-close, &.sidebar-close a {
     transition: color 1s;
-    color: $secondary-text;
+    color: $primary-dark;
   }
 }
 
