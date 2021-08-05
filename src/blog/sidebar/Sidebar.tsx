@@ -46,11 +46,9 @@ function Sidebar() {
         <Category
           name="Retro Computing"
           path="/retro-computing"
-          subCategories={
-            {
-              // "Opening up a Macintosh SE/30": "/opening-a-mac-se30",
-            }
-          }
+          subCategories={{
+            "Opening up a Macintosh SE/30": "/opening-a-mac-se30",
+          }}
         />
         <Category
           name="Retro Gaming"

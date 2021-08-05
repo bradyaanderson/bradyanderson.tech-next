@@ -11,14 +11,14 @@ interface Props {
   /** The text to be displayed under the image. */
   caption?: string;
   /** The max width that the image will be displayed at. */
-  maxWidth: string;
+  maxWidth?: string;
 }
 
 /** Component for easily displaying images in blog */
 function BlogImage({ path, caption, maxWidth }: Props) {
   return (
     <div className="image-wth-caption-container">
-      <Figure style={{ maxWidth: maxWidth }}>
+      <Figure style={{ maxWidth }}>
         <Figure.Image src={PUBLIC_IMAGE_URL + path} />
         {caption && (
           <Figure.Caption className="caption">{caption}</Figure.Caption>

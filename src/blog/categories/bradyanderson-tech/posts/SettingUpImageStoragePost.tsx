@@ -23,6 +23,7 @@ function SettingUpImageStoragePost() {
                 <a
                   href="https://docs.aws.amazon.com/s3/index.html"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   documentation
                 </a>{" "}
@@ -59,6 +60,7 @@ function SettingUpImageStoragePost() {
         <a
           href="https://github.com/bradyaanderson/bradyanderson.tech-next/blob/4b05c24a195c458818f4baed8974f9321fd43d65/src/common/BlogImage.tsx"
           target="_blank"
+          rel="noreferrer"
         >
           Blog Image
         </a>{" "}
