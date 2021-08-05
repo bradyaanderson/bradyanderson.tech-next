@@ -106,6 +106,32 @@ function OpeningAMacSE30Post() {
         maxWidth={"16rem"}
         caption="The Motorola 68030."
       />
+
+      <h2>Links</h2>
+      <pre>
+        Here are some of the videos that taught me how to open the case on my
+        Macintosh SE/30:
+      </pre>
+      <ul>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=bTNYQzDh_fI&t=1298s"
+            target="_blank"
+            rel="noreferrer"
+          >
+            The 8-bit Guy's Macintosh SE Restoration
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=bTNYQzDh_fI&t=1298s"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Branchus Creations' Macintosh SE/30 Live Teardown
+          </a>
+        </li>
+      </ul>
     </BlogPost>
   );
 }
