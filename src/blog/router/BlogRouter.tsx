@@ -3,6 +3,7 @@ import sitemap from "../../about/sitemap";
 import getCategoryRoutes from "./getCategoryRoutes";
 import BlogIndex from "../BlogIndex";
 
+/** Router for blog */
 function BlogRouter() {
   const { routes } = sitemap.index.routes.blog;
   const { path: currentPath } = useRouteMatch();
