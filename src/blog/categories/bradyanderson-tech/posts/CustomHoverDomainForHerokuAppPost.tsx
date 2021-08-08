@@ -1,7 +1,7 @@
 import BlogPost from "../../../../common/BlogPost";
 import BlogImage from "../../../../common/BlogImage";
 
-function customHoverDomainForHerokuAppPost() {
+function CustomHoverDomainForHerokuAppPost() {
   return (
     <BlogPost
       title="Using My Custom Hover Domain for Heroku Application"
@@ -116,4 +116,4 @@ function customHoverDomainForHerokuAppPost() {
   );
 }
 
-export default customHoverDomainForHerokuAppPost;
+export default CustomHoverDomainForHerokuAppPost;
