@@ -15,48 +15,48 @@ const sitemap: Sitemap = {
       /* Blog Main Section */
       blog: {
         title: "Blog",
-        component: BlogIndex,
+        Component: BlogIndex,
         routes: {
           /* Retro Computing Blog Category */
           "retro-computing": {
             title: "Retro Computing",
-            component: RetroComputingIndex,
+            Component: RetroComputingIndex,
             routes: {
               "opening-a-mac-se30": {
                 title: "Opening A Macintosh SE/30",
-                component: OpeningAMacSE30Post,
+                Component: OpeningAMacSE30Post,
               },
             },
           },
           /* Retro Gaming Blog Category */
           "retro-gaming": {
             title: "Retro Gaming",
-            component: RetroGamingIndex,
+            Component: RetroGamingIndex,
             routes: {},
           },
           /* Website Blog Category */
-          website: {
+          "bradyanderson.tech": {
             title: "bradyanderson.tech",
-            component: BradyAndersonTechIndex,
+            Component: BradyAndersonTechIndex,
             routes: {
               "getting-started": {
                 title: "Getting Started",
-                component: GettingStartedPost,
+                Component: GettingStartedPost,
               },
               "custom-hover-domain-for-heroku-app": {
                 title: "Using My Custom Hover Domain for Heroku Application",
                 shortTitle: "Using My Custom Domain",
-                component: CustomHoverDomainForHerokuAppPost,
+                Component: CustomHoverDomainForHerokuAppPost,
               },
               "moving-to-aws": {
                 title: "Moving to AWS from Heroku",
                 shortTitle: "Moving to AWS",
-                component: MovingToAwsPost,
+                Component: MovingToAwsPost,
               },
               "setting-up-image-storage": {
                 title: "Setting up Amazon S3 Image Storage",
                 shortTitle: "Setting up Image Storage",
-                component: SettingUpImageStoragePost,
+                Component: SettingUpImageStoragePost,
               },
             },
           },

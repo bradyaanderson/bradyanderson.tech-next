@@ -1,29 +1,35 @@
 /** Basic Sitemap Route */
-interface Route {
+export interface Route {
   title: string;
 }
 
 /** Basic Blog Route */
-interface BlogRoute extends Route {
-  component: () => JSX.Element;
+export interface BlogRoute extends Route {
+  Component: () => JSX.Element;
   shortTitle?: string;
 }
 
 /** Blog Post Route */
-interface BlogPostRoute extends BlogRoute {}
+export interface BlogPostRoute extends BlogRoute {}
+
+/** Structure for storing Blog Post Routes in sitemap. */
+export interface BlogPostRoutes {
+  [key: string]: BlogPostRoute;
+}
 
 /** Blog Category Route. Contains Blog Post child routes */
-interface BlogCategoryRoute extends BlogPostRoute {
-  routes: {
-    [key: string]: BlogPostRoute;
-  };
+export interface BlogCategoryRoute extends BlogPostRoute {
+  routes: BlogPostRoutes;
+}
+
+/** Structure for storing Blog Category Routes in sitemap. */
+export interface BlogCategoryRoutes {
+  [key: string]: BlogCategoryRoute;
 }
 
 /** Structure of blog routes */
-interface BlogIndex extends BlogRoute {
-  routes: {
-    [key: string]: BlogCategoryRoute;
-  };
+export interface BlogIndex extends BlogRoute {
+  routes: BlogCategoryRoutes;
 }
 
 /** Structure of site routes for custom sitemap */
