@@ -8,6 +8,7 @@ import MovingToAwsPost from "../blog/categories/bradyanderson-tech/posts/MovingT
 import SettingUpImageStoragePost from "../blog/categories/bradyanderson-tech/posts/SettingUpImageStoragePost";
 import CustomHoverDomainForHerokuAppPost from "../blog/categories/bradyanderson-tech/posts/CustomHoverDomainForHerokuAppPost";
 import BlogIndex from "../blog/BlogIndex";
+import BootingAnSE30Post from "../blog/categories/bradyanderson-tech/posts/BootingAnSE30Post";
 
 const sitemap: Sitemap = {
   index: {
@@ -25,6 +26,11 @@ const sitemap: Sitemap = {
               "opening-a-mac-se30": {
                 title: "Opening A Macintosh SE/30",
                 Component: OpeningAMacSE30Post,
+              },
+              "booting-se30-without-a-hard-drive": {
+                title: "Booting a Macintosh SE/30 without a hard drive",
+                shortTitle: "Booting an SE/30 Without a Hard Drive",
+                Component: BootingAnSE30Post,
               },
             },
           },

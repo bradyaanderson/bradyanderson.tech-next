@@ -38,6 +38,7 @@
           <option value="http://jakarta.apache.org/" />
           <option value="http://cxf.apache.org/schemas/" />
           <option value="http://brendan-quinn.xyz" />
+          <option value="http://www.winimage.com" />
         </list>
       </option>
     </inspection_tool>
