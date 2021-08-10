@@ -43,7 +43,11 @@ function BootingAnSE30Post() {
         Now that I had to the disk, I had to track down an OS Image to image to
         the floppy disk. The Internet Archive made this pretty simple by
         providing the two ISO images for{" "}
-        <a href="https://archive.org/details/mac_MacOS_6.0.8">
+        <a
+          href="https://archive.org/details/mac_MacOS_6.0.8"
+          target="_blank"
+          rel="noreferrer"
+        >
           macOS System 6.0.8 boot disk and system additions disk
         </a>
         .
@@ -61,10 +65,20 @@ function BootingAnSE30Post() {
 
       <pre>
         Getting System 6 imaged to floppy disk took longer than expected. I used{" "}
-        <a href="http://www.winimage.com/download.htm">WinImage</a> to write the
-        images. For more details on how to create a boot disk using WinImage,
-        checkout this Terry Stewart's Blog Post on{" "}
-        <a href="https://www.classic-computers.org.nz/blog/2011-12-29-disk-from-images-mac.htm">
+        <a
+          href="http://www.winimage.com/download.htm"
+          target="_blank"
+          rel="noreferrer"
+        >
+          WinImage
+        </a>{" "}
+        to write the images. For more details on how to create a boot disk using
+        WinImage, checkout this Terry Stewart's Blog Post on{" "}
+        <a
+          href="https://www.classic-computers.org.nz/blog/2011-12-29-disk-from-images-mac.htm"
+          target="_blank"
+          rel="noreferrer"
+        >
           Making vintage Macintosh boot or system disks
         </a>
         .
