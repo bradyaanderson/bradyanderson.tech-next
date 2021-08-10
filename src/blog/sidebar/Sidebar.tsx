@@ -1,17 +1,22 @@
-import Category from "./Category";
+import Category, { SubCategories } from "./Category";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
 import "../../assests/stylesheets/blog/sidebar/Sidebar.scss";
 import React, { useState } from "react";
+import sitemap from "../../about/sitemap";
+import { BlogPostRoutes } from "../../../types/Sitemap";
 
 /** blog sidebar. Used for navigating blog. */
 function Sidebar() {
   const startSidebarOpen = window.innerWidth > 640;
   const [open, setOpen] = useState(startSidebarOpen);
+
+  const { routes: categoryRoutes } = sitemap.index.routes.blog;
+  const categories = Object.keys(categoryRoutes);
+
   function handleRollupClick() {
     setOpen(!open);
-    console.log("Button clicked");
   }
 
   const sidebarClasses = classNames({
@@ -25,6 +30,39 @@ function Sidebar() {
     "sidebar-invisible": !open,
   });
 
+  /**
+   * Builds {@link Category} component given category name.
+   *
+   * @param category The category name to build {@link Category} component for.
+   */
+  function buildCategoryComponent(category: string) {
+    const categoryRoute = categoryRoutes[category];
+    const display = categoryRoute.shortTitle || categoryRoute.title;
+    return (
+      <Category
+        display={display}
+        subdirectory={category}
+        subCategories={buildSubCategories(categoryRoute.routes)}
+        key={category}
+      />
+    );
+  }
+
+  /**
+   * Builds an object from {@link BlogPostRoutes} to pass as subcategory prop for {@link Category} component.
+   *
+   * @param postRoutes The post routes to build subcategories object from.
+   */
+  function buildSubCategories(postRoutes: BlogPostRoutes): SubCategories {
+    const subCategories: SubCategories = {};
+    Object.keys(postRoutes).forEach((post) => {
+      const { title, shortTitle } = postRoutes[post];
+      const display = shortTitle || title;
+      subCategories[display] = post;
+    });
+    return subCategories;
+  }
+
   return (
     <div className={sidebarClasses}>
       <div className="sidebar-rollup">
@@ -33,34 +71,8 @@ function Sidebar() {
         </button>
       </div>
       <div className={sidebarNavigationClasses}>
-        <Category name="Welcome" path="/" subCategories={{}} />
-        <Category
-          name="Retro Computing"
-          path="/retro-computing"
-          subCategories={{
-            "Opening up a Macintosh SE/30": "/opening-a-mac-se30",
-          }}
-        />
-        <Category
-          name="Retro Gaming"
-          path="/retro-gaming"
-          subCategories={
-            {
-              // "Replacing a Game Boy Color Speaker":
-              //   "/replacing-game-boy-color-speaker",
-            }
-          }
-        />
-        <Category
-          name="bradyanderson.tech"
-          path="/bradyanderson.tech"
-          subCategories={{
-            "Getting Started": "/getting-started",
-            "Using My Custom Domain": "/custom-hover-domain-for-heroku-app",
-            "Moving to AWS": "/moving-to-aws",
-            "Setting up Image Storage": "/setting-up-image-storage",
-          }}
-        />
+        <Category display="Welcome" subdirectory="/" subCategories={{}} />
+        {categories.map((category) => buildCategoryComponent(category))}
       </div>
     </div>
   );
