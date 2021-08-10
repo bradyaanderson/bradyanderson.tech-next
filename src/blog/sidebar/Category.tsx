@@ -1,34 +1,40 @@
 import { Link } from "react-router-dom";
 import SubCategory from "./SubCategory";
 import "../../assests/stylesheets/blog/sidebar/Sidebar.scss";
+import { join } from "path";
 
 interface Props {
   /** Name displayed for category */
-  name: string;
+  display: string;
   /** Router link used when category is clicked */
-  path: string;
+  subdirectory: string;
   /** Object map of subcategory name (display) to path */
-  subCategories: {
-    [key: string]: string;
-  };
+  subCategories: SubCategories;
+}
+
+/**
+ * Structure for storing subcategories.
+ */
+export interface SubCategories {
+  [key: string]: string;
 }
 
 /** Main category in sidebar nav. Contains children subcategories. Routes to category root when clicked. */
-function Category({ name, path, subCategories }: Props) {
+function Category({ display, subdirectory, subCategories }: Props) {
   const subCategoryKeys = Object.keys(subCategories);
-  const categoryPath = `/blog${path}`;
+  const categoryPath = join("/", "blog", subdirectory);
 
   return (
     <div className="sidebar-category">
       {/* Main category display */}
       <Link to={categoryPath}>
-        <span>{name}</span>
+        <span>{display}</span>
       </Link>
       {/* Sub-category displays */}
       {subCategoryKeys.map((subCategoryName, index) => (
         <SubCategory
           name={subCategoryName}
-          path={subCategories[subCategoryName]}
+          subCategory={subCategories[subCategoryName]}
           categoryPath={categoryPath}
           key={index}
         />

@@ -115,7 +115,7 @@ function OpeningAMacSE30Post() {
       <ul>
         <li>
           <a
-            href="https://www.youtube.com/watch?v=bTNYQzDh_fI&t=1298s"
+            href="https://youtu.be/wXWlJFrX19s"
             target="_blank"
             rel="noreferrer"
           >
@@ -124,7 +124,7 @@ function OpeningAMacSE30Post() {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/watch?v=bTNYQzDh_fI&t=1298s"
+            href="https://youtu.be/bTNYQzDh_fI"
             target="_blank"
             rel="noreferrer"
           >
