@@ -9,6 +9,7 @@ import SettingUpImageStoragePost from "../blog/categories/bradyanderson-tech/pos
 import CustomHoverDomainForHerokuAppPost from "../blog/categories/bradyanderson-tech/posts/CustomHoverDomainForHerokuAppPost";
 import BlogIndex from "../blog/BlogIndex";
 import BootingAnSE30Post from "../blog/categories/bradyanderson-tech/posts/BootingAnSE30Post";
+import FixingKeyboardPost from "../blog/categories/retro-computing/posts/FixingKeyboardPost";
 
 const sitemap: Sitemap = {
   index: {
@@ -28,9 +29,15 @@ const sitemap: Sitemap = {
                 Component: OpeningAMacSE30Post,
               },
               "booting-se30-without-a-hard-drive": {
-                title: "Booting a Macintosh SE/30 without a hard drive",
+                title: "Booting a Macintosh SE/30 Without a Hard Drive",
                 shortTitle: "Booting an SE/30 Without a Hard Drive",
                 Component: BootingAnSE30Post,
+              },
+              "apple-ii-keyboard-fix": {
+                title:
+                  '"Fixing" the Keyboard That Came With My SE/30 (Apple Keyboard II)',
+                shortTitle: '"Fixing" Apple Keyboard II',
+                Component: FixingKeyboardPost,
               },
             },
           },
