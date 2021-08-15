@@ -30,13 +30,13 @@ const sitemap: Sitemap = {
               },
               "booting-se30-without-a-hard-drive": {
                 title: "Booting a Macintosh SE/30 Without a Hard Drive",
-                shortTitle: "Booting an SE/30 Without a Hard Drive",
+                shortTitle: "Booting a SE/30 Without a Hard Drive",
                 Component: BootingAnSE30Post,
               },
               "apple-ii-keyboard-fix": {
                 title:
                   '"Fixing" the Keyboard That Came With My SE/30 (Apple Keyboard II)',
-                shortTitle: '"Fixing" Apple Keyboard II',
+                shortTitle: '"Fixing" an Apple Keyboard II',
                 Component: FixingKeyboardPost,
               },
             },
