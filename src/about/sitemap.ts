@@ -10,6 +10,7 @@ import CustomHoverDomainForHerokuAppPost from "../blog/categories/bradyanderson-
 import BlogIndex from "../blog/BlogIndex";
 import BootingAnSE30Post from "../blog/categories/bradyanderson-tech/posts/BootingAnSE30Post";
 import FixingKeyboardPost from "../blog/categories/retro-computing/posts/FixingKeyboardPost";
+import ReplacingGameBoyColorSpeakerPost from "../blog/categories/retro-gaming/posts/ReplacingGameBoyColorSpeakerPost";
 
 const sitemap: Sitemap = {
   index: {
@@ -45,7 +46,12 @@ const sitemap: Sitemap = {
           "retro-gaming": {
             title: "Retro Gaming",
             Component: RetroGamingIndex,
-            routes: {},
+            routes: {
+              "replacing-game-boy-color-speaker": {
+                title: "Replacing a Game Boy Color Speaker",
+                Component: ReplacingGameBoyColorSpeakerPost,
+              },
+            },
           },
           /* Website Blog Category */
           "bradyanderson.tech": {
