@@ -1,5 +1,5 @@
 import { Figure } from "react-bootstrap";
-import "../assests/stylesheets/common/ImageWithCaption.scss";
+import "../assests/stylesheets/common/BlogImage.scss";
 
 /** The URL where images are hosted */
 const PUBLIC_IMAGE_URL =
