@@ -4,7 +4,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
 import "../../assests/stylesheets/blog/sidebar/Sidebar.scss";
 import React, { useState } from "react";
-import sitemap from "../../about/sitemap";
+import sitemap from "../../sitemap/sitemap";
 import { BlogPostRoutes } from "../../../types/Sitemap";
 
 /** blog sidebar. Used for navigating blog. */
