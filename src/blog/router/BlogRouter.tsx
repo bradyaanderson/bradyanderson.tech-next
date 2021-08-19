@@ -1,5 +1,5 @@
 import { Route, Switch, useRouteMatch } from "react-router-dom";
-import sitemap from "../../about/sitemap";
+import sitemap from "../../sitemap/sitemap";
 import getCategoryRoutes from "./getCategoryRoutes";
 import BlogIndex from "../BlogIndex";
 
