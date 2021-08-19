@@ -11,6 +11,7 @@ import BlogIndex from "../blog/BlogIndex";
 import BootingAnSE30Post from "../blog/categories/bradyanderson-tech/posts/BootingAnSE30Post";
 import FixingKeyboardPost from "../blog/categories/retro-computing/posts/FixingKeyboardPost";
 import ReplacingGameBoyColorSpeakerPost from "../blog/categories/retro-gaming/posts/ReplacingGameBoyColorSpeakerPost";
+import InstallingSCSI2SDPost from "../blog/categories/retro-computing/posts/InstallingSCSI2SDPost";
 
 const sitemap: Sitemap = {
   index: {
@@ -39,6 +40,11 @@ const sitemap: Sitemap = {
                   '"Fixing" the Keyboard That Came With My SE/30 (Apple Keyboard II)',
                 shortTitle: '"Fixing" an Apple Keyboard II',
                 Component: FixingKeyboardPost,
+              },
+              "installing-scsi2sd-se30": {
+                title: "Installing a SCSI2SD on my Macintosh SE/30",
+                shortTitle: "Installing a SCSI2SD (Macintosh SE/30)",
+                Component: InstallingSCSI2SDPost,
               },
             },
           },
