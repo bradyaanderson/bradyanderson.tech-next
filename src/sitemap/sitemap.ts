@@ -12,6 +12,7 @@ import BootingAnSE30Post from "../blog/categories/bradyanderson-tech/posts/Booti
 import FixingKeyboardPost from "../blog/categories/retro-computing/posts/FixingKeyboardPost";
 import ReplacingGameBoyColorSpeakerPost from "../blog/categories/retro-gaming/posts/ReplacingGameBoyColorSpeakerPost";
 import InstallingSCSI2SDPost from "../blog/categories/retro-computing/posts/InstallingSCSI2SDPost";
+import FixingSE30SoundStruggle from "../blog/categories/retro-computing/posts/FixingSE30SoundStruggle";
 
 const sitemap: Sitemap = {
   index: {
@@ -45,6 +46,10 @@ const sitemap: Sitemap = {
                 title: "Installing a SCSI2SD on my Macintosh SE/30",
                 shortTitle: "Installing a SCSI2SD (Macintosh SE/30)",
                 Component: InstallingSCSI2SDPost,
+              },
+              "fixing-macintosh-se30-sound-struggle": {
+                title: "The Struggle to Fix a Macintosh SE/30's Sound",
+                Component: FixingSE30SoundStruggle,
               },
             },
           },
