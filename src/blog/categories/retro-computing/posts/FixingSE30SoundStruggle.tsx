@@ -1,112 +1,124 @@
 import BlogPost from "../../../../common/BlogPost";
 import BlogLink from "../../../../common/BlogLink";
+import BlogImage from "../../../../common/BlogImage";
 
 function FixingSE30SoundStruggle() {
+  const imageBasePath =
+    "/blog/categories/retro-computing/posts/fixing-macintosh-se30-sound-struggle";
   return (
     <BlogPost
       title="The Struggle to Fix a Macintosh SE/30's Sound"
       date="08/23/2021"
     >
       <pre>
-        I often tell people the reason I'm a software engineer is that I'm too
-        clumsy to work with real things. I can write clean code, but I struggle
-        when working with anything tangible. Despite this, I love working with
-        hardware and wish I knew more about electrical engineering. But I don't
-        and that means I tend to make mistakes when I work with hardware.
+        I often tell people I'm a software engineer because I'm too clumsy to
+        work with real things. Writing code feels natural, but I struggle to
+        work with anything tangible. Even so, I love working with hardware, even
+        if that means I often make mistakes.
       </pre>
       <pre>
-        After installing the SCSI2SD into my Macintosh, I started to fill it
-        with software and games. After installing Price of Persia, I launched
-        the game and noticed there was no sound. I knew my computer didn't make
-        the iconic Mac sound when starting up, but I thought maybe the sound was
-        turned down. It doesn't help that the SE/30 does not have a volume
-        switch. Volume is instead controlled through the sound application in
-        the Macintosh control panel. I had never needed to look at this control
-        and when I finally did open it, I saw that the volume was turned all the
-        way up.
+        After installing SCSI2SD into my Macintosh SE/30, I filled it with
+        software and games. After installing Price of Persia, I launched the
+        game and noticed there was no sound. I knew my computer didn't make the
+        iconic Mac sound when starting up, but I thought the volume was just
+        low. It also doesn't help that on the SE/30, volume can only be
+        controlled through the sound application and not a physical knob. I had
+        never needed to open this application before, and when I finally opened
+        it, I saw that the volume was turned up all the way.
       </pre>
       <pre>
         After some research, I found a{" "}
-        <BlogLink link="http://pc-restorer.com/">
+        <BlogLink link="https://www.tasteofhome.com/recipes/summer-bounty-ratatouille/">
           post on pc-restorer.com
         </BlogLink>{" "}
-        that outlined the exact problem I was facing. The post suggests
-        replacing 4 capacitors on the logic board to restore the sound.
+        that outlined the exact problem I was facing. The post explains that my
+        sound issue was most likely because of aging capacitors and replacing 4
+        capacitors on the logic board should restore the sound.
       </pre>
 
-      {/*  Picture of capacitors */}
+      <BlogImage
+        path={`${imageBasePath}/Capacitors.jpg`}
+        caption="Capacitors C3 - C6. You can see they no longer appear flat against the board due to age."
+        maxWidth="16rem"
+      />
 
       <pre>
-        First I located the 4 capacitors mentioned in that post. I had read that
-        the best method to pull off capacitors is to grab the capacitor with a
-        pair of pliers and twists, gradually increasing the amount of rotation
-        until the capacitor comes free. This method worked well, and I was able
-        to remove all 4 capacitors without any problems. I then used solder wick
-        and a soldering iron to clean up the remaining solder on the capacitor
-        pads.
+        First, I located the 4 capacitors mentioned in that post. I had read
+        that the best method to pull off capacitors is to grab the capacitor
+        with a pair of pliers and twists, gradually increasing the amount of
+        rotation until the capacitor comes free. This method worked well, and I
+        removed all 4 capacitors with no problems. I then used solder wick and a
+        soldering iron to clean up the residual solder left by the capacitors.
       </pre>
 
-      {/*  Picture of cleaned up capacitor pads */}
+      <BlogImage
+        path={`${imageBasePath}/RemovedCapacitors.jpg`}
+        caption="Capacitors C3 - C6 removed. Looking back, I can see that I didn't do a great job."
+        maxWidth="16rem"
+      />
 
       <pre>
         I had bought some electrolytic capacitors and used these to replace the
         capacitors I had just removed. I'm still new to soldering, so I made a
         lot of mistakes. The biggest mistake I made was not buying soldering
-        flux, so it was hard to get the solder to stick to the board. After a
-        lot of attempts, I had all 4 capacitors soldered in their correct
-        location.
+        flux, so my solder was not sticking to the correct places on the board.
+        After a lot of attempts, though, I had all 4 capacitors soldered in
+        their correct location.
       </pre>
 
       <pre>
         I reconnected the logic board to the other components of the computer
         and tried turning it on. On start-up, I heard a "bong" sound. This was
         the first time I heard my SE/30 produced noise. Unfortunately, any
-        excitement I had from hearing the "bong" quickly faded when a
-        checkerboard pattern appeared on the screen instead of the normal
-        "Welcome to Macintosh" message. Uh oh...
+        excitement I had from hearing sound quickly faded when a checkerboard
+        pattern appeared on the screen instead of the normal "Welcome to
+        Macintosh" message. Uh oh...
       </pre>
       <pre>
-        I panicked and tried looking at the 4 capacitors I had just replaced to
-        make sure they were connected and in the correct orientation. I didn't
-        see anything wrong with them. The "bong" I heard confirmed that some
-        capacitors had gone bad and replacing them might fix some issues, so
-        decided to try replacing every capacitor on the board.
+        I panicked and double-checked the 4 capacitors I had just replaced to
+        make sure they were connected and in the correct orientation. I saw
+        nothing wrong with them. The sound I heard when turning on the machine
+        confirmed that some capacitors had gone bad. I decided to try replacing
+        more capacitors on the board, just in case others that had stopped
+        working.
       </pre>
 
-      {/*  Empty board*/}
+      <BlogImage
+        path={`${imageBasePath}/RemovedCapacitorsFull.jpg`}
+        caption="The logic board after removing all non-through-hold capacitors."
+        maxWidth="24rem"
+      />
 
       <pre>
-        I removed only capacitors on the board that seemed easy to replace. I
-        would leave the through-hole capacitors for another time. I even removed
-        the new capacitors that I had just soldered to the board (I don't
-        remember why. Maybe I thought reinstalling them could help fix the
-        issue?). However, this process didn't go smoothly. While removing
-        capacitors C6 and C12, I accidentally removed the pad and some of the
-        wire trace that allowed the capacitors to connect to the board.
+        I removed the capacitors on the board, which seemed easy to replace,
+        leaving the through-hole capacitors for another time. I even removed the
+        new capacitors that I had just soldered to the board (I don't remember
+        why. Maybe I thought reinstalling them could help fix the issue?).
+        However, this process didn't go smoothly. While removing capacitors C6
+        and C12, I accidentally removed the pad and some of the wire trace that
+        connects the capacitors to the board. I didn't know what to do now that
+        I had missing pads and broken traces.
       </pre>
-      <pre>
-        At this point, I didn't know what to do now that I had missing pads and
-        broken traces. How do I fix this?
-      </pre>
-
-      {/*Missing pad*/}
 
       <pre>
-        I learned that it's possible to use wire to reestablish a connection
-        between a capacitor and the board, even when a trace has been broken. I
-        knew there was a high chance I could mess that up. I need to practice
-        soldering on PCBs, but let's be honest, a Macintosh SE/30 logic board is
-        not the place to do that.
+        After some more research, I learned that it's possible to use wire to
+        take the place of a broken trace. However, I knew I could mess that up.
+        I need to practice soldering on PCBs, but let's be honest, a Macintosh
+        SE/30 logic board is not the place to do that.
       </pre>
       <pre>
         Instead, I found an individual on eBay who was offering a service to
         replace capacitors on old Macintosh logic boards. I sent them a message
-        showing them the issue and they said they could fix my board. I was a
-        little hesitant to ship off my board, but I packaged it up and sent it
-        off to Pennsylvania.
+        showing them the issue, and they said they could fix my board even with
+        the broken traces. I was a little hesitant to ship off my logic board,
+        but I went ahead, packaged it up, and got it sent out.
       </pre>
 
-      {/* Fixed logic board */}
+      <BlogImage
+        path={`${imageBasePath}/ReplacedCapacitors.jpg`}
+        caption="The board after being returned from capacitor replacement and cleaning."
+        maxWidth="24rem"
+      />
 
       <pre>
         Less than a week later, the logic board was back in my hands and it
@@ -115,20 +127,19 @@ function FixingSE30SoundStruggle() {
         and had the battery replaced.
       </pre>
       <pre>
-        I was so excited to get the board back that I forgot to reinstall the
-        RAM before putting the board back into the SE/30. Of course, it didn't
-        boot this time, but I pretty quickly realized what I did wrong. After
-        replacing the RAM, I flipped the power switch, heard the iconic
-        Macintosh chime, and then saw "Welcome to Macintosh" appear on the
-        screen. I couldn't believe it. I was pretty sure I would never be able
-        to use my SE/30 again after my failed soldering attempts, but I was back
-        in business. I learned a lot from almost killing my SE/30. I'm not sure
-        that I'll need to solder more capacitors onto PCBs anytime soon, but I
-        know what mistakes not to make the next time.
+        I was so excited to get the board back; I forgot to reinstall the RAM.
+        Of course, it didn't boot this time, but I pretty quickly realized what
+        I did wrong. After reinstalling the RAM, I flipped the power switch,
+        heard the iconic Macintosh chime, and then saw "Welcome to Macintosh"
+        appear on the screen. I couldn't believe it. I was pretty sure I could
+        never use my SE/30 again after my failed capacitor replacement attempt.
       </pre>
       <pre>
-        Finally, I can't recommend the service I used to repair my board after
-        my mishap. I've included a link to this service below.
+        I learned a lot from almost killing my SE/30. I'm not sure that I'll
+        need to solder more capacitors onto PCBs anytime soon, but I know what
+        mistakes not to make the next time. Finally, I can't recommend the
+        service I used to repair my board after my mishap. I've included a link
+        to this service below.
       </pre>
 
       <h2>Links</h2>
@@ -139,7 +150,7 @@ function FixingSE30SoundStruggle() {
           </BlogLink>
         </li>
         <li>
-          <BlogLink link="ebay.com/itm/253935420702">
+          <BlogLink link="https://ebay.com/itm/253935420702">
             Classic Macintosh logic board capacitor + battery service
           </BlogLink>
         </li>
