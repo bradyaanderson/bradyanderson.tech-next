@@ -13,6 +13,7 @@ import FixingKeyboardPost from "../blog/categories/retro-computing/posts/FixingK
 import ReplacingGameBoyColorSpeakerPost from "../blog/categories/retro-gaming/posts/ReplacingGameBoyColorSpeakerPost";
 import InstallingSCSI2SDPost from "../blog/categories/retro-computing/posts/InstallingSCSI2SDPost";
 import FixingSE30SoundStruggle from "../blog/categories/retro-computing/posts/FixingSE30SoundStruggle";
+import WhiteningAMacintoshPost from "../blog/categories/retro-computing/posts/WhiteningAMacintoshPost";
 
 const sitemap: Sitemap = {
   index: {
@@ -50,6 +51,10 @@ const sitemap: Sitemap = {
               "fixing-macintosh-se30-sound-struggle": {
                 title: "The Struggle to Fix a Macintosh SE/30's Sound",
                 Component: FixingSE30SoundStruggle,
+              },
+              "whitening-a-macintosh": {
+                title: "Whitening a Macintosh's Plastic Case",
+                Component: WhiteningAMacintoshPost,
               },
             },
           },
