@@ -1,19 +1,19 @@
 import { Route, Switch, useRouteMatch } from "react-router-dom";
-import sitemap from "../../sitemap/sitemap";
-import getCategoryRoutes from "./getCategoryRoutes";
 import BlogIndex from "../BlogIndex";
+import getCategoryRoutes from "./routeConstructor";
+import blogMap from "../blogMap";
 
 /** Router for blog. */
 function BlogRouter() {
-  const { routes } = sitemap.index.routes.blog;
+  const { routes } = blogMap;
   const { path: currentPath } = useRouteMatch();
   const categoryRoutes = getCategoryRoutes(routes, currentPath);
 
   return (
     <Switch>
-      {categoryRoutes.map((categoryRoute) => categoryRoute)}
+      {categoryRoutes.map((CategoryRoute) => CategoryRoute)}
       <Route exact path={currentPath}>
-        <BlogIndex />
+        <BlogIndex title="Blog" />
       </Route>
     </Switch>
   );

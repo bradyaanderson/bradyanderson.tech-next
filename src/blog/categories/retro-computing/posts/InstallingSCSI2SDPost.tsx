@@ -1,17 +1,16 @@
-import BlogPost from "../../../../common/BlogPost";
-import BlogLink from "../../../../common/BlogLink";
-import BlogEmbeddedYouTubeVideo from "../../../../common/BlogEmbeddedYouTubeVideo";
-import BlogImage from "../../../../common/BlogImage";
+import BlogPost from "../../../blog-components/BlogPost";
+import BlogLink from "../../../blog-components/BlogLink";
+import BlogEmbeddedYouTubeVideo from "../../../blog-components/BlogEmbeddedYouTubeVideo";
+import BlogImage from "../../../blog-components/BlogImage";
+import { BlogPostProps } from "../../../../../types/Sitemap";
+import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function InstallingSCSI2SDPost() {
+function InstallingSCSI2SDPost({ title }: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/installing-scsi2sd-se30";
   return (
-    <BlogPost
-      title="Installing a SCSI2SD on my Macintosh SE/30"
-      date="08/18/2021"
-    >
-      <pre>
+    <BlogPost title={title} date="08/18/2021">
+      <BlogParagraph>
         My Macintosh SE/30 did not come with a hard drive when I bought it. All
         SE/30s originally came with a hard drive, so it seems like the one in my
         device had been removed at some point. While searching for replacements
@@ -22,7 +21,7 @@ function InstallingSCSI2SDPost() {
         which can be used in place of a hard drive. After doing a bit of
         research, I decided this would be the best "hard drive" for my
         Macintosh.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/SCSI2SD.jpg`}
@@ -30,7 +29,7 @@ function InstallingSCSI2SDPost() {
         caption="The SCSI2SD device."
       />
 
-      <pre>
+      <BlogParagraph>
         The SCSI2SD offers a lot of benefits over a traditional hard drive. Most
         importantly, many of the original hard drives that worked with the SE/30
         are starting to fail and are expensive. On top of this, the SCSI2SD
@@ -39,16 +38,16 @@ function InstallingSCSI2SDPost() {
         card with an operating system and applications which is increasingly
         important as it becomes harder to find people willing to part with their
         old Macintosh software.
-      </pre>
+      </BlogParagraph>
 
-      <pre>
+      <BlogParagraph>
         There are plenty of tutorials online about how to set up the SCSI2SD to
         run macOS. I won't spend time rehashing those tutorials because they
         already do a great job of saying explaining this (see links below).
         Instead, I'd like to talk about installing the device itself. Especially
         because my SE/30 did not come with any of the cables I needed to connect
         the SCSI2SD to the system which other tutorials did not talk about.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/Materials.jpg`}
@@ -56,7 +55,7 @@ function InstallingSCSI2SDPost() {
         caption="The materials needed to install the SCSI2SD."
       />
 
-      <pre>
+      <BlogParagraph>
         There were 5 things I needed to get the SCSI2SD working:
         <ol>
           <li>SD Card</li>
@@ -108,12 +107,12 @@ function InstallingSCSI2SDPost() {
             </li>
           </ul>
         </ol>
-      </pre>
+      </BlogParagraph>
 
-      <pre>
+      <BlogParagraph>
         After everything had arrived and I had set up my formatted my SD card
         and installed macOS 7 on it, I got to work installing the SCSI2SD:
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/Power2Analog.jpg`}
@@ -135,28 +134,28 @@ function InstallingSCSI2SDPost() {
         maxWidth="24rem"
         caption="Last, I connected the power and SCSI cables to the SCSI2SD."
       />
-      <pre>
+      <BlogParagraph>
         Once everything was together, I flipped on the system to see if it would
         work. Sure enough, I saw the "Welcome to Macintosh" message appear and,
         after a little bit. The system then started rebuilding the desktop
         image. When that finished, I was able to use macOS like normal. I
         restarted the system and it booted right to the desktop.
-      </pre>
+      </BlogParagraph>
 
-      <pre>
+      <BlogParagraph>
         Here's a video of me starting they system. I originally filmed this for
         an Instagram Story, so apologies for the vertical video.
-      </pre>
+      </BlogParagraph>
       <BlogEmbeddedYouTubeVideo url="https://www.youtube.com/embed/XCuxafr5Aqo" />
 
-      <pre>
+      <BlogParagraph>
         Having long-term storage working on my Macintosh has opened up a lot of
         possibilities for me. I no longer have to constantly flip out floppy
         disks, which was a pain. The SCSI2SD has also allowed me to pre-load my
         system with applications and games that I may have never been able to
         experience otherwise. I'm looking forward to what I'll do next with my
         SE/30.
-      </pre>
+      </BlogParagraph>
 
       <h2>Resources</h2>
       <ul>

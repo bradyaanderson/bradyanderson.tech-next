@@ -1,7 +1,6 @@
-import { BlogCategoryRoutes } from "../../../types/Sitemap";
+import { BlogCategoryRoutes, BlogPostRoutes } from "../../../types/Sitemap";
 import { join } from "path";
 import { Route, Switch } from "react-router-dom";
-import getPostRoutes from "./getPostRoutes";
 
 /**
  * Creates routing for blog categories.
@@ -12,7 +11,11 @@ import getPostRoutes from "./getPostRoutes";
  */
 function getCategoryRoutes(routes: BlogCategoryRoutes, baseRoute: string) {
   return Object.keys(routes).map((key) => {
-    const { routes: childRoutes, Component: CategoryComponent } = routes[key];
+    const {
+      routes: childRoutes,
+      Component: CategoryComponent,
+      title,
+    } = routes[key];
     const path = join(baseRoute, key);
 
     const postRoutes = getPostRoutes(childRoutes, path);
@@ -21,9 +24,27 @@ function getCategoryRoutes(routes: BlogCategoryRoutes, baseRoute: string) {
         <Switch>
           {postRoutes.map((route) => route)}
           <Route exact path={path}>
-            <CategoryComponent />
+            <CategoryComponent title={title} />
           </Route>
         </Switch>
+      </Route>
+    );
+  });
+}
+
+/**
+ * Creates routing for blog posts.
+ *
+ * @param routes The BlogPostRoutes to use when constructing routes.
+ * @param categoryPath The path of the category which the post will be under.
+ */
+function getPostRoutes(routes: BlogPostRoutes, categoryPath: string) {
+  return Object.keys(routes).map((key) => {
+    const { Component: PostComponent, title } = routes[key];
+    const path = join(categoryPath, key);
+    return (
+      <Route path={path} key={key}>
+        <PostComponent title={title} />
       </Route>
     );
   });
