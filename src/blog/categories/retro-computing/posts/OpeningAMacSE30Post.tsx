@@ -1,7 +1,8 @@
-import BlogPost from "../../../../common/BlogPost";
-import BlogImage from "../../../../common/BlogImage";
+import BlogPost from "../../../blog-components/BlogPost";
+import BlogImage from "../../../blog-components/BlogImage";
 import { BlogPostProps } from "../../../../../types/Sitemap";
-import BlogLink from "../../../../common/BlogLink";
+import BlogLink from "../../../blog-components/BlogLink";
+import BlogParagraph from "../../../blog-components/BlogParagraph";
 
 function OpeningAMacSE30Post({ title }: BlogPostProps) {
   const imageBasePath =
@@ -12,14 +13,14 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
       title={title}
       date="08/05/2021 (based off an Instagram story from 06/16/2021)"
     >
-      <pre>
+      <BlogParagraph>
         On June 13th, I saw a Macintosh SE/30 at an antique store by my
         apartment. I've always wanted a retro Apple computer, but I knew almost
         nothing about them. After doing a little research, I learned that the
         SE/30 was the last and most powerful version of the compact black &
         white Macs produced. Pretty soon after learning this, I decided to
         purchase the computer.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/MacSE30.jpg`}
@@ -27,7 +28,7 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
         caption="My Macintosh SE/30."
       />
 
-      <pre>
+      <BlogParagraph>
         I took the computer home, plugged it in, and saw an image of a floppy
         disk with a question mark in the middle. It seemed like this computer
         was unable to boot to an operating system. This was a little odd because
@@ -35,7 +36,7 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
         this one was removed or not working? I'd have to open it to find out.
         The only problem is that I didn't have a screwdriver that was long
         enough to open the case.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/NoBoot.jpg`}
@@ -43,12 +44,12 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
         caption="This is the image that shows when the SE/30 does not have any media to boot from."
       />
 
-      <pre>
+      <BlogParagraph>
         A few days later, I had secured myself a 12-inch T15 screwdriver. I
         needed a long screwdriver to be able to reach two of the hard-to-reach
         screws on the case, but 12-inches was a little overkill. I probably
         would have been okay with a 6-inch screwdriver.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/OpeningCase.jpg`}
@@ -56,13 +57,13 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
         caption="Using a 12-inch T15 screwdriver to reach the hard to reach screws."
       />
 
-      <pre>
+      <BlogParagraph>
         I should stress that old CRTs can be dangerous and the CRT in this
         Macintosh is no exception. Luckily the SE/30 contains a bleeder resistor
         that should discharge the CRT, but I'm handling this machine as though
         that resistor isn't working and staying far away from the CRT
         components.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/CRT.jpg`}
@@ -70,15 +71,15 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
         caption="The CRT (Needs some cleaning)."
       />
 
-      <pre>
+      <BlogParagraph>
         After sliding off the case, I got my first look inside the machine. The
         internals were due for some cleaning, but things looked pretty good for
         a 30-year-old computer.
-      </pre>
-      <pre>
+      </BlogParagraph>
+      <BlogParagraph>
         Sure enough, the one thing I don't see is a hard drive. That explains
         why the machine won't boot to an operating system.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/NoHardDrive.jpg`}
@@ -86,11 +87,11 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
         caption="If there was a hard drive, it would sit under the CRT."
       />
 
-      <pre>
+      <BlogParagraph>
         Before I put the computer back together, I decided to take a look at the
         logic board and expansion card that came with this machine. I'll be back
         to do more with these components later.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/LogicBoard.jpg`}
@@ -98,10 +99,10 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
         caption="If there was a hard drive, it would sit under the CRT."
       />
 
-      <pre>
+      <BlogParagraph>
         And of course, I wanted to take a quick look at the 16MHz Motorola 68030
         processor.
-      </pre>
+      </BlogParagraph>
 
       <BlogImage
         path={`${imageBasePath}/Processor.jpg`}
@@ -110,10 +111,10 @@ function OpeningAMacSE30Post({ title }: BlogPostProps) {
       />
 
       <h2>Links</h2>
-      <pre>
+      <BlogParagraph>
         Here are some of the videos that taught me how to open the case on my
         Macintosh SE/30:
-      </pre>
+      </BlogParagraph>
       <ul>
         <li>
           <BlogLink link="https://youtu.be/wXWlJFrX19s">

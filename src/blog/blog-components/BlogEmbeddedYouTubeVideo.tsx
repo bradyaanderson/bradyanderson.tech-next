@@ -1,4 +1,4 @@
-import "../assests/stylesheets/common/BlogEmbeddedYouTubeVideo.scss";
+import "../../assests/stylesheets/common/BlogEmbeddedYouTubeVideo.scss";
 
 interface Props {
   /** The URL of the YouTube video to embed. */
