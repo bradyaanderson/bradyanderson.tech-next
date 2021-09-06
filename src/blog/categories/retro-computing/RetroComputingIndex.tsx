@@ -1,9 +1,10 @@
 import BlogPost from "../../../common/BlogPost";
+import { BlogPostProps } from "../../../../types/Sitemap";
 
 /** Index for Retro Computing blog category */
-function RetroComputingIndex() {
+function RetroComputingIndex({ title }: BlogPostProps) {
   return (
-    <BlogPost title="Retro Computing">
+    <BlogPost title={title}>
       <pre>
         I love all computers, but to me, there is something special about retro
         computing. I was born in 1998, so it's not nostalgia that drives my love

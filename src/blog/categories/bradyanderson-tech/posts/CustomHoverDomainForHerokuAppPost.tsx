@@ -1,20 +1,19 @@
 import BlogPost from "../../../../common/BlogPost";
 import BlogImage from "../../../../common/BlogImage";
+import BlogLink from "../../../../common/BlogLink";
+import { BlogPostProps } from "../../../../../types/Sitemap";
 
-function CustomHoverDomainForHerokuAppPost() {
+function CustomHoverDomainForHerokuAppPost({ title }: BlogPostProps) {
   return (
-    <BlogPost
-      title="Using My Custom Hover Domain for Heroku Application"
-      date="07/27/2021"
-    >
+    <BlogPost title={title} date="07/27/2021">
       <pre>
         When you create an application in{" "}
-        <a href="https://www.heroku.com/">Heroku</a>, you also get a Heroku
-        domain where you can access the app. In the case of bradyanderson.tech,
-        you can also find this site at{" "}
-        <a href="https://bradyanderson-tech-new.herokuapp.com">
+        <BlogLink link="https://www.heroku.com/">Heroku</BlogLink>, you also get
+        a Heroku domain where you can access the app. In the case of
+        bradyanderson.tech, you can also find this site at{" "}
+        <BlogLink link="https://bradyanderson-tech-new.herokuapp.com">
           bradyanderson-tech-new.herokuapp.com
-        </a>
+        </BlogLink>
         . The Heroku domain was great for when I first started because I could
         simply pull up this URL on my phone and test out how easy it was to use
         the site on a mobile device. Now that I'm ready for others to visit this
@@ -22,11 +21,11 @@ function CustomHoverDomainForHerokuAppPost() {
       </pre>
       <pre>
         Many years ago, I bought the domain bradyanderson.tech from{" "}
-        <a href="https://www.hover.com/">hover.com</a>. One problem I've had
-        with Hover is that there are not a ton of resources that explain how to
-        configure your domain. Because of that, I had to read through a few
-        references before bradyanderson.tech was actually pointing to my Heroku
-        application. Here is a recount of what I learned:
+        <BlogLink link="https://www.hover.com/">hover.com</BlogLink>. One
+        problem I've had with Hover is that there are not a ton of resources
+        that explain how to configure your domain. Because of that, I had to
+        read through a few references before bradyanderson.tech was actually
+        pointing to my Heroku application. Here is a recount of what I learned:
       </pre>
 
       <h2>Step 1: Configure Heroku Domain Settings</h2>
@@ -102,14 +101,14 @@ function CustomHoverDomainForHerokuAppPost() {
       <h2>References</h2>
       <ul>
         <li>
-          <a href="https://devcenter.heroku.com/articles/custom-domains">
+          <BlogLink link="https://devcenter.heroku.com/articles/custom-domains">
             Heroku Custom Domain Names For Apps
-          </a>
+          </BlogLink>
         </li>
         <li>
-          <a href="http://brendan-quinn.xyz/post/pointing-hover-domain-to-your-heroku-app/">
+          <BlogLink link="http://brendan-quinn.xyz/post/pointing-hover-domain-to-your-heroku-app/">
             Pointing Hover Domain to Your Heroku App
-          </a>
+          </BlogLink>
         </li>
       </ul>
     </BlogPost>

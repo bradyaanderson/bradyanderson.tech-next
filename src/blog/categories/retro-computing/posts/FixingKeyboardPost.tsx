@@ -1,15 +1,13 @@
 import BlogPost from "../../../../common/BlogPost";
 import BlogImage from "../../../../common/BlogImage";
+import { BlogPostProps } from "../../../../../types/Sitemap";
 
 const imageBasePath =
   "/blog/categories/retro-computing/posts/se30-keyboard-fix";
 
-function FixingKeyboardPost() {
+function FixingKeyboardPost({ title }: BlogPostProps) {
   return (
-    <BlogPost
-      title='"Fixing" the Keyboard That Came With My SE/30 (Apple Keyboard II)'
-      date="08/14/2021"
-    >
+    <BlogPost title={title} date="08/14/2021">
       <pre>
         When trying to solve a problem, I can sometimes fail to see the simple
         solution right in front of me. This time, however, I'm glad to admit

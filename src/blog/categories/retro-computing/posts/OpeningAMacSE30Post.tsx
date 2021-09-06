@@ -1,13 +1,15 @@
 import BlogPost from "../../../../common/BlogPost";
 import BlogImage from "../../../../common/BlogImage";
+import { BlogPostProps } from "../../../../../types/Sitemap";
+import BlogLink from "../../../../common/BlogLink";
 
-function OpeningAMacSE30Post() {
+function OpeningAMacSE30Post({ title }: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/opening-a-mac-se-30";
 
   return (
     <BlogPost
-      title="Opening A Macintosh SE/30"
+      title={title}
       date="08/05/2021 (based off an Instagram story from 06/16/2021)"
     >
       <pre>
@@ -114,22 +116,14 @@ function OpeningAMacSE30Post() {
       </pre>
       <ul>
         <li>
-          <a
-            href="https://youtu.be/wXWlJFrX19s"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <BlogLink link="https://youtu.be/wXWlJFrX19s">
             The 8-bit Guy's Macintosh SE Restoration
-          </a>
+          </BlogLink>
         </li>
         <li>
-          <a
-            href="https://youtu.be/bTNYQzDh_fI"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <BlogLink link="https://youtu.be/bTNYQzDh_fI">
             Branchus Creations' Macintosh SE/30 Live Teardown
-          </a>
+          </BlogLink>
         </li>
       </ul>
     </BlogPost>

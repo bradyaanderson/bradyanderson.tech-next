@@ -1,9 +1,10 @@
 import BlogPost from "../../../common/BlogPost";
+import { BlogPostProps } from "../../../../types/Sitemap";
 
 /** Index for Retro Gaming blog section */
-function RetroGamingIndex() {
+function RetroGamingIndex({ title }: BlogPostProps) {
   return (
-    <BlogPost title="Retro Gaming">
+    <BlogPost title={title}>
       <pre>
         Retro game consoles are retro computers, but I've decided to break posts
         about gaming into their own category. Retro gaming fascinates me for the

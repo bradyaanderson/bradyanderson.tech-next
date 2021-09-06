@@ -1,15 +1,13 @@
 import BlogPost from "../../../../common/BlogPost";
 import BlogLink from "../../../../common/BlogLink";
 import BlogImage from "../../../../common/BlogImage";
+import { BlogPostProps } from "../../../../../types/Sitemap";
 
-function FixingSE30SoundStruggle() {
+function FixingSE30SoundStruggle({ title }: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/fixing-macintosh-se30-sound-struggle";
   return (
-    <BlogPost
-      title="The Struggle to Fix a Macintosh SE/30's Sound"
-      date="08/23/2021"
-    >
+    <BlogPost title={title} date="08/23/2021">
       <pre>
         I often tell people I'm a software engineer because I'm too clumsy to
         work with real things. Writing code feels natural, but I struggle to

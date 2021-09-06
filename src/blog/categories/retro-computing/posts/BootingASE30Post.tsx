@@ -1,14 +1,13 @@
 import BlogPost from "../../../../common/BlogPost";
 import BlogImage from "../../../../common/BlogImage";
+import { BlogPostProps } from "../../../../../types/Sitemap";
+import BlogLink from "../../../../common/BlogLink";
 
-function BootingAnSE30Post() {
+function BootingASE30Post({ title }: BlogPostProps) {
   const imageDirectory =
     "/blog/categories/retro-computing/posts/booting-an-se30";
   return (
-    <BlogPost
-      title="Booting a Macintosh SE/30 Without a Hard Drive"
-      date="08/10/2021"
-    >
+    <BlogPost title={title} date="08/10/2021">
       <pre>
         In my last post, I wrote about how I discovered my Macintosh SE/30
         didn't have a hard drive. This explained why the computer didn't boot to
@@ -43,13 +42,9 @@ function BootingAnSE30Post() {
         Now that I had to the disk, I had to track down an OS Image to image to
         the floppy disk. The Internet Archive made this pretty simple by
         providing the two ISO images for{" "}
-        <a
-          href="https://archive.org/details/mac_MacOS_6.0.8"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <BlogLink link="https://archive.org/details/mac_MacOS_6.0.8">
           macOS System 6.0.8 boot disk and system additions disk
-        </a>
+        </BlogLink>
         .
       </pre>
       <pre>
@@ -65,22 +60,14 @@ function BootingAnSE30Post() {
 
       <pre>
         Getting System 6 imaged to floppy disk took longer than expected. I used{" "}
-        <a
-          href="http://www.winimage.com/download.htm"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <BlogLink link="http://www.winimage.com/download.htm">
           WinImage
-        </a>{" "}
+        </BlogLink>{" "}
         to write the images. For more details on how to create a boot disk using
         WinImage, checkout this Terry Stewart's Blog Post on{" "}
-        <a
-          href="https://www.classic-computers.org.nz/blog/2011-12-29-disk-from-images-mac.htm"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <BlogLink link="https://www.classic-computers.org.nz/blog/2011-12-29-disk-from-images-mac.htm">
           Making vintage Macintosh boot or system disks
-        </a>
+        </BlogLink>
         .
       </pre>
       <pre>
@@ -91,7 +78,6 @@ function BootingAnSE30Post() {
         few times but had no luck. It took almost 2 hours of constant retries
         before I got a disk that passed the verify step.
       </pre>
-      <pre></pre>
 
       <pre>
         I don't know why it took so long to create a usable boot disk. I have a
@@ -146,4 +132,4 @@ function BootingAnSE30Post() {
   );
 }
 
-export default BootingAnSE30Post;
+export default BootingASE30Post;

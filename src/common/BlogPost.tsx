@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 interface Props {
   /** Title to display on post. */
@@ -15,6 +16,9 @@ const BlogPost: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="blog-content">
         <h1 className="blog-title">{title}</h1>
         {date ? <span className="blog-date">{date}</span> : null}

@@ -4,15 +4,15 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
 import "../../assests/stylesheets/blog/sidebar/Sidebar.scss";
 import React, { useState } from "react";
-import sitemap from "../../sitemap/sitemap";
 import { BlogPostRoutes } from "../../../types/Sitemap";
+import blogMap from "../blogMap";
 
 /** blog sidebar. Used for navigating blog. */
 function Sidebar() {
   const startSidebarOpen = window.innerWidth > 640;
   const [open, setOpen] = useState(startSidebarOpen);
 
-  const { routes: categoryRoutes } = sitemap.index.routes.blog;
+  const { routes: categoryRoutes } = blogMap;
   const categories = Object.keys(categoryRoutes);
 
   function handleRollupClick() {

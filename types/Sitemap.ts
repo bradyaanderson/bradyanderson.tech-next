@@ -5,8 +5,13 @@ export interface Route {
 
 /** Basic Blog Route */
 export interface BlogRoute extends Route {
-  Component: () => JSX.Element;
+  Component: (props: BlogPostProps) => JSX.Element;
   shortTitle?: string;
+}
+
+/** Component props for Blog Posts */
+export interface BlogPostProps {
+  title: string;
 }
 
 /** Blog Post Route */
@@ -28,18 +33,6 @@ export interface BlogCategoryRoutes {
 }
 
 /** Structure of blog routes */
-export interface BlogIndex extends BlogRoute {
+export interface BlogMap extends BlogRoute {
   routes: BlogCategoryRoutes;
 }
-
-/** Structure of site routes for custom sitemap */
-export interface Sitemap {
-  index: {
-    routes: {
-      blog: BlogIndex;
-      about: Route;
-    };
-  };
-}
-
-export default Sitemap;

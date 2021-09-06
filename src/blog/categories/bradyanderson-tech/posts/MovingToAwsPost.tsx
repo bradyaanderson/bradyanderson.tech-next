@@ -1,8 +1,10 @@
 import BlogPost from "../../../../common/BlogPost";
+import { BlogPostProps } from "../../../../../types/Sitemap";
+import BlogLink from "../../../../common/BlogLink";
 
-function MovingToAwsPost() {
+function MovingToAwsPost({ title }: BlogPostProps) {
   return (
-    <BlogPost title="Moving To AWS from Heroku" date="07/20/2021">
+    <BlogPost title={title} date="07/20/2021">
       <pre>
         Well, that didn't last long... I was planning some upcoming posts for
         this blog and I realized that I'm going to need ample space to post
@@ -25,9 +27,9 @@ function MovingToAwsPost() {
         It's only been a day, but I'm already liking AWS a lot. Specifically,
         AWS Amplify made it incredibly simple to get my app up and running in
         less than an hour. They even had a{" "}
-        <a href="https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/">
+        <BlogLink link="https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/">
           tutorial
-        </a>{" "}
+        </BlogLink>{" "}
         that taught me almost everything I needed to know in just a few minutes.
         I should say that I'm not surprised that AWS is this polished given just
         how much of the web is hosted on it. I'm looking forward to learning

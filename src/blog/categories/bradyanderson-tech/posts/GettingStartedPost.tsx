@@ -1,12 +1,14 @@
 import BlogPost from "../../../../common/BlogPost";
 import { gettingStartedText } from "../../../text/bradyanderson-tech/gettingStartedText";
 import BlogImage from "../../../../common/BlogImage";
+import { BlogPostProps } from "../../../../../types/Sitemap";
+import BlogLink from "../../../../common/BlogLink";
 
 const { open, react, express, heroku, typescript } = gettingStartedText;
 
-function GettingStartedPost() {
+function GettingStartedPost({ title }: BlogPostProps) {
   return (
-    <BlogPost title="Getting Started" date="07/25/2021">
+    <BlogPost title={title} date="07/25/2021">
       <BlogImage
         path="/blog/categories/bradyanderson-tech/posts/getting-started/homepage.png"
         caption="The homepage on 07/25/2021."
@@ -33,21 +35,21 @@ function GettingStartedPost() {
       <h2>Links</h2>
       <ul>
         <li>
-          <a href="https://github.com/bradyaanderson/bradyanderson.tech-next">
+          <BlogLink link="https://github.com/bradyaanderson/bradyanderson.tech-next">
             bradyanderson.tech GitHub Repo
-          </a>
+          </BlogLink>
         </li>
         <li>
-          <a href="https://reactjs.org/">React</a>
+          <BlogLink link="https://reactjs.org/">React</BlogLink>
         </li>
         <li>
-          <a href="https://expressjs.com/">Express</a>
+          <BlogLink link="https://expressjs.com/">Express</BlogLink>
         </li>
         <li>
-          <a href="https://www.typescriptlang.org/">TypeScript</a>
+          <BlogLink link="https://www.typescriptlang.org/">TypeScript</BlogLink>
         </li>
         <li>
-          <a href="https://www.heroku.com/">Heroku</a>
+          <BlogLink link="https://www.heroku.com/">Heroku</BlogLink>
         </li>
       </ul>
     </BlogPost>

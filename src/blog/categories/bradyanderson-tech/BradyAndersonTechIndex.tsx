@@ -1,3 +1,4 @@
+import BlogLink from "../../../common/BlogLink";
 import BlogPost from "../../../common/BlogPost";
 import { bradyAndersonTechIndexText } from "../../text/bradyanderson-tech/bradyAndersonTechIndexText";
 
@@ -10,9 +11,9 @@ function BradyAndersonTechIndex() {
         <pre>
           If you want to check out any of the code for this website, it can be
           found here:{" "}
-          <a href="https://github.com/bradyaanderson/bradyanderson.tech-next">
+          <BlogLink link="https://github.com/bradyaanderson/bradyanderson.tech-next">
             https://github.com/bradyaanderson/bradyanderson.tech-next
-          </a>
+          </BlogLink>
           .
         </pre>
       </div>

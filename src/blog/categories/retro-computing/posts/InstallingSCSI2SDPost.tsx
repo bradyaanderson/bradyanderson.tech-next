@@ -2,15 +2,13 @@ import BlogPost from "../../../../common/BlogPost";
 import BlogLink from "../../../../common/BlogLink";
 import BlogEmbeddedYouTubeVideo from "../../../../common/BlogEmbeddedYouTubeVideo";
 import BlogImage from "../../../../common/BlogImage";
+import { BlogPostProps } from "../../../../../types/Sitemap";
 
-function InstallingSCSI2SDPost() {
+function InstallingSCSI2SDPost({ title }: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/installing-scsi2sd-se30";
   return (
-    <BlogPost
-      title="Installing a SCSI2SD on my Macintosh SE/30"
-      date="08/18/2021"
-    >
+    <BlogPost title={title} date="08/18/2021">
       <pre>
         My Macintosh SE/30 did not come with a hard drive when I bought it. All
         SE/30s originally came with a hard drive, so it seems like the one in my
