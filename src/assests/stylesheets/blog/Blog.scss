@@ -6,21 +6,29 @@
   min-height: calc(92.5vh - 1px);
 }
 
-.blog-content {
-  margin-top: 0.625rem;
+.blog-post {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 0.625rem;
   word-wrap: anywhere;
 
   @media screen and (max-width: $tablet) {
-    padding: 0 3%;
+    padding: 0 5%;
   }
 
   @media screen and (min-width: $tablet) {
-    padding: 0 4%;
+    padding: 0 8%;
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 0 6%;
+    padding: 0 10%;
   }
 }
 

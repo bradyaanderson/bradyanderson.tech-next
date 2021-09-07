@@ -1,5 +1,15 @@
 .home-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     margin-top: 0.625rem;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .logo {

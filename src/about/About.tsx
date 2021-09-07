@@ -3,11 +3,12 @@ import Col from "react-bootstrap/Col";
 import React from "react";
 import Image from "react-bootstrap/Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "../assests/stylesheets/about/About.scss";
 import aboutText from "./aboutText";
 import { Container } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import Footer from "../footer/Footer";
 
 /** about Page */
 function About() {
@@ -43,6 +44,7 @@ function About() {
             </a>
           </Col>
         </Row>
+        <Footer />
       </Container>
     </>
   );
