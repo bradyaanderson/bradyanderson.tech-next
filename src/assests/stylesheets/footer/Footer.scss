@@ -1,0 +1,9 @@
+@import '../variables.scss';
+
+#footer {
+  padding: 0.625rem 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  color: $primary-light;
+}

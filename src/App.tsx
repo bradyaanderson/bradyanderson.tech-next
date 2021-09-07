@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import "./assests/stylesheets/App.scss";
 import Container from "react-bootstrap/Container";
 import { Helmet } from "react-helmet";
+import Footer from "./footer/Footer";
 
 /** Root Content **/
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <title>bradyanderson.tech</title>
       </Helmet>
       <Container className="home-container">
-        <Row className="justify-content-center text-center">
+        <Row className="home-content text-center">
           <Col>
             <Image
               className="logo rounded mx-auto d-block"
@@ -23,6 +24,7 @@ function App() {
             <h1 className="title">Welcome to the new bradyanderson.tech</h1>
           </Col>
         </Row>
+        <Footer />
       </Container>
     </>
   );

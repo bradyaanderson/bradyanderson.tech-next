@@ -19,7 +19,7 @@ const BlogPost: React.FunctionComponent<Props> = ({
       <Helmet>
         <title>{title}</title>
       </Helmet>
-      <div className="blog-content">
+      <div className="blog-post">
         <h1 className="blog-title">{title}</h1>
         {date ? <span className="blog-date">{date}</span> : null}
         <div className="blog-children">{children}</div>

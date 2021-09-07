@@ -2,6 +2,7 @@ import "../assests/stylesheets/blog/Blog.scss";
 import Sidebar from "./sidebar/Sidebar";
 import React from "react";
 import BlogRouter from "./router/BlogRouter";
+import Footer from "../footer/Footer";
 
 /** Routing and skeleton for blog. */
 function Blog() {
@@ -10,6 +11,7 @@ function Blog() {
       <Sidebar />
       <div className="blog-content">
         <BlogRouter />
+        <Footer />
       </div>
     </div>
   );
