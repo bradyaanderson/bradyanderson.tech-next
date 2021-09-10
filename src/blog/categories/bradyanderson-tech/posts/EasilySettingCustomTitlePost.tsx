@@ -58,7 +58,11 @@ ef688a4031c5b/public/index.html"
         title of the page as “bradyanderson.tech”.
       </BlogParagraph>
 
-      <BlogImage path={`${baseImagePath}/BeforeTitleUpdate.png`} />
+      <BlogImage
+        path={`${baseImagePath}/BeforeTitleUpdate.png`}
+        maxWidth="28rem"
+        caption='Each route displays "bradyanderson.tech".'
+      />
 
       <BlogParagraph>
         After digging through Stack Overflow and other forums for how to
@@ -81,11 +85,14 @@ ef688a4031c5b/public/index.html"
       </SyntaxHighlighter>
 
       <BlogParagraph>
-        For this site, I have a BlogPost (link) component which acts as a base
-        component for every blog post you see. Each BlogPost has a title prop,
-        which is the title you see at the top of every post. To also have the
-        post title appear as the HTML title, I added the Helmut component to my
-        BlogPost component:
+        For this site, I have a{" "}
+        <BlogLink link="https://github.com/bradyaanderson/bradyanderson.tech-next/blob/05d18b341f6ae31b4c8f2c0c1245659a11f6c6af/src/blog/blog-components/BlogPost.tsx">
+          BlogPost
+        </BlogLink>
+        BlogPost component which acts as a base component for every blog post
+        you see. Each BlogPost has a title prop, which is the title you see at
+        the top of every post. To also have the post title appear as the HTML
+        title, I added the Helmut component to my BlogPost component:
       </BlogParagraph>
 
       <SyntaxHighlighter language="javascript" style={irBlack}>
@@ -97,7 +104,11 @@ ef688a4031c5b/public/index.html"
         will display a unique title for each blog post or other section.
       </BlogParagraph>
 
-      <BlogImage path={`${baseImagePath}/AfterTitleUpdate.png`} />
+      <BlogImage
+        path={`${baseImagePath}/AfterTitleUpdate.png`}
+        maxWidth="28rem"
+        caption="Each route now has a unique title."
+      />
 
       <BlogParagraph>
         Helmut provides an elegant and easy-to-use solution for dynamically
