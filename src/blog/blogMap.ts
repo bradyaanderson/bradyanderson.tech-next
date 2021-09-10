@@ -14,6 +14,7 @@ import MovingToAwsPost from "./categories/bradyanderson-tech/posts/MovingToAwsPo
 import SettingUpImageStoragePost from "./categories/bradyanderson-tech/posts/SettingUpImageStoragePost";
 import BlogIndex from "./BlogIndex";
 import { BlogMap } from "../../types/Sitemap";
+import EasilySettingCustomTitlePost from "./categories/bradyanderson-tech/posts/EasilySettingCustomTitlePost";
 
 const blogMap: BlogMap = {
   title: "Blog",
@@ -88,6 +89,12 @@ const blogMap: BlogMap = {
           title: "Setting Up Amazon S3 Image Storage",
           shortTitle: "Setting up Image Storage",
           Component: SettingUpImageStoragePost,
+        },
+        "dynamically-updating-html-title": {
+          title:
+            "Easily Setting a Custom Title For Each Page While Using React Router",
+          shortTitle: "Easily Setting a Custom Title For Each Page",
+          Component: EasilySettingCustomTitlePost,
         },
       },
     },
