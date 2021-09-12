@@ -42,7 +42,7 @@ function EasilySettingCustomTitlePost({ title }: BlogPostProps) {
       <BlogCode
         language="html"
         path={baseAssetPath}
-        filename="htmlHeadExample.html"
+        filename="htmlHeadExample.html.txt"
       />
 
       <BlogParagraph>
