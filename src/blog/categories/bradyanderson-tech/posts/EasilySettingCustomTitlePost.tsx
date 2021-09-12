@@ -85,7 +85,7 @@ ef688a4031c5b/public/index.html"
       <BlogCode
         language="typescript"
         path={baseAssetPath}
-        filename="helmutExample.tsx"
+        filename="helmutExample.tsx.txt"
       />
 
       <BlogParagraph>
@@ -102,7 +102,7 @@ ef688a4031c5b/public/index.html"
       <BlogCode
         language="typescript"
         path={baseAssetPath}
-        filename="helmutUsageExample.tsx"
+        filename="helmutUsageExample.tsx.txt"
       />
 
       <BlogParagraph>
