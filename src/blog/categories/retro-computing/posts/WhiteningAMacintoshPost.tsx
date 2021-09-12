@@ -103,16 +103,16 @@ function WhiteningAMacintoshPost({ title }: BlogPostProps) {
       <Row>
         <Col sm>
           <BlogImage
-            path={`${baseImagePath}/AfterBack.jpg`}
+            path={`${baseImagePath}/AfterFront.jpg`}
             maxWidth="16rem"
-            caption="The back-side after retrobright. A little splotchy, but the the yellowing is gone."
+            caption="The front-side after retrobright. It's a little splotchy, but the the yellowing is gone."
           />
         </Col>
         <Col sm>
           <BlogImage
-            path={`${baseImagePath}/AfterFront.jpg`}
+            path={`${baseImagePath}/AfterBack.jpg`}
             maxWidth="16rem"
-            caption="The front-side after retrobright. Also a little splotchy."
+            caption="The back-side after retrobright. It's also a little splotchy."
           />
         </Col>
         <Col sm>

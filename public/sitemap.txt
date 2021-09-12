@@ -15,3 +15,4 @@ https://bradyanderson.tech/blog/bradyanderson.tech/getting-started
 https://bradyanderson.tech/blog/bradyanderson.tech/custom-hover-domain-for-heroku-app
 https://bradyanderson.tech/blog/bradyanderson.tech/moving-to-aws
 https://bradyanderson.tech/blog/bradyanderson.tech/setting-up-image-storage
+https://bradyanderson.tech/blog/bradyanderson.tech/dynamically-updating-html-title
