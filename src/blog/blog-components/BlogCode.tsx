@@ -18,7 +18,7 @@ function BlogCode({ language, path, filename }: Props) {
   const getCode = useCallback(() => {
     fetch(join("/code", path, filename))
       .then((response) => response.text())
-      .then((code) => setCode(code))
+      .then((code) => setCode(code.trim()))
       .catch((_error) => setCode("There was an error fetching code."));
   }, [setCode, filename, path]);
 
