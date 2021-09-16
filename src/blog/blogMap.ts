@@ -15,6 +15,7 @@ import SettingUpImageStoragePost from "./categories/bradyanderson-tech/posts/Set
 import BlogIndex from "./BlogIndex";
 import { BlogMap } from "../../types/Sitemap";
 import EasilySettingCustomTitlePost from "./categories/bradyanderson-tech/posts/EasilySettingCustomTitlePost";
+import FixingFloppyDrive from "./categories/retro-computing/posts/FixingFloppyDrive";
 
 const blogMap: BlogMap = {
   title: "Blog",
@@ -52,6 +53,10 @@ const blogMap: BlogMap = {
         "whitening-a-macintosh": {
           title: "Whitening a Macintosh's Plastic Case",
           Component: WhiteningAMacintoshPost,
+        },
+        "fixing-floppy-drive": {
+          title: "Fixing Auto-Eject on Macintosh SuperDrive",
+          Component: FixingFloppyDrive,
         },
       },
     },
