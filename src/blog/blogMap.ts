@@ -16,6 +16,7 @@ import BlogIndex from "./BlogIndex";
 import { BlogMap } from "../../types/Sitemap";
 import EasilySettingCustomTitlePost from "./categories/bradyanderson-tech/posts/EasilySettingCustomTitlePost";
 import FixingFloppyDrive from "./categories/retro-computing/posts/FixingFloppyDrive";
+import GameGearRepairPart1 from "./categories/retro-gaming/posts/GameGearRepairPart1";
 
 const blogMap: BlogMap = {
   title: "Blog",
@@ -68,6 +69,11 @@ const blogMap: BlogMap = {
         "replacing-game-boy-color-speaker": {
           title: "Replacing a Game Boy Color Speaker",
           Component: ReplacingGameBoyColorSpeakerPost,
+        },
+        "game-gear-repair-part-1": {
+          title: "Game Gear Repair: Part 1 - Disassembly and Cleaning",
+          shortTitle: "Game Gear Repair - Disassembly and Cleaning",
+          Component: GameGearRepairPart1,
         },
       },
     },
