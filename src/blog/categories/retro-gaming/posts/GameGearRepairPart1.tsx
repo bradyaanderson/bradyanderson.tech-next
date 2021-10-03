@@ -3,6 +3,7 @@ import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 import BlogImage from "../../../blog-components/BlogImage";
 import BlogEmbeddedYouTubeVideo from "../../../blog-components/BlogEmbeddedYouTubeVideo";
+import { Link } from "react-router-dom";
 
 function GameGearRepairPart1({ title }: BlogPostProps) {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-1";
@@ -165,7 +166,9 @@ function GameGearRepairPart1({ title }: BlogPostProps) {
         and then immediately off. Looks like I’d be needing to replace some
         capacitors.
       </BlogParagraph>
-      <BlogParagraph>To be continued in part 2.</BlogParagraph>
+      <BlogParagraph>
+        <Link to={"game-gear-repair-part-2"}>Continued in part 2.</Link>
+      </BlogParagraph>
     </BlogPost>
   );
 }
