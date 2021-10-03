@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 interface Props {
@@ -14,6 +14,8 @@ const BlogPost: React.FunctionComponent<Props> = ({
   date,
   children,
 }) => {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <>
       <Helmet>

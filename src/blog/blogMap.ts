@@ -17,6 +17,7 @@ import { BlogMap } from "../../types/Sitemap";
 import EasilySettingCustomTitlePost from "./categories/bradyanderson-tech/posts/EasilySettingCustomTitlePost";
 import FixingFloppyDrive from "./categories/retro-computing/posts/FixingFloppyDrive";
 import GameGearRepairPart1 from "./categories/retro-gaming/posts/GameGearRepairPart1";
+import GameGearRepairPart2 from "./categories/retro-gaming/posts/GameGearRepairPart2";
 
 const blogMap: BlogMap = {
   title: "Blog",
@@ -74,6 +75,11 @@ const blogMap: BlogMap = {
           title: "Game Gear Repair: Part 1 - Disassembly and Cleaning",
           shortTitle: "Game Gear Repair - Disassembly and Cleaning",
           Component: GameGearRepairPart1,
+        },
+        "game-gear-repair-part-2": {
+          title: "Game Gear Repair: Part 2 - Fixing Immediate Power Off",
+          shortTitle: "Game Gear Repair - Fixing Immediate Power Off",
+          Component: GameGearRepairPart2,
         },
       },
     },
