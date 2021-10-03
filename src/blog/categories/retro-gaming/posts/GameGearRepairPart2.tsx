@@ -149,7 +149,9 @@ function GameGearRepairPart2({ title }: BlogPostProps) {
         still a bunch of original capacitors that could go bad. Therefore, I
         called it a night, but I would return to replace the rest soon.
       </BlogParagraph>
-      <BlogParagraph>To be continued in part 3.</BlogParagraph>
+      <BlogParagraph>
+        <Link to={"game-gear-repair-part-3"}>Continued in part 3.</Link>
+      </BlogParagraph>
     </BlogPost>
   );
 }

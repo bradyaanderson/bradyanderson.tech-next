@@ -18,6 +18,7 @@ import EasilySettingCustomTitlePost from "./categories/bradyanderson-tech/posts/
 import FixingFloppyDrive from "./categories/retro-computing/posts/FixingFloppyDrive";
 import GameGearRepairPart1 from "./categories/retro-gaming/posts/GameGearRepairPart1";
 import GameGearRepairPart2 from "./categories/retro-gaming/posts/GameGearRepairPart2";
+import GameGearRepairPart3 from "./categories/retro-gaming/posts/GameGearRepairPart3";
 
 const blogMap: BlogMap = {
   title: "Blog",
@@ -80,6 +81,13 @@ const blogMap: BlogMap = {
           title: "Game Gear Repair: Part 2 - Fixing Immediate Power Off",
           shortTitle: "Game Gear Repair - Fixing Immediate Power Off",
           Component: GameGearRepairPart2,
+        },
+        "game-gear-repair-part-3": {
+          title:
+            "Game Gear Repair: Part 3 - Finishing Main Board Recapping and Fixing Sound",
+          shortTitle:
+            "Game Gear Repair - Finishing Main Board Recapping and Fixing Sound",
+          Component: GameGearRepairPart3,
         },
       },
     },

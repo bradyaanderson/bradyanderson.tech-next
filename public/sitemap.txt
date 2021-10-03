@@ -13,6 +13,7 @@ https://bradyanderson.tech/blog/retro-gaming
 https://bradyanderson.tech/blog/retro-gaming/replacing-game-boy-color-speaker
 https://bradyanderson.tech/blog/retro-gaming/game-gear-repair-part-1
 https://bradyanderson.tech/blog/retro-gaming/game-gear-repair-part-2
+https://bradyanderson.tech/blog/retro-gaming/game-gear-repair-part-3
 https://bradyanderson.tech/blog/bradyanderson.tech
 https://bradyanderson.tech/blog/bradyanderson.tech/getting-started
 https://bradyanderson.tech/blog/bradyanderson.tech/custom-hover-domain-for-heroku-app
