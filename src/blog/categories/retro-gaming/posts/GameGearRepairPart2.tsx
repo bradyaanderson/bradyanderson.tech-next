@@ -3,18 +3,20 @@ import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 import BlogImage from "../../../blog-components/BlogImage";
 import BlogEmbeddedYouTubeVideo from "../../../blog-components/BlogEmbeddedYouTubeVideo";
+import { Link } from "react-router-dom";
+import BlogLink from "../../../blog-components/BlogLink";
 
 function GameGearRepairPart2({ title }: BlogPostProps) {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-2";
   return (
     <BlogPost title={title} date="10/02/2021">
       <BlogParagraph>
-        In part 1 (add link), I started my repair of a broken Game Gear by
-        disassembling it and cleaning corrosion off of its PCBs. I mentioned how
-        even after the cleaning, the Game Gear would only stay powered on for
-        about a second, which was probably because of old capacitors (a very
-        common problem with Game Gears). Now it was time to try replacing the
-        capacitors.
+        In <Link to={"game-gear-repair-part-1"}>part 1</Link>, I started my
+        repair of a broken Game Gear by disassembling it and cleaning corrosion
+        off of its PCBs. I mentioned how even after the cleaning, the Game Gear
+        would only stay powered on for about a second, which was probably
+        because of old capacitors (a very common problem with Game Gears). Now
+        it was time to try replacing the capacitors.
       </BlogParagraph>
       <BlogParagraph>
         I figured I’d start with recapping the power PCB first. If I had more
@@ -70,20 +72,24 @@ function GameGearRepairPart2({ title }: BlogPostProps) {
         if I could get the power PCB working properly. This reminded me of
         another thing I learned in physics, which is that total capacitance of
         capacitors in series is calculated by adding up the reciprocal of each
-        capacitor’s capacitance and then taking the reciprocal of that value
-        (Khan Academy can help explain that). Although that sounds complicated,
-        with some planning you create a circuit with that capacitance you need
-        pretty easily on a breadboard. In my case, I used three 100μF in series
-        (that’s a total capacitance of 33.33μF) to substitute for C5’s 22μF
-        capacitor.
+        capacitor’s capacitance and then taking the reciprocal of that value (
+        <BlogLink link="https://www.khanacademy.org/science/physics/circuits-topic/circuits-with-capacitors/v/capacitors-series">
+          Khan Academy
+        </BlogLink>{" "}
+        can help explain that). Although that sounds complicated, with some
+        planning you create a circuit with that capacitance you need pretty
+        easily on a breadboard. In my case, I used three 100μF in series (that’s
+        a total capacitance of 33.33μF) to substitute for C5’s 22μF capacitor.
       </BlogParagraph>
       <BlogParagraph>
         After hooking everything up to the breadboard, I turned on the power and
         saw no smoke. That seemed like a good sign, so I got out my multimeter
         and tested the voltages coming off of the pinout of the power PCB.
-        Looking at the Game Gear Power PCB schematic (which I found here), I saw
-        that two of the pins should read 5V and one pin should read 35V. Sure
-        enough, that’s what I saw when testing each pin with the multimeter.
+        Looking at the Game Gear Power PCB schematic (which I found{" "}
+        <BlogLink link="https://console5.com/wiki/Game_Gear">here</BlogLink>), I
+        saw that two of the pins should read 5V and one pin should read 35V.
+        Sure enough, that’s what I saw when testing each pin with the
+        multimeter.
       </BlogParagraph>
 
       <BlogImage
