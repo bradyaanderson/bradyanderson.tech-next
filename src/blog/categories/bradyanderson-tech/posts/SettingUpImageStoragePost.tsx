@@ -4,9 +4,9 @@ import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogLink from "../../../blog-components/BlogLink";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function SettingUpImageStoragePost({ title }: BlogPostProps) {
+function SettingUpImageStoragePost(props: BlogPostProps) {
   return (
-    <BlogPost title={title} date="08/03/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         I want to post a lot of images on this blog, but my current setup won't
         make that easy. Right now, I'm storing all images in my Git repository.

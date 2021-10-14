@@ -6,9 +6,9 @@ import BlogParagraph from "../../../blog-components/BlogParagraph";
 const imageBasePath =
   "/blog/categories/retro-computing/posts/se30-keyboard-fix";
 
-function FixingKeyboardPost({ title }: BlogPostProps) {
+function FixingKeyboardPost(props: BlogPostProps) {
   return (
-    <BlogPost title={title} date="08/14/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         When trying to solve a problem, I can sometimes fail to see the simple
         solution right in front of me. This time, however, I'm glad to admit

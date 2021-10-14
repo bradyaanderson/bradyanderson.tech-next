@@ -4,9 +4,9 @@ import BlogLink from "../../../blog-components/BlogLink";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function CustomHoverDomainForHerokuAppPost({ title }: BlogPostProps) {
+function CustomHoverDomainForHerokuAppPost(props: BlogPostProps) {
   return (
-    <BlogPost title={title} date="07/27/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         When you create an application in{" "}
         <BlogLink link="https://www.heroku.com/">Heroku</BlogLink>, you also get

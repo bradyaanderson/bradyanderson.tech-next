@@ -5,10 +5,10 @@ import Col from "react-bootstrap/Col";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function WhiteningAMacintoshPost({ title }: BlogPostProps) {
+function WhiteningAMacintoshPost(props: BlogPostProps) {
   const baseImagePath = `/blog/categories/retro-computing/posts/whitening-a-macintosh`;
   return (
-    <BlogPost title={title} date="09/01/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         When exposed to UV light, the plastic on some older electronics will
         turn yellow over time. The discoloration on doesn’t affect the

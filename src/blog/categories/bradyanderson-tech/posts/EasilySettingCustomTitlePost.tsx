@@ -5,12 +5,12 @@ import BlogImage from "../../../blog-components/BlogImage";
 import BlogLink from "../../../blog-components/BlogLink";
 import BlogCode from "../../../blog-components/BlogCode";
 
-function EasilySettingCustomTitlePost({ title }: BlogPostProps) {
+function EasilySettingCustomTitlePost(props: BlogPostProps) {
   const baseAssetPath =
     "/blog/categories/bradyanderson-tech/posts/dynamically-updating-html-title";
 
   return (
-    <BlogPost title={title} date="09/12/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         On this website, I use{" "}
         <BlogLink link="https://github.com/facebook/react">React</BlogLink> and{" "}

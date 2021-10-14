@@ -5,10 +5,10 @@ import BlogImage from "../../../blog-components/BlogImage";
 import BlogEmbeddedYouTubeVideo from "../../../blog-components/BlogEmbeddedYouTubeVideo";
 import { Link } from "react-router-dom";
 
-function GameGearRepairPart1({ title }: BlogPostProps) {
+function GameGearRepairPart1(props: BlogPostProps) {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-1";
   return (
-    <BlogPost title={title} date="09/22/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         The Sega Game Gear came out in 1990, less than 2 years after the
         Nintendo Game Boy. Unlike the Game Boy, though, the Game Gear has a

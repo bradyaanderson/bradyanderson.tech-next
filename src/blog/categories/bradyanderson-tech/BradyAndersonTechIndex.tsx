@@ -1,11 +1,11 @@
 import BlogLink from "../../blog-components/BlogLink";
 import BlogParagraph from "../../blog-components/BlogParagraph";
-import BlogPost from "../../blog-components/BlogPost";
+import BlogCategory from "../../blog-components/BlogCategory";
 
 /** Index for bradyanderson.tech blog category */
 function BradyAndersonTechIndex() {
   return (
-    <BlogPost title="bradyanderson.tech">
+    <BlogCategory title="bradyanderson.tech">
       <div>
         <BlogParagraph>
           I bought the domain name bradyanderson.tech several years ago. I used
@@ -39,7 +39,7 @@ function BradyAndersonTechIndex() {
           .
         </BlogParagraph>
       </div>
-    </BlogPost>
+    </BlogCategory>
   );
 }
 

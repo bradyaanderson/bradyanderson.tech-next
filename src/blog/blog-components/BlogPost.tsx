@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import moment from "moment";
 
 interface Props {
   /** Title to display on post. */
   title: string;
   /** Optional date to display on post */
-  date?: string;
+  date: moment.Moment;
 }
 
 /** blog post skeleton. */
@@ -23,7 +24,7 @@ const BlogPost: React.FunctionComponent<Props> = ({
       </Helmet>
       <div className="blog-post">
         <h1 className="blog-title">{title}</h1>
-        {date ? <span className="blog-date">{date}</span> : null}
+        <span className="blog-date">{moment(date).format("MM/DD/YYYY")}</span>
         <div className="blog-children">{children}</div>
       </div>
     </>

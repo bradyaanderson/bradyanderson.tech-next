@@ -4,11 +4,11 @@ import BlogParagraph from "../../../blog-components/BlogParagraph";
 import BlogImage from "../../../blog-components/BlogImage";
 import BlogEmbeddedYouTubeVideo from "../../../blog-components/BlogEmbeddedYouTubeVideo";
 
-function FixingFloppyDrive({ title }: BlogPostProps) {
+function FixingFloppyDrive(props: BlogPostProps) {
   const baseImagePath =
     "/blog/categories/retro-computing/posts/floppy-drive-fix";
   return (
-    <BlogPost title={title} date="09/15/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         After retrobrighting my Macintosh SE/30’s case, I reinstalled all the
         internal components back into the case. I spent some time testing some

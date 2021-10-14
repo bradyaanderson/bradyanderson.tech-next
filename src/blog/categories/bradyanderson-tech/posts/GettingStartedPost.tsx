@@ -4,9 +4,9 @@ import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogLink from "../../../blog-components/BlogLink";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function GettingStartedPost({ title }: BlogPostProps) {
+function GettingStartedPost(props: BlogPostProps) {
   return (
-    <BlogPost title={title} date="07/25/2021">
+    <BlogPost {...props}>
       <BlogImage
         path="/blog/categories/bradyanderson-tech/posts/getting-started/homepage.png"
         caption="The homepage on 07/25/2021."

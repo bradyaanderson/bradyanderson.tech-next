@@ -6,10 +6,10 @@ import BlogEmbeddedYouTubeVideo from "../../../blog-components/BlogEmbeddedYouTu
 import { Link } from "react-router-dom";
 import BlogLink from "../../../blog-components/BlogLink";
 
-function GameGearRepairPart2({ title }: BlogPostProps) {
+function GameGearRepairPart2(props: BlogPostProps) {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-2";
   return (
-    <BlogPost title={title} date="10/02/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         In <Link to={"game-gear-repair-part-1"}>part 1</Link>, I started my
         repair of a broken Game Gear by disassembling it and cleaning corrosion

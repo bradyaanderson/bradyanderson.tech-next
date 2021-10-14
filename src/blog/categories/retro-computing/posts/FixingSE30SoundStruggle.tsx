@@ -4,11 +4,11 @@ import BlogImage from "../../../blog-components/BlogImage";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function FixingSE30SoundStruggle({ title }: BlogPostProps) {
+function FixingSE30SoundStruggle(props: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/fixing-macintosh-se30-sound-struggle";
   return (
-    <BlogPost title={title} date="08/23/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         I often tell people I'm a software engineer because I'm too clumsy to
         work with real things. Writing code feels natural, but I struggle to

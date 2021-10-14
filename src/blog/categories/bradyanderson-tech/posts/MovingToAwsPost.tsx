@@ -3,9 +3,9 @@ import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogLink from "../../../blog-components/BlogLink";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function MovingToAwsPost({ title }: BlogPostProps) {
+function MovingToAwsPost(props: BlogPostProps) {
   return (
-    <BlogPost title={title} date="07/20/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         Well, that didn't last long... I was planning some upcoming posts for
         this blog and I realized that I'm going to need ample space to post

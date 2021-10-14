@@ -40,11 +40,11 @@ function getCategoryRoutes(routes: BlogCategoryRoutes, baseRoute: string) {
  */
 function getPostRoutes(routes: BlogPostRoutes, categoryPath: string) {
   return Object.keys(routes).map((key) => {
-    const { Component: PostComponent, title } = routes[key];
+    const { Component: PostComponent, title, date } = routes[key];
     const path = join(categoryPath, key);
     return (
       <Route path={path} key={key}>
-        <PostComponent title={title} />
+        <PostComponent title={title} date={date} />
       </Route>
     );
   });

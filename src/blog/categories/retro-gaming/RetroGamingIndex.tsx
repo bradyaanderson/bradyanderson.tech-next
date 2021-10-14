@@ -1,11 +1,11 @@
-import BlogPost from "../../blog-components/BlogPost";
-import { BlogPostProps } from "../../../../types/Sitemap";
+import { BlogCategoryProps } from "../../../../types/Sitemap";
 import BlogParagraph from "../../blog-components/BlogParagraph";
+import BlogCategory from "../../blog-components/BlogCategory";
 
 /** Index for Retro Gaming blog section */
-function RetroGamingIndex({ title }: BlogPostProps) {
+function RetroGamingIndex({ title }: BlogCategoryProps) {
   return (
-    <BlogPost title={title}>
+    <BlogCategory title={title}>
       <BlogParagraph>
         Retro game consoles are retro computers, but I've decided to break posts
         about gaming into their own category. Retro gaming fascinates me for the
@@ -26,7 +26,7 @@ function RetroGamingIndex({ title }: BlogPostProps) {
         it's like to develop games for these consoles. This is what this section
         of the blog will be dedicated to.
       </BlogParagraph>
-    </BlogPost>
+    </BlogCategory>
   );
 }
 

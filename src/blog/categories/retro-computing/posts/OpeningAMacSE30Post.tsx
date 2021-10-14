@@ -4,15 +4,12 @@ import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogLink from "../../../blog-components/BlogLink";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function OpeningAMacSE30Post({ title }: BlogPostProps) {
+function OpeningAMacSE30Post(props: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/opening-a-mac-se-30";
 
   return (
-    <BlogPost
-      title={title}
-      date="08/05/2021 (based off an Instagram story from 06/16/2021)"
-    >
+    <BlogPost {...props}>
       <BlogParagraph>
         On June 13th, I saw a Macintosh SE/30 at an antique store by my
         apartment. I've always wanted a retro Apple computer, but I knew almost

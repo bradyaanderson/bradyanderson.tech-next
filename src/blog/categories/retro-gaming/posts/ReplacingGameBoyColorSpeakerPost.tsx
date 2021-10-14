@@ -4,11 +4,11 @@ import BlogImage from "../../../blog-components/BlogImage";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function ReplacingGameBoyColorSpeakerPost({ title }: BlogPostProps) {
+function ReplacingGameBoyColorSpeakerPost(props: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-gaming/replacing-game-boy-color-speaker";
   return (
-    <BlogPost title={title} date="08/17/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         A few years ago, I got a Game Boy Color. Unfortunately, the speaker
         never worked. However, The headphone jack worked, so I wasn't too

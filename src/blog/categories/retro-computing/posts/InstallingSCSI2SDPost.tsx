@@ -5,11 +5,11 @@ import BlogImage from "../../../blog-components/BlogImage";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 
-function InstallingSCSI2SDPost({ title }: BlogPostProps) {
+function InstallingSCSI2SDPost(props: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/installing-scsi2sd-se30";
   return (
-    <BlogPost title={title} date="08/18/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         My Macintosh SE/30 did not come with a hard drive when I bought it. All
         SE/30s originally came with a hard drive, so it seems like the one in my

@@ -5,10 +5,10 @@ import BlogImage from "../../../blog-components/BlogImage";
 import BlogEmbeddedYouTubeVideo from "../../../blog-components/BlogEmbeddedYouTubeVideo";
 import { Link } from "react-router-dom";
 
-function GameGearRepairPart3({ title }: BlogPostProps) {
+function GameGearRepairPart3(props: BlogPostProps) {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-3";
   return (
-    <BlogPost title={title} date="10/03/2021">
+    <BlogPost {...props}>
       <BlogParagraph>
         In <Link to={"game-gear-repair-part-2"}>part 2</Link>, I replaced the
         capacitors on the power PCB of my Game Gear and one capacitor (C68) on

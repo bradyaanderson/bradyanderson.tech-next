@@ -1,12 +1,12 @@
-import BlogPost from "./blog-components/BlogPost";
 import React from "react";
-import { BlogPostProps } from "../../types/Sitemap";
+import { BlogIndexProps } from "../../types/Sitemap";
 import BlogParagraph from "./blog-components/BlogParagraph";
+import BlogIndexTemplate from "./blog-components/BlogIndex";
 
 /** Index for blog. */
-function BlogIndex({ title }: BlogPostProps) {
+function BlogIndex({ title }: BlogIndexProps) {
   return (
-    <BlogPost title={title}>
+    <BlogIndexTemplate title={title}>
       <BlogParagraph>
         I think it's about time I start a blog, or at least attempt one. Knowing
         me, I'll probably write a few posts and then get carried away with
@@ -31,7 +31,7 @@ function BlogIndex({ title }: BlogPostProps) {
       </BlogParagraph>
       <BlogParagraph>Enjoy!</BlogParagraph>
       <BlogParagraph>-Brady</BlogParagraph>
-    </BlogPost>
+    </BlogIndexTemplate>
   );
 }
 
