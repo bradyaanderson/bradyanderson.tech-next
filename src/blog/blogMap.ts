@@ -9,7 +9,7 @@ import FixingSE30SoundStruggle from "./categories/retro-computing/posts/FixingSE
 import WhiteningAMacintoshPost from "./categories/retro-computing/posts/WhiteningAMacintoshPost";
 import RetroGamingIndex from "./categories/retro-gaming/RetroGamingIndex";
 import ReplacingGameBoyColorSpeakerPost from "./categories/retro-gaming/posts/ReplacingGameBoyColorSpeakerPost";
-import BradyAndersonTechIndex from "./categories/website-updates/BradyAndersonTechIndex";
+import WebsiteUpdatesIndex from "./categories/website-updates/WebsiteUpdatesIndex";
 import GettingStartedPost from "./categories/website-updates/posts/GettingStartedPost";
 import CustomHoverDomainForHerokuAppPost from "./categories/website-updates/posts/CustomHoverDomainForHerokuAppPost";
 import MovingToAwsPost from "./categories/website-updates/posts/MovingToAwsPost";
@@ -108,7 +108,7 @@ const blogMap: BlogMap = {
     /* Website Updates Blog Category */
     "website-updates": {
       title: "Website Updates",
-      Component: BradyAndersonTechIndex,
+      Component: WebsiteUpdatesIndex,
       routes: {
         "getting-started": {
           title: "Getting Started",
