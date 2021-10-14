@@ -15,7 +15,7 @@ interface Props {
 }
 
 /** Component for easily displaying images in blog */
-function BlogImage({ path, caption, maxWidth }: Props) {
+function Image({ path, caption, maxWidth }: Props) {
   return (
     <div className="image-wth-caption-container">
       <Figure style={{ maxWidth }}>
@@ -28,4 +28,4 @@ function BlogImage({ path, caption, maxWidth }: Props) {
   );
 }
 
-export default BlogImage;
+export default Image;

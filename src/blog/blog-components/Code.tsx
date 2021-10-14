@@ -12,7 +12,7 @@ interface Props {
   filename: string;
 }
 
-function BlogCode({ language, path, filename }: Props) {
+function Code({ language, path, filename }: Props) {
   const [code, setCode] = useState("");
 
   const getCode = useCallback(() => {
@@ -40,4 +40,4 @@ function BlogCode({ language, path, filename }: Props) {
   );
 }
 
-export default BlogCode;
+export default Code;

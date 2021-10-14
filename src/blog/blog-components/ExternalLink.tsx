@@ -3,7 +3,7 @@ import React from "react";
 interface Props {
   link: string;
 }
-const BlogLink: React.FunctionComponent<Props> = ({ link, children }) => {
+const ExternalLink: React.FunctionComponent<Props> = ({ link, children }) => {
   return (
     <>
       <a href={link} target="_blank" rel="noreferrer">
@@ -13,4 +13,4 @@ const BlogLink: React.FunctionComponent<Props> = ({ link, children }) => {
   );
 };
 
-export default BlogLink;
+export default ExternalLink;
