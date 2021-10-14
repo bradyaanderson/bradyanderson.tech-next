@@ -1,6 +1,6 @@
 import { BlogCategoryProps } from "../../../../types/Sitemap";
 import BlogParagraph from "../../blog-components/BlogParagraph";
-import BlogCategory from "../../blog-components/BlogCategory";
+import BlogCategory from "../../blog-components/page-template/BlogCategory";
 
 /** Index for Retro Computing blog category */
 function RetroComputingIndex({ title }: BlogCategoryProps) {

@@ -1,6 +1,6 @@
 import { BlogCategoryProps } from "../../../../types/Sitemap";
 import BlogParagraph from "../../blog-components/BlogParagraph";
-import BlogCategory from "../../blog-components/BlogCategory";
+import BlogCategory from "../../blog-components/page-template/BlogCategory";
 
 /** Index for Retro Gaming blog section */
 function RetroGamingIndex({ title }: BlogCategoryProps) {

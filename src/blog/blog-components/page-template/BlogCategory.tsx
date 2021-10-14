@@ -1,20 +1,19 @@
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import PageHelmut from "./template-components/PageHelmut";
+import { scrollToTop } from "./templateUtils";
 
 interface Props {
   /** Title to display on category. */
   title: string;
 }
 
-/** blog category skeleton. */
+/** Blog category template. */
 const BlogCategory: React.FunctionComponent<Props> = ({ title, children }) => {
-  useEffect(() => window.scrollTo(0, 0), []);
+  useEffect(scrollToTop, []);
 
   return (
     <>
-      <Helmet>
-        <title>{title}</title>
-      </Helmet>
+      <PageHelmut title={title} />
       <div className="blog-category">
         <h1 className="blog-title">{title}</h1>
         <div className="blog-children">{children}</div>

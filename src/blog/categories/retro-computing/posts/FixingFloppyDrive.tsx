@@ -1,4 +1,4 @@
-import BlogPost from "../../../blog-components/BlogPost";
+import BlogPost from "../../../blog-components/page-template/BlogPost";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import BlogParagraph from "../../../blog-components/BlogParagraph";
 import BlogImage from "../../../blog-components/BlogImage";

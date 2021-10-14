@@ -1,7 +1,7 @@
 import React from "react";
 import { BlogIndexProps } from "../../types/Sitemap";
 import BlogParagraph from "./blog-components/BlogParagraph";
-import BlogIndexTemplate from "./blog-components/BlogIndex";
+import BlogIndexTemplate from "./blog-components/page-template/BlogIndex";
 
 /** Index for blog. */
 function BlogIndex({ title }: BlogIndexProps) {

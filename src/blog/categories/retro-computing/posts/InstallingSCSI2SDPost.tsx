@@ -1,4 +1,4 @@
-import BlogPost from "../../../blog-components/BlogPost";
+import BlogPost from "../../../blog-components/page-template/BlogPost";
 import BlogLink from "../../../blog-components/BlogLink";
 import BlogEmbeddedYouTubeVideo from "../../../blog-components/BlogEmbeddedYouTubeVideo";
 import BlogImage from "../../../blog-components/BlogImage";

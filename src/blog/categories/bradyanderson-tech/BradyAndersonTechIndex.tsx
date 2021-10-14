@@ -1,6 +1,6 @@
 import BlogLink from "../../blog-components/BlogLink";
 import BlogParagraph from "../../blog-components/BlogParagraph";
-import BlogCategory from "../../blog-components/BlogCategory";
+import BlogCategory from "../../blog-components/page-template/BlogCategory";
 
 /** Index for bradyanderson.tech blog category */
 function BradyAndersonTechIndex() {
