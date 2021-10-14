@@ -1,38 +1,50 @@
-/** Basic Sitemap Route */
-export interface Route {
+import moment from "moment";
+
+/** Props for all components in blog map */
+export interface BlogComponentProps {
   title: string;
+}
+
+/** Props for Blog Index */
+export interface BlogIndexProps extends BlogComponentProps {}
+
+/** Props for Blog Category */
+export interface BlogCategoryProps extends BlogComponentProps {}
+
+/** Props for Blog Posts */
+export interface BlogPostProps extends BlogComponentProps {
+  date: moment.Moment;
 }
 
 /** Basic Blog Route */
-export interface BlogRoute extends Route {
-  Component: (props: BlogPostProps) => JSX.Element;
+export interface BlogRoute extends BlogComponentProps {
   shortTitle?: string;
 }
 
-/** Component props for Blog Posts */
-export interface BlogPostProps {
-  title: string;
+/** Blog Category Route */
+export interface BlogCategoryRoute extends BlogRoute, BlogCategoryProps {
+  Component: (props: BlogCategoryProps) => JSX.Element;
+  routes: BlogPostRoutes;
 }
 
 /** Blog Post Route */
-export interface BlogPostRoute extends BlogRoute {}
+export interface BlogPostRoute extends BlogRoute, BlogPostProps {
+  Component: (props: BlogPostProps) => JSX.Element;
+}
+
+/** Structure for storing Blog Post Routes in sitemap. */
+export interface BlogCategoryRoutes {
+  [key: string]: BlogCategoryRoute;
+}
 
 /** Structure for storing Blog Post Routes in sitemap. */
 export interface BlogPostRoutes {
   [key: string]: BlogPostRoute;
 }
 
-/** Blog Category Route. Contains Blog Post child routes */
-export interface BlogCategoryRoute extends BlogPostRoute {
-  routes: BlogPostRoutes;
-}
-
-/** Structure for storing Blog Category Routes in sitemap. */
-export interface BlogCategoryRoutes {
-  [key: string]: BlogCategoryRoute;
-}
-
 /** Structure of blog routes */
-export interface BlogMap extends BlogRoute {
+export interface BlogMap {
+  Component: (props: BlogIndexProps) => JSX.Element;
+  title: string;
   routes: BlogCategoryRoutes;
 }

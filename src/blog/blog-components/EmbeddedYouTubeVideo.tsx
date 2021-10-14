@@ -4,7 +4,7 @@ interface Props {
   /** The URL of the YouTube video to embed. */
   url: string;
 }
-function BlogEmbeddedYouTubeVideo({ url }: Props) {
+function EmbeddedYouTubeVideo({ url }: Props) {
   return (
     <div className="blog-embedded-youtube-video">
       <iframe
@@ -19,4 +19,4 @@ function BlogEmbeddedYouTubeVideo({ url }: Props) {
   );
 }
 
-export default BlogEmbeddedYouTubeVideo;
+export default EmbeddedYouTubeVideo;
