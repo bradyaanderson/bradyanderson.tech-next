@@ -9,12 +9,12 @@ import FixingSE30SoundStruggle from "./categories/retro-computing/posts/FixingSE
 import WhiteningAMacintoshPost from "./categories/retro-computing/posts/WhiteningAMacintoshPost";
 import RetroGamingIndex from "./categories/retro-gaming/RetroGamingIndex";
 import ReplacingGameBoyColorSpeakerPost from "./categories/retro-gaming/posts/ReplacingGameBoyColorSpeakerPost";
-import BradyAndersonTechIndex from "./categories/bradyanderson-tech/BradyAndersonTechIndex";
-import GettingStartedPost from "./categories/bradyanderson-tech/posts/GettingStartedPost";
-import CustomHoverDomainForHerokuAppPost from "./categories/bradyanderson-tech/posts/CustomHoverDomainForHerokuAppPost";
-import MovingToAwsPost from "./categories/bradyanderson-tech/posts/MovingToAwsPost";
-import SettingUpImageStoragePost from "./categories/bradyanderson-tech/posts/SettingUpImageStoragePost";
-import EasilySettingCustomTitlePost from "./categories/bradyanderson-tech/posts/EasilySettingCustomTitlePost";
+import BradyAndersonTechIndex from "./categories/website-updates/BradyAndersonTechIndex";
+import GettingStartedPost from "./categories/website-updates/posts/GettingStartedPost";
+import CustomHoverDomainForHerokuAppPost from "./categories/website-updates/posts/CustomHoverDomainForHerokuAppPost";
+import MovingToAwsPost from "./categories/website-updates/posts/MovingToAwsPost";
+import SettingUpImageStoragePost from "./categories/website-updates/posts/SettingUpImageStoragePost";
+import EasilySettingCustomTitlePost from "./categories/website-updates/posts/EasilySettingCustomTitlePost";
 import FixingFloppyDrive from "./categories/retro-computing/posts/FixingFloppyDrive";
 import GameGearRepairPart1 from "./categories/retro-gaming/posts/GameGearRepairPart1";
 import GameGearRepairPart2 from "./categories/retro-gaming/posts/GameGearRepairPart2";
@@ -105,9 +105,9 @@ const blogMap: BlogMap = {
         },
       },
     },
-    /* Website Blog Category */
-    "bradyanderson.tech": {
-      title: "bradyanderson.tech",
+    /* Website Updates Blog Category */
+    "website-updates": {
+      title: "Website Updates",
       Component: BradyAndersonTechIndex,
       routes: {
         "getting-started": {

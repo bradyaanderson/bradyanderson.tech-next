@@ -7,7 +7,7 @@ import Code from "../../../blog-components/Code";
 
 function EasilySettingCustomTitlePost(props: BlogPostProps) {
   const baseAssetPath =
-    "/blog/categories/bradyanderson-tech/posts/dynamically-updating-html-title";
+    "/blog/categories/website-updates/posts/dynamically-updating-html-title";
 
   return (
     <BlogPost {...props}>
