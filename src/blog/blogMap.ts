@@ -1,15 +1,15 @@
 import { BlogMap } from "../../types/Sitemap";
 import BlogIndex from "./BlogIndex";
-import RetroComputingIndex from "./categories/retro-computing/RetroComputingIndex";
+import RetroComputingCategory from "./categories/retro-computing/RetroComputingCategory";
 import OpeningAMacSE30Post from "./categories/retro-computing/posts/OpeningAMacSE30Post";
 import BootingASE30Post from "./categories/retro-computing/posts/BootingASE30Post";
 import FixingKeyboardPost from "./categories/retro-computing/posts/FixingKeyboardPost";
 import InstallingSCSI2SDPost from "./categories/retro-computing/posts/InstallingSCSI2SDPost";
 import FixingSE30SoundStruggle from "./categories/retro-computing/posts/FixingSE30SoundStruggle";
 import WhiteningAMacintoshPost from "./categories/retro-computing/posts/WhiteningAMacintoshPost";
-import RetroGamingIndex from "./categories/retro-gaming/RetroGamingIndex";
+import RetroGamingCategory from "./categories/retro-gaming/RetroGamingCategory";
 import ReplacingGameBoyColorSpeakerPost from "./categories/retro-gaming/posts/ReplacingGameBoyColorSpeakerPost";
-import WebsiteUpdatesIndex from "./categories/website-updates/WebsiteUpdatesIndex";
+import WebsiteUpdatesCategory from "./categories/website-updates/WebsiteUpdatesCategory";
 import GettingStartedPost from "./categories/website-updates/posts/GettingStartedPost";
 import CustomHoverDomainForHerokuAppPost from "./categories/website-updates/posts/CustomHoverDomainForHerokuAppPost";
 import MovingToAwsPost from "./categories/website-updates/posts/MovingToAwsPost";
@@ -30,7 +30,7 @@ const blogMap: BlogMap = {
     /* Retro Computing Blog Category */
     "retro-computing": {
       title: "Retro Computing",
-      Component: RetroComputingIndex,
+      Component: RetroComputingCategory,
       routes: {
         "opening-a-mac-se30": {
           title: "Opening A Macintosh SE/30",
@@ -76,7 +76,7 @@ const blogMap: BlogMap = {
     /* Retro Gaming Blog Category */
     "retro-gaming": {
       title: "Retro Gaming",
-      Component: RetroGamingIndex,
+      Component: RetroGamingCategory,
       routes: {
         "replacing-game-boy-color-speaker": {
           title: "Replacing a Game Boy Color Speaker",
@@ -108,7 +108,7 @@ const blogMap: BlogMap = {
     /* Website Updates Blog Category */
     "website-updates": {
       title: "Website Updates",
-      Component: WebsiteUpdatesIndex,
+      Component: WebsiteUpdatesCategory,
       routes: {
         "getting-started": {
           title: "Getting Started",

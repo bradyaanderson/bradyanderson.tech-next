@@ -4,7 +4,7 @@ import BlogCategory from "../../blog-components/page-templates/BlogCategory";
 import { BlogCategoryProps } from "../../../../types/Sitemap";
 
 /** Index for Website Update blog category */
-function WebsiteUpdatesIndex({ title }: BlogCategoryProps) {
+function WebsiteUpdatesCategory({ title }: BlogCategoryProps) {
   return (
     <BlogCategory title={title}>
       <div>
@@ -43,4 +43,4 @@ function WebsiteUpdatesIndex({ title }: BlogCategoryProps) {
   );
 }
 
-export default WebsiteUpdatesIndex;
+export default WebsiteUpdatesCategory;

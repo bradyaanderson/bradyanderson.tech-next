@@ -3,7 +3,7 @@ import Paragraph from "../../blog-components/Paragraph";
 import BlogCategory from "../../blog-components/page-templates/BlogCategory";
 
 /** Index for Retro Gaming blog section */
-function RetroGamingIndex({ title }: BlogCategoryProps) {
+function RetroGamingCategory({ title }: BlogCategoryProps) {
   return (
     <BlogCategory title={title}>
       <Paragraph>
@@ -30,4 +30,4 @@ function RetroGamingIndex({ title }: BlogCategoryProps) {
   );
 }
 
-export default RetroGamingIndex;
+export default RetroGamingCategory;

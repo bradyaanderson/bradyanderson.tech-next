@@ -3,7 +3,7 @@ import Paragraph from "../../blog-components/Paragraph";
 import BlogCategory from "../../blog-components/page-templates/BlogCategory";
 
 /** Index for Retro Computing blog category */
-function RetroComputingIndex({ title }: BlogCategoryProps) {
+function RetroComputingCategory({ title }: BlogCategoryProps) {
   return (
     <BlogCategory title={title}>
       <Paragraph>
@@ -24,4 +24,4 @@ function RetroComputingIndex({ title }: BlogCategoryProps) {
   );
 }
 
-export default RetroComputingIndex;
+export default RetroComputingCategory;
