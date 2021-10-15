@@ -72,3 +72,28 @@
 .blog-list {
   margin-bottom: 0;
 }
+
+.blog-post-navigator-container {
+  background: $complement;
+  margin: 1.5rem 3% 0;
+  padding: 0.625rem;
+  border: 3px solid $primary-dark;
+}
+
+.retro-gaming-category-navigation {
+  a {
+    color: $retro-gaming;
+  }
+}
+
+.retro-computing-category-navigation {
+  a {
+    color: $retro-computing;
+  }
+}
+
+.website-updates-category-navigation {
+  a {
+    color: $website-updates;
+  }
+}

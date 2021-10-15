@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
+import * as path from "path";
 
 interface Props {
   categoryName: string;
-  path: string;
+  categoryPath: string;
 }
 
 /** Navigates to a blog category */
-function CategoryNavigator({ categoryName, path }: Props) {
+function CategoryNavigator({ categoryName, categoryPath }: Props) {
+  const baseName = path.basename(categoryPath);
   return (
-    <li>
-      <Link to={path}>{categoryName}</Link>
+    <li className={`${baseName}-category-navigation`}>
+      <Link to={categoryPath}>{categoryName}</Link>
     </li>
   );
 }

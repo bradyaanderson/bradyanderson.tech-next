@@ -4,6 +4,7 @@ import BlogIndexTemplate from "./blog-components/page-templates/BlogIndex";
 import { BlogIndexProps } from "../../types/Sitemap";
 import CategoryNavigationContainer from "./blog-components/navigation/CategoryNavigationContainer";
 import { buildCategoryToPath } from "./utils/navigationHelpers";
+import RecentPostsContainer from "./blog-components/navigation/RecentPostsContainer";
 
 /** Index for blog. */
 function BlogIndex({ routes }: BlogIndexProps) {
@@ -27,6 +28,7 @@ function BlogIndex({ routes }: BlogIndexProps) {
       <CategoryNavigationContainer
         categoryNameToPath={buildCategoryToPath(routes)}
       />
+      <RecentPostsContainer postTitleToLink={{}} />
     </BlogIndexTemplate>
   );
 }

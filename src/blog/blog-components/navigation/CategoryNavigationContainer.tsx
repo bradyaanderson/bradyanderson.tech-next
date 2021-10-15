@@ -14,7 +14,7 @@ function CategoryNavigationContainer({ categoryNameToPath }: Props) {
         {Object.keys(categoryNameToPath).map((categoryName) => (
           <CategoryNavigator
             categoryName={categoryName}
-            path={categoryNameToPath[categoryName]}
+            categoryPath={categoryNameToPath[categoryName]}
             key={categoryName}
           />
         ))}
