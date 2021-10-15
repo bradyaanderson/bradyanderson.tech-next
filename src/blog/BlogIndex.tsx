@@ -2,9 +2,11 @@ import React from "react";
 import Paragraph from "./blog-components/Paragraph";
 import BlogIndexTemplate from "./blog-components/page-templates/BlogIndex";
 import { BlogIndexProps } from "../../types/Sitemap";
+import CategoryNavigationContainer from "./blog-components/navigation/CategoryNavigationContainer";
+import { buildCategoryToPath } from "./utils/navigationHelpers";
 
 /** Index for blog. */
-function BlogIndex(_props: BlogIndexProps) {
+function BlogIndex({ routes }: BlogIndexProps) {
   return (
     <BlogIndexTemplate title="Welcome">
       <Paragraph>
@@ -22,6 +24,9 @@ function BlogIndex(_props: BlogIndexProps) {
         blog though, I hope you enjoy!
       </Paragraph>
       <Paragraph>-Brady</Paragraph>
+      <CategoryNavigationContainer
+        categoryNameToPath={buildCategoryToPath(routes)}
+      />
     </BlogIndexTemplate>
   );
 }

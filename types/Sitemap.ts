@@ -6,7 +6,9 @@ export interface BlogComponentProps {
 }
 
 /** Props for Blog Index */
-export interface BlogIndexProps extends BlogComponentProps {}
+export interface BlogIndexProps extends BlogComponentProps {
+  routes: BlogCategoryRoutes;
+}
 
 /** Props for Blog Category */
 export interface BlogCategoryProps extends BlogComponentProps {}
@@ -43,8 +45,6 @@ export interface BlogPostRoutes {
 }
 
 /** Structure of blog routes */
-export interface BlogMap {
+export interface BlogMap extends BlogIndexProps {
   Component: (props: BlogIndexProps) => JSX.Element;
-  title: string;
-  routes: BlogCategoryRoutes;
 }

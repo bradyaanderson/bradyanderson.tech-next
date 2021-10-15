@@ -13,7 +13,7 @@ function BlogRouter() {
     <Switch>
       {categoryRoutes.map((CategoryRoute) => CategoryRoute)}
       <Route exact path={currentPath}>
-        <BlogIndex title="Blog" />
+        <BlogIndex title="Blog" routes={routes} />
       </Route>
     </Switch>
   );
