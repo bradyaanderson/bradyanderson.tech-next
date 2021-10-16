@@ -3,11 +3,15 @@ import Paragraph from "./blog-components/Paragraph";
 import BlogIndexTemplate from "./blog-components/page-templates/BlogIndex";
 import { BlogIndexProps } from "../../types/Sitemap";
 import CategoryNavigationContainer from "./blog-components/navigation/CategoryNavigationContainer";
-import { buildCategoryToPath } from "./utils/navigationHelpers";
+import {
+  getCategoryToLink,
+  getRecentPostDetails,
+} from "./utils/navigationUtils";
 import RecentPostsContainer from "./blog-components/navigation/RecentPostsContainer";
 
 /** Index for blog. */
 function BlogIndex({ routes }: BlogIndexProps) {
+  getRecentPostDetails(routes);
   return (
     <BlogIndexTemplate title="Welcome">
       <Paragraph>
@@ -26,7 +30,7 @@ function BlogIndex({ routes }: BlogIndexProps) {
       </Paragraph>
       <Paragraph>-Brady</Paragraph>
       <CategoryNavigationContainer
-        categoryNameToPath={buildCategoryToPath(routes)}
+        categoryNameToPath={getCategoryToLink(routes)}
       />
       <RecentPostsContainer postTitleToLink={{}} />
     </BlogIndexTemplate>

@@ -1,8 +1,8 @@
-import { CategoryNameToPath } from "../../types";
+import { NameToPathMap } from "../../types";
 import CategoryNavigator from "./CategoryNavigator";
 
 interface Props {
-  categoryNameToPath: CategoryNameToPath;
+  categoryNameToPath: NameToPathMap;
 }
 
 /** A container that allows for navigation to different blog categories */
