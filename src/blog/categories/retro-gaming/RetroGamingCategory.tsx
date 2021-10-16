@@ -3,9 +3,9 @@ import Paragraph from "../../blog-components/Paragraph";
 import BlogCategory from "../../blog-components/page-templates/BlogCategory";
 
 /** Index for Retro Gaming blog section */
-function RetroGamingCategory({ title }: BlogCategoryProps) {
+function RetroGamingCategory(props: BlogCategoryProps) {
   return (
-    <BlogCategory title={title}>
+    <BlogCategory {...props}>
       <Paragraph>
         Retro game consoles are retro computers, but I've decided to break posts
         about gaming into their own category. Retro gaming fascinates me for the

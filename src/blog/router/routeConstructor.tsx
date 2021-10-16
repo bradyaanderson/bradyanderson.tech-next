@@ -24,7 +24,7 @@ function getCategoryRoutes(routes: BlogCategoryRoutes, baseRoute: string) {
         <Switch>
           {postRoutes.map((route) => route)}
           <Route exact path={path}>
-            <CategoryComponent title={title} />
+            <CategoryComponent title={title} routes={childRoutes} />
           </Route>
         </Switch>
       </Route>

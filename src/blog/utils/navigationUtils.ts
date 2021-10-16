@@ -1,4 +1,5 @@
 import { BlogCategoryRoutes, BlogPostRoutes } from "../../../types/Sitemap";
+import * as path from "path";
 import { join } from "path";
 import { NameToPathMap, PostDetails } from "../types";
 
@@ -38,17 +39,14 @@ export function getRecentPostDetails(routes: BlogCategoryRoutes) {
 
 /**
  * Returns a list of post details for a category sorted with most recent posts first.
- * @param category The category to get post details for.
  * @param categoryPath The URL path for the category relative to.
  * @param routes The {@link BlogPostRoutes} for the category.
  */
 export function getRecentCategoryPostDetails(
-  category: string,
   categoryPath: string,
   routes: BlogPostRoutes
 ) {
   const posts: PostDetails[] = getPostDetailsFromPostRoutes(
-    category,
     categoryPath,
     routes
   );
@@ -66,7 +64,6 @@ function getPostDetailsFromCategoryRoutes(routes: BlogCategoryRoutes) {
     const categoryPath = join(BaseRoute, category);
     const { routes: postRoutes } = routes[category];
     const categoryPostDetails = getPostDetailsFromPostRoutes(
-      category,
       categoryPath,
       postRoutes
     );
@@ -80,16 +77,15 @@ function getPostDetailsFromCategoryRoutes(routes: BlogCategoryRoutes) {
  */
 /**
  *
- * @param category The category to get post details for.
  * @param categoryPath The URL path for the category relative to.
  * @param routes The {@link BlogPostRoutes} for the category.
  */
 function getPostDetailsFromPostRoutes(
-  category: string,
   categoryPath: string,
   routes: BlogPostRoutes
 ) {
   const postDetails: PostDetails[] = [];
+  const category = path.basename(categoryPath);
   Object.keys(routes).forEach((post) => {
     const link = join(categoryPath, post);
     const { title, date } = routes[post];

@@ -5,8 +5,8 @@ interface Props {
   postDetailsList: PostDetails[];
 }
 
-/** A container that allows for navigation to different blog categories */
-function CategoryNavigationContainer({ postDetailsList }: Props) {
+/** A container that allows for navigation to recent blog posts */
+function RecentPostsContainer({ postDetailsList }: Props) {
   return (
     <div className="category-navigation-container">
       <h2>Recent Posts</h2>
@@ -17,4 +17,4 @@ function CategoryNavigationContainer({ postDetailsList }: Props) {
   );
 }
 
-export default CategoryNavigationContainer;
+export default RecentPostsContainer;

@@ -1,14 +1,19 @@
 import React, { useEffect } from "react";
 import PageHelmut from "./template-components/PageHelmut";
 import { scrollToTop } from "./templateUtils";
-
-interface Props {
-  /** Title to display on category. */
-  title: string;
-}
+import { BlogCategoryProps } from "../../../../types/Sitemap";
+import { useLocation } from "react-router-dom";
+import RecentPostsContainer from "../navigation/RecentPostsContainer";
+import { getRecentCategoryPostDetails } from "../../utils/navigationUtils";
 
 /** Blog category template. */
-const BlogCategory: React.FunctionComponent<Props> = ({ title, children }) => {
+const BlogCategory: React.FunctionComponent<BlogCategoryProps> = ({
+  title,
+  routes,
+  children,
+}) => {
+  const { pathname } = useLocation();
+
   useEffect(scrollToTop, []);
 
   return (
@@ -17,6 +22,9 @@ const BlogCategory: React.FunctionComponent<Props> = ({ title, children }) => {
       <div className="blog-category">
         <h1 className="blog-title">{title}</h1>
         <div className="blog-children">{children}</div>
+        <RecentPostsContainer
+          postDetailsList={getRecentCategoryPostDetails(pathname, routes)}
+        />
       </div>
     </>
   );

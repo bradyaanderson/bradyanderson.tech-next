@@ -11,7 +11,9 @@ export interface BlogIndexProps extends BlogComponentProps {
 }
 
 /** Props for Blog Category */
-export interface BlogCategoryProps extends BlogComponentProps {}
+export interface BlogCategoryProps extends BlogComponentProps {
+  routes: BlogPostRoutes;
+}
 
 /** Props for Blog Posts */
 export interface BlogPostProps extends BlogComponentProps {
@@ -26,7 +28,6 @@ export interface BlogRoute extends BlogComponentProps {
 /** Blog Category Route */
 export interface BlogCategoryRoute extends BlogRoute, BlogCategoryProps {
   Component: (props: BlogCategoryProps) => JSX.Element;
-  routes: BlogPostRoutes;
 }
 
 /** Blog Post Route */

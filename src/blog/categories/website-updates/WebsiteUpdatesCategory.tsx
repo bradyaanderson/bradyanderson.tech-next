@@ -4,9 +4,9 @@ import BlogCategory from "../../blog-components/page-templates/BlogCategory";
 import { BlogCategoryProps } from "../../../../types/Sitemap";
 
 /** Index for Website Update blog category */
-function WebsiteUpdatesCategory({ title }: BlogCategoryProps) {
+function WebsiteUpdatesCategory(props: BlogCategoryProps) {
   return (
-    <BlogCategory title={title}>
+    <BlogCategory {...props}>
       <div>
         <Paragraph>
           I bought the domain name bradyanderson.tech several years ago. I used
