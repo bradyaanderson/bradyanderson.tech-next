@@ -11,7 +11,6 @@ import RecentPostsContainer from "./blog-components/navigation/RecentPostsContai
 
 /** Index for blog. */
 function BlogIndex({ routes }: BlogIndexProps) {
-  getRecentPostDetails(routes);
   return (
     <BlogIndexTemplate title="Welcome">
       <Paragraph>
@@ -32,7 +31,7 @@ function BlogIndex({ routes }: BlogIndexProps) {
       <CategoryNavigationContainer
         categoryNameToPath={getCategoryToLink(routes)}
       />
-      <RecentPostsContainer postTitleToLink={{}} />
+      <RecentPostsContainer postDetailsList={getRecentPostDetails(routes)} />
     </BlogIndexTemplate>
   );
 }

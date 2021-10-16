@@ -1,10 +1,24 @@
+import { PostDetails } from "../../types";
+import { Link } from "react-router-dom";
+import moment from "moment";
+
 interface Props {
-  categoryName: string;
-  path: string;
+  postDetails: PostDetails;
 }
 
-function PostNavigator() {
-  return <div className="blog-post-navigator-container">Hello</div>;
+function PostNavigator({ postDetails }: Props) {
+  const { title, date, link, category } = postDetails;
+  const dateString = moment(date).format("MM/DD/YYYY");
+  return (
+    <Link to={link} className={"blog-post-navigator-link"}>
+      <div
+        className={`blog-post-navigator-container ${category}-post-navigation`}
+      >
+        <span className="blog-post-navigator-title">{title}</span>
+        <span className="blog-post-navigator-date">{dateString}</span>
+      </div>
+    </Link>
+  );
 }
 
 export default PostNavigator;

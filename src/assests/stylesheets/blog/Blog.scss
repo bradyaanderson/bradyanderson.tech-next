@@ -49,6 +49,40 @@
   a {
     color: $link;
   }
+
+  a.blog-post-navigator-link {
+    color: $primary-text-color;
+
+    .blog-post-navigator-container {
+      background: $complement;
+      margin: 1.5rem 3% 0;
+      padding: 0.625rem;
+      border: 3px solid $primary-dark;
+
+      &.retro-gaming-post-navigation {
+        background: $retro-gaming;
+      }
+
+      &.retro-computing-post-navigation {
+        background: $retro-computing;
+      }
+
+      &.website-updates-post-navigation {
+        background: $website-updates;
+      }
+
+      .blog-post-navigator-title {
+        font-size: 1rem;
+        display: block;
+      }
+
+      .blog-post-navigator-date {
+        font-size: 0.75rem;
+        display: block;
+        text-align: right;
+      }
+    }
+  }
 }
 
 .blog-title {
@@ -71,13 +105,6 @@
 
 .blog-list {
   margin-bottom: 0;
-}
-
-.blog-post-navigator-container {
-  background: $complement;
-  margin: 1.5rem 3% 0;
-  padding: 0.625rem;
-  border: 3px solid $primary-dark;
 }
 
 .retro-gaming-category-navigation {

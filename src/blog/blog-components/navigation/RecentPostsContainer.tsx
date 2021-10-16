@@ -1,26 +1,18 @@
 import PostNavigator from "./PostNavigator";
+import { PostDetails } from "../../types";
 
 interface Props {
-  postTitleToLink: any;
+  postDetailsList: PostDetails[];
 }
 
 /** A container that allows for navigation to different blog categories */
-function CategoryNavigationContainer({ postTitleToLink }: Props) {
+function CategoryNavigationContainer({ postDetailsList }: Props) {
   return (
     <div className="category-navigation-container">
       <h2>Recent Posts</h2>
-      {/*<ul>*/}
-      {/*  {Object.keys(categoryNameToPath).map((categoryName) => (*/}
-      {/*    <CategoryNavigator*/}
-      {/*      categoryName={categoryName}*/}
-      {/*      path={categoryNameToPath[categoryName]}*/}
-      {/*      key={categoryName}*/}
-      {/*    />*/}
-      {/*  ))}*/}
-      {/*</ul>*/}
-      <PostNavigator />
-      <PostNavigator />
-      <PostNavigator />
+      {postDetailsList.map((postDetails) => (
+        <PostNavigator postDetails={postDetails} key={postDetails.title} />
+      ))}
     </div>
   );
 }
