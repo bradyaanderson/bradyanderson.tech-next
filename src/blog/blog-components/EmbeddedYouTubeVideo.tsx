@@ -1,4 +1,5 @@
 import "../../assests/stylesheets/common/BlogEmbeddedYouTubeVideo.scss";
+import { memo } from "react";
 
 interface Props {
   /** The URL of the YouTube video to embed. */
@@ -19,4 +20,4 @@ function EmbeddedYouTubeVideo({ url }: Props) {
   );
 }
 
-export default EmbeddedYouTubeVideo;
+export default memo(EmbeddedYouTubeVideo);

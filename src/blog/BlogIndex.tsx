@@ -2,17 +2,11 @@ import React from "react";
 import Paragraph from "./blog-components/Paragraph";
 import BlogIndexTemplate from "./blog-components/page-templates/BlogIndex";
 import { BlogIndexProps } from "../../types/Sitemap";
-import CategoryNavigationContainer from "./blog-components/navigation/CategoryNavigationContainer";
-import {
-  getCategoryToLink,
-  getRecentPostDetails,
-} from "./utils/navigationUtils";
-import RecentPostsContainer from "./blog-components/navigation/RecentPostsContainer";
 
 /** Index for blog. */
-function BlogIndex({ routes }: BlogIndexProps) {
+function BlogIndex(props: BlogIndexProps) {
   return (
-    <BlogIndexTemplate title="Welcome">
+    <BlogIndexTemplate {...props}>
       <Paragraph>
         I think it's about time I start a blog, or at least attempt one. Knowing
         me, I'll probably write a few posts and then get carried away with
@@ -28,10 +22,6 @@ function BlogIndex({ routes }: BlogIndexProps) {
         blog though, I hope you enjoy!
       </Paragraph>
       <Paragraph>-Brady</Paragraph>
-      <CategoryNavigationContainer
-        categoryNameToPath={getCategoryToLink(routes)}
-      />
-      <RecentPostsContainer postDetailsList={getRecentPostDetails(routes)} />
     </BlogIndexTemplate>
   );
 }
