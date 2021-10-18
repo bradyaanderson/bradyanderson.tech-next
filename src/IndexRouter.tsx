@@ -5,7 +5,7 @@ import Blog from "./blog/Blog";
 import React from "react";
 import Home from "./home/Home";
 
-/** The main router component. */
+/** Router for top-level routes. */
 function IndexRouter() {
   return (
     <Router>

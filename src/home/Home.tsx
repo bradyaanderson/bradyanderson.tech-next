@@ -7,6 +7,7 @@ import Footer from "../footer/Footer";
 import "../assests/stylesheets/App.scss";
 import React from "react";
 
+/** The home page. */
 function Home() {
   return (
     <>

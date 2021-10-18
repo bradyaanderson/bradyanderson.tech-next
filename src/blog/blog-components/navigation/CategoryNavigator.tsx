@@ -6,7 +6,7 @@ interface Props {
   categoryPath: string;
 }
 
-/** Navigates to a blog category */
+/** Navigates to a blog category. */
 function CategoryNavigator({ categoryName, categoryPath }: Props) {
   const baseName = path.basename(categoryPath);
   return (

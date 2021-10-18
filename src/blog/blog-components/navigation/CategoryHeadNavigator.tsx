@@ -4,6 +4,7 @@ interface Props {
   currentCategoryTitle: string;
 }
 
+/** Component for navigating back to blog home from category */
 function CategoryHeadNavigator({ currentCategoryTitle }: Props) {
   return (
     <div className="head-navigator category-head-navigator">

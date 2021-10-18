@@ -5,7 +5,7 @@ interface Props {
   categoryNameToPath: NameToPathMap;
 }
 
-/** A container that allows for navigation to different blog categories */
+/** A container that allows for navigation to different blog categories. */
 function CategoryNavigationContainer({ categoryNameToPath }: Props) {
   return (
     <div className="category-navigation-container">

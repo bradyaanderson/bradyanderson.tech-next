@@ -5,6 +5,7 @@ interface Props {
   currentPostTitle: string;
 }
 
+/** Component for navigating back to blog home and parent category. */
 function CategoryHeadNavigator({
   currentCategoryTitle,
   currentPostTitle,

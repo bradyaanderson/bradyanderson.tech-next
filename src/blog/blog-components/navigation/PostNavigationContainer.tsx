@@ -5,7 +5,7 @@ interface Props {
   postDetailsList: PostDetails[];
 }
 
-/** A container that allows for navigation to recent blog posts */
+/** A container that allows for navigation to recent blog posts. */
 function PostNavigationContainer({ postDetailsList }: Props) {
   return (
     <div className="post-navigation-container">
