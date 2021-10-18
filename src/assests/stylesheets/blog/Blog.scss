@@ -73,6 +73,18 @@
   margin-bottom: 0;
 }
 
+.retro-gaming-accent-text {
+    color: $retro-gaming;
+}
+
+.retro-computing-accent-text {
+    color: $retro-computing;
+}
+
+.website-updates-accent-text {
+    color: $website-updates;
+}
+
 .retro-gaming-category-navigation {
   a {
     color: $retro-gaming;
@@ -90,6 +102,7 @@
     color: $website-updates;
   }
 }
+
 
 a.blog-post-navigator-link {
   color: $primary-text-color;
