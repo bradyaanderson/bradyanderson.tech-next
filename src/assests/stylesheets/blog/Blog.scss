@@ -124,3 +124,23 @@ a.blog-post-navigator-link {
     }
   }
 }
+
+.category-navigation-container, .post-navigation-container {
+  h2 {
+    font-size: 1.6em;
+    text-decoration: underline;
+  }
+}
+
+.head-navigator {
+  font-size: .9em;
+  padding-bottom: 0.65rem;
+
+  .head-navigator-current-location {
+    text-decoration: underline;
+  }
+
+  a {
+    color: $primary-text-color;
+  }
+}

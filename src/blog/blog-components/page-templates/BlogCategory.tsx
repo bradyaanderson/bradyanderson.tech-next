@@ -3,8 +3,9 @@ import PageHelmut from "./template-components/PageHelmut";
 import { scrollToTop } from "./templateUtils";
 import { BlogCategoryProps } from "../../../../types/Sitemap";
 import { useLocation } from "react-router-dom";
-import RecentPostsContainer from "../navigation/RecentPostsContainer";
+import PostNavigationContainer from "../navigation/PostNavigationContainer";
 import { getRecentCategoryPostDetails } from "../../utils/navigationUtils";
+import CategoryHeadNavigator from "../navigation/CategoryHeadNavigator";
 
 /** Blog category template. */
 const BlogCategory: React.FunctionComponent<BlogCategoryProps> = ({
@@ -20,9 +21,10 @@ const BlogCategory: React.FunctionComponent<BlogCategoryProps> = ({
     <>
       <PageHelmut title={title} />
       <div className="blog-category">
+        <CategoryHeadNavigator currentCategoryTitle={title} />
         <h1 className="blog-title">{title}</h1>
         <div className="blog-children">{children}</div>
-        <RecentPostsContainer
+        <PostNavigationContainer
           postDetailsList={getRecentCategoryPostDetails(pathname, routes)}
         />
       </div>

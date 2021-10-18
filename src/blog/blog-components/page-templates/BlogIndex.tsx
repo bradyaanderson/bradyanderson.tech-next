@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import PageHelmut from "./template-components/PageHelmut";
 import { scrollToTop } from "./templateUtils";
-import RecentPostsContainer from "../navigation/RecentPostsContainer";
+import PostNavigationContainer from "../navigation/PostNavigationContainer";
 import {
   getCategoryToLink,
   getRecentPostDetails,
@@ -26,7 +26,9 @@ const BlogIndex: React.FunctionComponent<BlogIndexProps> = ({
         <CategoryNavigationContainer
           categoryNameToPath={getCategoryToLink(routes)}
         />
-        <RecentPostsContainer postDetailsList={getRecentPostDetails(routes)} />
+        <PostNavigationContainer
+          postDetailsList={getRecentPostDetails(routes)}
+        />
       </div>
     </>
   );
