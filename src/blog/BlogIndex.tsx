@@ -4,9 +4,9 @@ import BlogIndexTemplate from "./blog-components/page-templates/BlogIndex";
 import { BlogIndexProps } from "../../types/Sitemap";
 
 /** Index for blog. */
-function BlogIndex(_props: BlogIndexProps) {
+function BlogIndex(props: BlogIndexProps) {
   return (
-    <BlogIndexTemplate title="Welcome">
+    <BlogIndexTemplate {...props}>
       <Paragraph>
         I think it's about time I start a blog, or at least attempt one. Knowing
         me, I'll probably write a few posts and then get carried away with

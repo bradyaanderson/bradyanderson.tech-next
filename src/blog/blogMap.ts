@@ -125,7 +125,7 @@ const blogMap: BlogMap = {
           title: "Moving to AWS from Heroku",
           shortTitle: "Moving to AWS",
           Component: MovingToAwsPost,
-          date: moment("07/20/2021", DATE_FORMAT),
+          date: moment("07/30/2021", DATE_FORMAT),
         },
         "setting-up-image-storage": {
           title: "Setting Up Amazon S3 Image Storage",

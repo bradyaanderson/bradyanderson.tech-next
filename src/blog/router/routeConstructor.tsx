@@ -18,13 +18,13 @@ function getCategoryRoutes(routes: BlogCategoryRoutes, baseRoute: string) {
     } = routes[key];
     const path = join(baseRoute, key);
 
-    const postRoutes = getPostRoutes(childRoutes, path);
+    const postRoutes = getPostRoutes(childRoutes, title, path);
     return (
       <Route path={path} key={key}>
         <Switch>
           {postRoutes.map((route) => route)}
           <Route exact path={path}>
-            <CategoryComponent title={title} />
+            <CategoryComponent title={title} routes={childRoutes} />
           </Route>
         </Switch>
       </Route>
@@ -36,15 +36,24 @@ function getCategoryRoutes(routes: BlogCategoryRoutes, baseRoute: string) {
  * Creates routing for blog posts.
  *
  * @param routes The BlogPostRoutes to use when constructing routes.
- * @param categoryPath The path of the category which the post will be under.
+ * @param categoryTitle The title of the category which the post is under.
+ * @param categoryPath The path of the category which the post is under.
  */
-function getPostRoutes(routes: BlogPostRoutes, categoryPath: string) {
+function getPostRoutes(
+  routes: BlogPostRoutes,
+  categoryTitle: string,
+  categoryPath: string
+) {
   return Object.keys(routes).map((key) => {
     const { Component: PostComponent, title, date } = routes[key];
     const path = join(categoryPath, key);
     return (
       <Route path={path} key={key}>
-        <PostComponent title={title} date={date} />
+        <PostComponent
+          title={title}
+          date={date}
+          categoryTitle={categoryTitle}
+        />
       </Route>
     );
   });

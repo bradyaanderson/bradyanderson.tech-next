@@ -3,9 +3,9 @@ import Paragraph from "../../blog-components/Paragraph";
 import BlogCategory from "../../blog-components/page-templates/BlogCategory";
 
 /** Index for Retro Computing blog category */
-function RetroComputingCategory({ title }: BlogCategoryProps) {
+function RetroComputingCategory(props: BlogCategoryProps) {
   return (
-    <BlogCategory title={title}>
+    <BlogCategory {...props}>
       <Paragraph>
         I love all computers, but to me, there is something special about retro
         computing. I was born in 1998, so it's not nostalgia that drives my love
