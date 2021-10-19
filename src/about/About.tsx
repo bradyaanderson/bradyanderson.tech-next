@@ -9,6 +9,7 @@ import aboutText from "./aboutText";
 import { Container } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import Footer from "../footer/Footer";
+import ExternalLink from "../blog/blog-components/ExternalLink";
 
 /** about Page */
 function About() {
@@ -36,12 +37,16 @@ function About() {
         </Row>
         <Row className="justify-content-center text-center">
           <Col>
-            <a href="https://www.linkedin.com/in/bradyaanderson/">
-              <FontAwesomeIcon className="about-icon" icon={faLinkedin} />
-            </a>
-            <a href="https://github.com/bradyaanderson">
-              <FontAwesomeIcon className="about-icon" icon={faGithub} />
-            </a>
+            <ExternalLink link="https://www.linkedin.com/in/bradyaanderson/">
+              <div className="about-icon">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </div>
+            </ExternalLink>
+            <ExternalLink link="https://github.com/bradyaanderson">
+              <div className="about-icon">
+                <FontAwesomeIcon icon={faGithub} />
+              </div>
+            </ExternalLink>
           </Col>
         </Row>
         <Footer />

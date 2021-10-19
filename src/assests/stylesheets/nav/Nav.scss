@@ -17,4 +17,8 @@
   a, a:link, a:hover, a:active {
     color: $primary-text-color;
   }
+
+  a:hover {
+    text-decoration: underline $link;
+  }
 }
