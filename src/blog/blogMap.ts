@@ -33,41 +33,37 @@ const blogMap: BlogMap = {
       Component: RetroComputingCategory,
       routes: {
         "opening-a-mac-se30": {
-          title: "Opening A Macintosh SE/30",
+          title: "Taking a Look Inside a Macintosh SE/30",
           date: moment("08/05/2021", DATE_FORMAT),
           Component: OpeningAMacSE30Post,
         },
         "booting-se30-without-a-hard-drive": {
-          title: "Booting a Macintosh SE/30 Without a Hard Drive",
-          shortTitle: "Booting a SE/30 Without a Hard Drive",
+          title: "Getting a Macintosh SE/30 Without a Hard Drive to Boot",
           Component: BootingASE30Post,
           date: moment("08/10/2021", DATE_FORMAT),
         },
         "apple-ii-keyboard-fix": {
-          title:
-            '"Fixing" the Keyboard That Came With My SE/30 (Apple Keyboard II)',
-          shortTitle: '"Fixing" an Apple Keyboard II',
+          title: '"Fixing" an Apple Keyboard II',
           Component: FixingKeyboardPost,
           date: moment("08/14/2021", DATE_FORMAT),
         },
         "installing-scsi2sd-se30": {
-          title: "Installing a SCSI2SD on my Macintosh SE/30",
-          shortTitle: "Installing a SCSI2SD (Macintosh SE/30)",
+          title: "Installing a SCSI2SD in a Macintosh SE/30",
           Component: InstallingSCSI2SDPost,
           date: moment("08/18/2021", DATE_FORMAT),
         },
         "fixing-macintosh-se30-sound-struggle": {
-          title: "The Struggle to Fix a Macintosh SE/30's Sound",
+          title: "Attempting to Fix the Sound on a Macintosh SE/30",
           Component: FixingSE30SoundStruggle,
           date: moment("08/23/2021", DATE_FORMAT),
         },
         "whitening-a-macintosh": {
-          title: "Whitening a Macintosh's Plastic Case",
+          title: "Retrobrighting a Macintosh SE/30's Case",
           Component: WhiteningAMacintoshPost,
           date: moment("09/01/2021", DATE_FORMAT),
         },
         "fixing-floppy-drive": {
-          title: "Fixing Auto-Eject on Macintosh SuperDrive",
+          title: "Fixing a Macintosh SuperDrive That Won't Auto-Eject",
           Component: FixingFloppyDrive,
           date: moment("09/15/2021", DATE_FORMAT),
         },
@@ -79,27 +75,22 @@ const blogMap: BlogMap = {
       Component: RetroGamingCategory,
       routes: {
         "replacing-game-boy-color-speaker": {
-          title: "Replacing a Game Boy Color Speaker",
+          title: "Replacing the Speaker on a Game Boy Color",
           Component: ReplacingGameBoyColorSpeakerPost,
           date: moment("08/17/2021", DATE_FORMAT),
         },
         "game-gear-repair-part-1": {
           title: "Game Gear Repair: Part 1 - Disassembly and Cleaning",
-          shortTitle: "Game Gear Repair - Disassembly and Cleaning",
           Component: GameGearRepairPart1,
           date: moment("09/22/2021", DATE_FORMAT),
         },
         "game-gear-repair-part-2": {
-          title: "Game Gear Repair: Part 2 - Fixing Immediate Power Off",
-          shortTitle: "Game Gear Repair - Fixing Immediate Power Off",
+          title: "Game Gear Repair: Part 2 - Fixing the Power Issue",
           Component: GameGearRepairPart2,
           date: moment("10/02/2021", DATE_FORMAT),
         },
         "game-gear-repair-part-3": {
-          title:
-            "Game Gear Repair: Part 3 - Finishing Main Board Recapping and Fixing Sound",
-          shortTitle:
-            "Game Gear Repair - Finishing Main Board Recapping and Fixing Sound",
+          title: "Game Gear Repair: Part 3 - Main and Sound Board Recapping",
           Component: GameGearRepairPart3,
           date: moment("10/03/2021", DATE_FORMAT),
         },
@@ -116,27 +107,22 @@ const blogMap: BlogMap = {
           date: moment("07/25/2021", DATE_FORMAT),
         },
         "custom-hover-domain-for-heroku-app": {
-          title: "Using My Custom Hover Domain for Heroku Application",
-          shortTitle: "Using My Custom Domain",
+          title: "Using a Hover Domain with Heroku",
           Component: CustomHoverDomainForHerokuAppPost,
           date: moment("07/27/2021", DATE_FORMAT),
         },
         "moving-to-aws": {
-          title: "Moving to AWS from Heroku",
-          shortTitle: "Moving to AWS",
+          title: "Moving From Heroku to AWS",
           Component: MovingToAwsPost,
           date: moment("07/30/2021", DATE_FORMAT),
         },
         "setting-up-image-storage": {
-          title: "Setting Up Amazon S3 Image Storage",
-          shortTitle: "Setting up Image Storage",
+          title: "Simple Image Storage using Amazon S3",
           Component: SettingUpImageStoragePost,
           date: moment("08/03/2021", DATE_FORMAT),
         },
         "dynamically-updating-html-title": {
-          title:
-            "Easily Setting a Custom Title For Each Page While Using React Router",
-          shortTitle: "Easily Setting a Custom Title For Each Page",
+          title: "Dynamically Updating the HTML Title with React Helmet",
           Component: EasilySettingCustomTitlePost,
           date: moment("09/12/2021", DATE_FORMAT),
         },
