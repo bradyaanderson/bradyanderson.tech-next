@@ -9,6 +9,7 @@ import { BlogPostProps } from "../../../../types/Sitemap";
 const BlogPost: React.FunctionComponent<BlogPostProps> = ({
   title,
   categoryTitle,
+  categoryBaseName,
   date,
   children,
 }) => {
@@ -22,7 +23,9 @@ const BlogPost: React.FunctionComponent<BlogPostProps> = ({
           currentCategoryTitle={categoryTitle}
           currentPostTitle={title}
         />
-        <h1 className="blog-title">{title}</h1>
+        <h1 className={`blog-title ${categoryBaseName}-accent-text`}>
+          {title}
+        </h1>
         <span className="blog-date">{moment(date).format("MM/DD/YYYY")}</span>
         <div className="blog-children">{children}</div>
       </div>
