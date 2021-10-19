@@ -13,7 +13,6 @@ const BlogPost: React.FunctionComponent<BlogPostProps> = ({
   children,
 }) => {
   useEffect(scrollToTop, []);
-  console.log("category title: ", categoryTitle);
 
   return (
     <>
