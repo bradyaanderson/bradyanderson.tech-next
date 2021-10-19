@@ -19,6 +19,7 @@ export interface BlogCategoryProps extends BlogComponentProps {
 export interface BlogPostProps extends BlogComponentProps {
   date: moment.Moment;
   categoryTitle: string;
+  categoryBaseName: string;
 }
 
 /** Basic Blog Route */

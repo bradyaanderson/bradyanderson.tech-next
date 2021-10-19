@@ -1,4 +1,5 @@
 import { BlogCategoryRoutes, BlogPostRoutes } from "../../../types/Sitemap";
+import * as path from "path";
 import { join } from "path";
 import { Route, Switch } from "react-router-dom";
 
@@ -10,20 +11,20 @@ import { Route, Switch } from "react-router-dom";
  * base path, then a route path for "test" category will be "bradyanderson.tech/test".
  */
 function getCategoryRoutes(routes: BlogCategoryRoutes, baseRoute: string) {
-  return Object.keys(routes).map((key) => {
+  return Object.keys(routes).map((categoryBaseName) => {
     const {
       routes: childRoutes,
       Component: CategoryComponent,
       title,
-    } = routes[key];
-    const path = join(baseRoute, key);
+    } = routes[categoryBaseName];
+    const pathName = join(baseRoute, categoryBaseName);
 
-    const postRoutes = getPostRoutes(childRoutes, title, path);
+    const postRoutes = getPostRoutes(childRoutes, title, pathName);
     return (
-      <Route path={path} key={key}>
+      <Route path={pathName} key={categoryBaseName}>
         <Switch>
           {postRoutes.map((route) => route)}
-          <Route exact path={path}>
+          <Route exact path={pathName}>
             <CategoryComponent title={title} routes={childRoutes} />
           </Route>
         </Switch>
@@ -44,15 +45,17 @@ function getPostRoutes(
   categoryTitle: string,
   categoryPath: string
 ) {
-  return Object.keys(routes).map((key) => {
-    const { Component: PostComponent, title, date } = routes[key];
-    const path = join(categoryPath, key);
+  return Object.keys(routes).map((postBaseName) => {
+    const { Component: PostComponent, title, date } = routes[postBaseName];
+    const categoryBaseName = path.basename(categoryPath);
+    const pathName = join(categoryPath, postBaseName);
     return (
-      <Route path={path} key={key}>
+      <Route path={pathName} key={postBaseName}>
         <PostComponent
           title={title}
           date={date}
           categoryTitle={categoryTitle}
+          categoryBaseName={categoryBaseName}
         />
       </Route>
     );

@@ -17,9 +17,10 @@ a .about-icon {
   font-size: 3em;
   margin: 0.625rem 1.875rem;
   color: $primary-text-color;
+  display: inline-block;
 
   :hover {
-    color: #000a12;
+    color: $link;
   }
 }
 
