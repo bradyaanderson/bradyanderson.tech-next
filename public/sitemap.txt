@@ -20,3 +20,4 @@ https://bradyanderson.tech/blog/website-updates/custom-hover-domain-for-heroku-a
 https://bradyanderson.tech/blog/website-updates/moving-to-aws
 https://bradyanderson.tech/blog/website-updates/setting-up-image-storage
 https://bradyanderson.tech/blog/website-updates/dynamically-updating-html-title
+https://bradyanderson.tech/blog/website-updates/navigation-updates

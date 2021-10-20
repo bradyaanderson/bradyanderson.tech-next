@@ -20,6 +20,7 @@ import GameGearRepairPart1 from "./categories/retro-gaming/posts/GameGearRepairP
 import GameGearRepairPart2 from "./categories/retro-gaming/posts/GameGearRepairPart2";
 import GameGearRepairPart3 from "./categories/retro-gaming/posts/GameGearRepairPart3";
 import moment from "moment";
+import BlogNavigationUpdates from "./categories/website-updates/posts/BlogNavigationUpdates";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 
@@ -125,6 +126,11 @@ const blogMap: BlogMap = {
           title: "Dynamically Updating the HTML Title with React Helmet",
           Component: EasilySettingCustomTitlePost,
           date: moment("09/12/2021", DATE_FORMAT),
+        },
+        "navigation-updates": {
+          title: "Blog Navigation Updates",
+          Component: BlogNavigationUpdates,
+          date: moment("10/18/2021", DATE_FORMAT),
         },
       },
     },

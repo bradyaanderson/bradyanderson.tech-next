@@ -12,14 +12,19 @@ interface Props {
   caption?: string;
   /** The max width that the image will be displayed at. */
   maxWidth?: string;
+  /** The border to put around the image */
+  imageBorder?: string;
 }
 
 /** Component for easily displaying images in blog */
-function Image({ path, caption, maxWidth }: Props) {
+function Image({ path, caption, maxWidth, imageBorder }: Props) {
   return (
     <div className="image-wth-caption-container">
       <Figure style={{ maxWidth }}>
-        <Figure.Image src={PUBLIC_IMAGE_URL + path} />
+        <Figure.Image
+          src={PUBLIC_IMAGE_URL + path}
+          style={{ border: imageBorder }}
+        />
         {caption && (
           <Figure.Caption className="caption">{caption}</Figure.Caption>
         )}
