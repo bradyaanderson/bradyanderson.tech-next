@@ -21,6 +21,7 @@ import GameGearRepairPart2 from "./categories/retro-gaming/posts/GameGearRepairP
 import GameGearRepairPart3 from "./categories/retro-gaming/posts/GameGearRepairPart3";
 import moment from "moment";
 import BlogNavigationUpdates from "./categories/website-updates/posts/BlogNavigationUpdates";
+import SE30FTPConnectionPost from "./categories/retro-computing/posts/SE30FTPConnectionPost";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 
@@ -67,6 +68,11 @@ const blogMap: BlogMap = {
           title: "Fixing a Macintosh SuperDrive That Won't Auto-Eject",
           Component: FixingFloppyDrive,
           date: moment("09/15/2021", DATE_FORMAT),
+        },
+        "se30-ftp-connection": {
+          title: "Macintosh SE/30 - Connecting to a local FTP Server",
+          Component: SE30FTPConnectionPost,
+          date: moment("11/11/2021", DATE_FORMAT),
         },
       },
     },
