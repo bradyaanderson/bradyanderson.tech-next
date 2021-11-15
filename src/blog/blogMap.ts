@@ -22,6 +22,7 @@ import GameGearRepairPart3 from "./categories/retro-gaming/posts/GameGearRepairP
 import moment from "moment";
 import BlogNavigationUpdates from "./categories/website-updates/posts/BlogNavigationUpdates";
 import SE30FTPConnectionPost from "./categories/retro-computing/posts/SE30FTPConnectionPost";
+import TakingAndConvertingScreenshotsPost from "./categories/retro-computing/posts/TakingAndConvertingScreenshotsPost";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 
@@ -73,6 +74,12 @@ const blogMap: BlogMap = {
           title: "Macintosh SE/30 - Connecting to a local FTP Server",
           Component: SE30FTPConnectionPost,
           date: moment("11/11/2021", DATE_FORMAT),
+        },
+        "taking-and-converting-screenshots": {
+          title:
+            "Taking Screenshots on System 7 and Converting to a Modern Format",
+          Component: TakingAndConvertingScreenshotsPost,
+          date: moment("11/15/2021", DATE_FORMAT),
         },
       },
     },
