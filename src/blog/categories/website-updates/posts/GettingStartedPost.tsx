@@ -1,12 +1,11 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import Image from "../../../blog-components/Image";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import ExternalLink from "../../../blog-components/ExternalLink";
 import Paragraph from "../../../blog-components/Paragraph";
 
-function GettingStartedPost(props: BlogPostProps) {
+function GettingStartedPost({ BlogPost }: BlogPostProps) {
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Image
         path="/blog/categories/bradyanderson-tech/posts/getting-started/homepage.png"
         caption="The homepage on 07/25/2021."

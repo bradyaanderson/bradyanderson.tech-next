@@ -1,11 +1,10 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import ExternalLink from "../../../blog-components/ExternalLink";
 import Paragraph from "../../../blog-components/Paragraph";
 
-function MovingToAwsPost(props: BlogPostProps) {
+function MovingToAwsPost({ BlogPost }: BlogPostProps) {
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         Well, that didn't last long... I was planning some upcoming posts for
         this blog and I realized that I'm going to need ample space to post

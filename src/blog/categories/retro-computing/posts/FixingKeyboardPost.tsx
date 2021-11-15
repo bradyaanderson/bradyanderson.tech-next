@@ -1,4 +1,3 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import Image from "../../../blog-components/Image";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../blog-components/Paragraph";
@@ -6,9 +5,9 @@ import Paragraph from "../../../blog-components/Paragraph";
 const imageBasePath =
   "/blog/categories/retro-computing/posts/se30-keyboard-fix";
 
-function FixingKeyboardPost(props: BlogPostProps) {
+function FixingKeyboardPost({ BlogPost }: BlogPostProps) {
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         When trying to solve a problem, I can sometimes fail to see the simple
         solution right in front of me. This time, however, I'm glad to admit

@@ -1,12 +1,11 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import Image from "../../../blog-components/Image";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import ExternalLink from "../../../blog-components/ExternalLink";
 import Paragraph from "../../../blog-components/Paragraph";
 
-function SettingUpImageStoragePost(props: BlogPostProps) {
+function SettingUpImageStoragePost({ BlogPost }: BlogPostProps) {
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         I want to post a lot of images on this blog, but my current setup won't
         make that easy. Right now, I'm storing all images in my Git repository.

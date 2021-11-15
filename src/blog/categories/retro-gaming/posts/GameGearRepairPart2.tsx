@@ -1,4 +1,3 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../blog-components/Paragraph";
 import Image from "../../../blog-components/Image";
@@ -6,10 +5,10 @@ import EmbeddedYouTubeVideo from "../../../blog-components/EmbeddedYouTubeVideo"
 import { Link } from "react-router-dom";
 import ExternalLink from "../../../blog-components/ExternalLink";
 
-function GameGearRepairPart2(props: BlogPostProps) {
+function GameGearRepairPart2({ BlogPost }: BlogPostProps) {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-2";
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         In <Link to={"game-gear-repair-part-1"}>part 1</Link>, I started my
         repair of a broken Game Gear by disassembling it and cleaning corrosion

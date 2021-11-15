@@ -1,14 +1,13 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import Image from "../../../blog-components/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../blog-components/Paragraph";
 
-function WhiteningAMacintoshPost(props: BlogPostProps) {
+function WhiteningAMacintoshPost({ BlogPost }: BlogPostProps) {
   const baseImagePath = `/blog/categories/retro-computing/posts/whitening-a-macintosh`;
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         When exposed to UV light, the plastic on some older electronics will
         turn yellow over time. The discoloration on doesn’t affect the

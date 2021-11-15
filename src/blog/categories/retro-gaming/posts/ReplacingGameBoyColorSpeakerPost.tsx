@@ -1,14 +1,13 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import EmbeddedYouTubeVideo from "../../../blog-components/EmbeddedYouTubeVideo";
 import Image from "../../../blog-components/Image";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../blog-components/Paragraph";
 
-function ReplacingGameBoyColorSpeakerPost(props: BlogPostProps) {
+function ReplacingGameBoyColorSpeakerPost({ BlogPost }: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-gaming/replacing-game-boy-color-speaker";
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         A few years ago, I got a Game Boy Color. Unfortunately, the speaker
         never worked. However, The headphone jack worked, so I wasn't too

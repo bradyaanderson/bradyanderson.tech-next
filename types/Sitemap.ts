@@ -1,4 +1,5 @@
 import moment from "moment";
+import { FunctionComponent } from "react";
 
 /** Props for all components in blog map */
 export interface BlogComponentProps {
@@ -16,7 +17,12 @@ export interface BlogCategoryProps extends BlogComponentProps {
 }
 
 /** Props for Blog Posts */
-export interface BlogPostProps extends BlogComponentProps {
+export interface BlogPostProps {
+  BlogPost: FunctionComponent;
+}
+
+/** Props for Blog Post Template */
+export interface BlogPostTemplateProps extends BlogComponentProps {
   date: moment.Moment;
   categoryTitle: string;
   categoryBaseName: string;

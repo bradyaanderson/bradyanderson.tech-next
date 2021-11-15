@@ -2,6 +2,8 @@ import { BlogCategoryRoutes, BlogPostRoutes } from "../../../types/Sitemap";
 import * as path from "path";
 import { join } from "path";
 import { Route, Switch } from "react-router-dom";
+import BlogPost from "../blog-components/page-templates/BlogPost";
+import { FunctionComponent } from "react";
 
 /**
  * Creates routing for blog categories.
@@ -49,14 +51,20 @@ function getPostRoutes(
     const { Component: PostComponent, title, date } = routes[postBaseName];
     const categoryBaseName = path.basename(categoryPath);
     const pathName = join(categoryPath, postBaseName);
+    const BlogPostWrapper: FunctionComponent = ({ children }) => (
+      <BlogPost
+        title={title}
+        date={date}
+        categoryTitle={categoryTitle}
+        categoryBaseName={categoryBaseName}
+      >
+        {children}
+      </BlogPost>
+    );
+
     return (
       <Route path={pathName} key={postBaseName}>
-        <PostComponent
-          title={title}
-          date={date}
-          categoryTitle={categoryTitle}
-          categoryBaseName={categoryBaseName}
-        />
+        <PostComponent BlogPost={BlogPostWrapper} />
       </Route>
     );
   });
