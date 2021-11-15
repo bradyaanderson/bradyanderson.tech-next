@@ -21,8 +21,8 @@ export interface BlogPostProps {
   BlogPost: FunctionComponent;
 }
 
-/** Props for Blog Wrapper Posts */
-export interface BlogPostWrapperProps extends BlogComponentProps {
+/** Props for Blog Post Template */
+export interface BlogPostTemplateProps extends BlogComponentProps {
   date: moment.Moment;
   categoryTitle: string;
   categoryBaseName: string;
