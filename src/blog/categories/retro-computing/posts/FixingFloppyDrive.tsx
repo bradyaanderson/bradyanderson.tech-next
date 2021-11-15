@@ -1,14 +1,13 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../blog-components/Paragraph";
 import Image from "../../../blog-components/Image";
 import EmbeddedYouTubeVideo from "../../../blog-components/EmbeddedYouTubeVideo";
 
-function FixingFloppyDrive(props: BlogPostProps) {
+function FixingFloppyDrive({ BlogPost }: BlogPostProps) {
   const baseImagePath =
     "/blog/categories/retro-computing/posts/floppy-drive-fix";
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         After retrobrighting my Macintosh SE/30’s case, I reinstalled all the
         internal components back into the case. I spent some time testing some

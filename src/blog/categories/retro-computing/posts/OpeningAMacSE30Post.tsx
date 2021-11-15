@@ -1,15 +1,14 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import Image from "../../../blog-components/Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import ExternalLink from "../../../blog-components/ExternalLink";
 import Paragraph from "../../../blog-components/Paragraph";
+import { BlogPostProps } from "../../../../../types/Sitemap";
 
-function OpeningAMacSE30Post(props: BlogPostProps) {
+function OpeningAMacSE30Post({ BlogPost }: BlogPostProps) {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/opening-a-mac-se-30";
 
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         On June 13th, I saw a Macintosh SE/30 at an antique store by my
         apartment. I've always wanted a retro Apple computer, but I knew almost

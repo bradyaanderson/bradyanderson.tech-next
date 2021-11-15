@@ -3,10 +3,10 @@ import moment from "moment";
 import PageHelmut from "./template-components/PageHelmut";
 import { scrollToTop } from "./templateUtils";
 import PostHeadNavigator from "../navigation/PostHeadNavigator";
-import { BlogPostProps } from "../../../../types/Sitemap";
+import { BlogPostWrapperProps } from "../../../../types/Sitemap";
 
 /** Blog post template. */
-const BlogPost: React.FunctionComponent<BlogPostProps> = ({
+const BlogPost: React.FunctionComponent<BlogPostWrapperProps> = ({
   title,
   categoryTitle,
   categoryBaseName,

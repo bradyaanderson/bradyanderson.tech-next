@@ -1,14 +1,13 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../blog-components/Paragraph";
 import Image from "../../../blog-components/Image";
 import EmbeddedYouTubeVideo from "../../../blog-components/EmbeddedYouTubeVideo";
 import { Link } from "react-router-dom";
 
-function GameGearRepairPart3(props: BlogPostProps) {
+function GameGearRepairPart3({ BlogPost }: BlogPostProps) {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-3";
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         In <Link to={"game-gear-repair-part-2"}>part 2</Link>, I replaced the
         capacitors on the power PCB of my Game Gear and one capacitor (C68) on

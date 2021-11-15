@@ -1,13 +1,12 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../blog-components/Paragraph";
 import Image from "../../../blog-components/Image";
 
-function BlogNavigationUpdates(props: BlogPostProps) {
+function BlogNavigationUpdates({ BlogPost }: BlogPostProps) {
   const baseImagePath =
     "/blog/categories/website-updates/posts/blog-navigation-updates";
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         When I launched this blog, I created a sidebar to allow for quick
         navigation between posts. This worked pretty well, but it had a few

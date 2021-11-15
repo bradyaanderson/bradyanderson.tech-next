@@ -1,14 +1,13 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import Image from "../../../blog-components/Image";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import ExternalLink from "../../../blog-components/ExternalLink";
 import Paragraph from "../../../blog-components/Paragraph";
 
-function BootingASE30Post(props: BlogPostProps) {
+function BootingASE30Post({ BlogPost }: BlogPostProps) {
   const imageDirectory =
     "/blog/categories/retro-computing/posts/booting-an-se30";
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         In my last post, I wrote about how I discovered my Macintosh SE/30
         didn't have a hard drive. This explained why the computer didn't boot to

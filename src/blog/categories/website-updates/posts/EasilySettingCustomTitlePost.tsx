@@ -1,16 +1,15 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../blog-components/Paragraph";
 import Image from "../../../blog-components/Image";
 import ExternalLink from "../../../blog-components/ExternalLink";
 import Code from "../../../blog-components/Code";
 
-function EasilySettingCustomTitlePost(props: BlogPostProps) {
+function EasilySettingCustomTitlePost({ BlogPost }: BlogPostProps) {
   const baseAssetPath =
     "/blog/categories/bradyanderson-tech/posts/dynamically-updating-html-title";
 
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Paragraph>
         On this website, I use{" "}
         <ExternalLink link="https://github.com/facebook/react">

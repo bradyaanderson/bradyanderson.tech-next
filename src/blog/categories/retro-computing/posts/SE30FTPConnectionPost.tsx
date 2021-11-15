@@ -1,13 +1,12 @@
-import BlogPost from "../../../blog-components/page-templates/BlogPost";
 import { BlogPostProps } from "../../../../../types/Sitemap";
 import Image from "../../../blog-components/Image";
 import Paragraph from "../../../blog-components/Paragraph";
 import ExternalLink from "../../../blog-components/ExternalLink";
 
-function SE30FTPConnectionPost(props: BlogPostProps) {
+function SE30FTPConnectionPost({ BlogPost }: BlogPostProps) {
   const imageBasePath = `/blog/categories/retro-computing/posts/se30-ftp-connection`;
   return (
-    <BlogPost {...props}>
+    <BlogPost>
       <Image
         path={`${imageBasePath}/ExpansionCard.jpg`}
         maxWidth="16rem"
