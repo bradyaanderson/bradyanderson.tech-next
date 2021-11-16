@@ -1,0 +1,1 @@
+brady@top:~$ mogify -format png *

@@ -1,4 +1,5 @@
 import { BlogMap } from "../../types/Sitemap";
+import moment from "moment";
 import BlogIndex from "./BlogIndex";
 import RetroComputingCategory from "./categories/retro-computing/RetroComputingCategory";
 import OpeningAMacSE30Post from "./categories/retro-computing/posts/OpeningAMacSE30Post";
@@ -19,11 +20,12 @@ import FixingFloppyDrive from "./categories/retro-computing/posts/FixingFloppyDr
 import GameGearRepairPart1 from "./categories/retro-gaming/posts/GameGearRepairPart1";
 import GameGearRepairPart2 from "./categories/retro-gaming/posts/GameGearRepairPart2";
 import GameGearRepairPart3 from "./categories/retro-gaming/posts/GameGearRepairPart3";
-import moment from "moment";
 import BlogNavigationUpdates from "./categories/website-updates/posts/BlogNavigationUpdates";
 import SE30FTPConnectionPost from "./categories/retro-computing/posts/SE30FTPConnectionPost";
+import TakingAndConvertingScreenshotsPost from "./categories/retro-computing/posts/TakingAndConvertingScreenshotsPost";
 
 const DATE_FORMAT = "MM/DD/YYYY";
+const date = (dateString: string) => moment(dateString, DATE_FORMAT);
 
 const blogMap: BlogMap = {
   title: "Blog",
@@ -36,43 +38,49 @@ const blogMap: BlogMap = {
       routes: {
         "opening-a-mac-se30": {
           title: "Taking a Look Inside a Macintosh SE/30",
-          date: moment("08/05/2021", DATE_FORMAT),
+          date: date("08/05/2021"),
           Component: OpeningAMacSE30Post,
         },
         "booting-se30-without-a-hard-drive": {
           title: "Getting a Macintosh SE/30 Without a Hard Drive to Boot",
           Component: BootingASE30Post,
-          date: moment("08/10/2021", DATE_FORMAT),
+          date: date("08/10/2021"),
         },
         "apple-ii-keyboard-fix": {
           title: '"Fixing" an Apple Keyboard II',
           Component: FixingKeyboardPost,
-          date: moment("08/14/2021", DATE_FORMAT),
+          date: date("08/14/2021"),
         },
         "installing-scsi2sd-se30": {
           title: "Installing a SCSI2SD in a Macintosh SE/30",
           Component: InstallingSCSI2SDPost,
-          date: moment("08/18/2021", DATE_FORMAT),
+          date: date("08/18/2021"),
         },
         "fixing-macintosh-se30-sound-struggle": {
           title: "Attempting to Fix the Sound on a Macintosh SE/30",
           Component: FixingSE30SoundStruggle,
-          date: moment("08/23/2021", DATE_FORMAT),
+          date: date("08/23/2021"),
         },
         "whitening-a-macintosh": {
           title: "Retrobrighting a Macintosh SE/30's Case",
           Component: WhiteningAMacintoshPost,
-          date: moment("09/01/2021", DATE_FORMAT),
+          date: date("09/01/2021"),
         },
         "fixing-floppy-drive": {
           title: "Fixing a Macintosh SuperDrive That Won't Auto-Eject",
           Component: FixingFloppyDrive,
-          date: moment("09/15/2021", DATE_FORMAT),
+          date: date("09/15/2021"),
         },
         "se30-ftp-connection": {
           title: "Macintosh SE/30 - Connecting to a local FTP Server",
           Component: SE30FTPConnectionPost,
-          date: moment("11/11/2021", DATE_FORMAT),
+          date: date("11/11/2021"),
+        },
+        "taking-and-converting-screenshots": {
+          title:
+            "Taking Screenshots on System 7 and Converting to a Modern Format",
+          Component: TakingAndConvertingScreenshotsPost,
+          date: date("11/15/2021"),
         },
       },
     },
@@ -84,22 +92,22 @@ const blogMap: BlogMap = {
         "replacing-game-boy-color-speaker": {
           title: "Replacing the Speaker on a Game Boy Color",
           Component: ReplacingGameBoyColorSpeakerPost,
-          date: moment("08/17/2021", DATE_FORMAT),
+          date: date("08/17/2021"),
         },
         "game-gear-repair-part-1": {
           title: "Game Gear Repair: Part 1 - Disassembly and Cleaning",
           Component: GameGearRepairPart1,
-          date: moment("09/22/2021", DATE_FORMAT),
+          date: date("09/22/2021"),
         },
         "game-gear-repair-part-2": {
           title: "Game Gear Repair: Part 2 - Fixing the Power Issue",
           Component: GameGearRepairPart2,
-          date: moment("10/02/2021", DATE_FORMAT),
+          date: date("10/02/2021"),
         },
         "game-gear-repair-part-3": {
           title: "Game Gear Repair: Part 3 - Main and Sound Board Recapping",
           Component: GameGearRepairPart3,
-          date: moment("10/03/2021", DATE_FORMAT),
+          date: date("10/03/2021"),
         },
       },
     },
@@ -111,32 +119,32 @@ const blogMap: BlogMap = {
         "getting-started": {
           title: "Getting Started",
           Component: GettingStartedPost,
-          date: moment("07/25/2021", DATE_FORMAT),
+          date: date("07/25/2021"),
         },
         "custom-hover-domain-for-heroku-app": {
           title: "Using a Hover Domain with Heroku",
           Component: CustomHoverDomainForHerokuAppPost,
-          date: moment("07/27/2021", DATE_FORMAT),
+          date: date("07/27/2021"),
         },
         "moving-to-aws": {
           title: "Moving From Heroku to AWS",
           Component: MovingToAwsPost,
-          date: moment("07/30/2021", DATE_FORMAT),
+          date: date("07/30/2021"),
         },
         "setting-up-image-storage": {
           title: "Simple Image Storage using Amazon S3",
           Component: SettingUpImageStoragePost,
-          date: moment("08/03/2021", DATE_FORMAT),
+          date: date("08/03/2021"),
         },
         "dynamically-updating-html-title": {
           title: "Dynamically Updating the HTML Title with React Helmet",
           Component: EasilySettingCustomTitlePost,
-          date: moment("09/12/2021", DATE_FORMAT),
+          date: date("09/12/2021"),
         },
         "navigation-updates": {
           title: "Blog Navigation Updates",
           Component: BlogNavigationUpdates,
-          date: moment("10/18/2021", DATE_FORMAT),
+          date: date("10/18/2021"),
         },
       },
     },
