@@ -35,6 +35,9 @@
     "typescript": "^4.3.3",
     "web-vitals": "^1.1.2"
   },
+  "devDependencies": {
+    "prettier": "2.5.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -60,6 +63,7 @@
     ]
   },
   "engines": {
-    "node": "16.3.0"
+    "node": "^16.3.0",
+    "npm": "^8.1.4"
   }
 }
