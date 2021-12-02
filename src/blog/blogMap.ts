@@ -23,6 +23,7 @@ import GameGearRepairPart3 from "./categories/retro-gaming/posts/GameGearRepairP
 import BlogNavigationUpdates from "./categories/website-updates/posts/BlogNavigationUpdates";
 import SE30FTPConnectionPost from "./categories/retro-computing/posts/SE30FTPConnectionPost";
 import TakingAndConvertingScreenshotsPost from "./categories/retro-computing/posts/TakingAndConvertingScreenshotsPost";
+import CartridgeCleaningPost from "./categories/retro-gaming/posts/CartridgeCleaningPost";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);
@@ -108,6 +109,12 @@ const blogMap: BlogMap = {
           title: "Game Gear Repair: Part 3 - Main and Sound Board Recapping",
           Component: GameGearRepairPart3,
           date: date("10/03/2021"),
+        },
+        "cart-cleaning": {
+          title:
+            "Cartridge Cleaning - Removing Permanent Marker and Cleaning Contacts",
+          Component: CartridgeCleaningPost,
+          date: date("12/01/2021"),
         },
       },
     },
