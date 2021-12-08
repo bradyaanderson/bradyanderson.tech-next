@@ -24,6 +24,7 @@ import BlogNavigationUpdates from "./categories/website-updates/posts/BlogNaviga
 import SE30FTPConnectionPost from "./categories/retro-computing/posts/SE30FTPConnectionPost";
 import TakingAndConvertingScreenshotsPost from "./categories/retro-computing/posts/TakingAndConvertingScreenshotsPost";
 import CartridgeCleaningPost from "./categories/retro-gaming/posts/CartridgeCleaningPost";
+import MacintoshCHelloWorldPost from "./categories/retro-computing/posts/MacintoshCHelloWorldPost";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);
@@ -82,6 +83,11 @@ const blogMap: BlogMap = {
             "Taking Screenshots on System 7 and Converting to a Modern Format",
           Component: TakingAndConvertingScreenshotsPost,
           date: date("11/15/2021"),
+        },
+        "macintosh-c-hello-world": {
+          title: "68k Macintosh C Programming - Hello World",
+          Component: MacintoshCHelloWorldPost,
+          date: date("12/07/2021"),
         },
       },
     },
