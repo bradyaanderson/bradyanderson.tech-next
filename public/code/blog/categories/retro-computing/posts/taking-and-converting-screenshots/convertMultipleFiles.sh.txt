@@ -1,1 +1,1 @@
-brady@top:~$ mogify -format png *
+brady@top:~$ mogrify -format png *
