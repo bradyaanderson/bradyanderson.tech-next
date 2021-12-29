@@ -25,6 +25,7 @@ import SE30FTPConnectionPost from "./categories/retro-computing/posts/SE30FTPCon
 import TakingAndConvertingScreenshotsPost from "./categories/retro-computing/posts/TakingAndConvertingScreenshotsPost";
 import CartridgeCleaningPost from "./categories/retro-gaming/posts/CartridgeCleaningPost";
 import MacintoshCHelloWorldPost from "./categories/retro-computing/posts/MacintoshCHelloWorldPost";
+import MacintoshCAdvancedHelloWorld from "./categories/retro-computing/posts/MacintoshCAdvancedHelloWorld";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);
@@ -88,6 +89,11 @@ const blogMap: BlogMap = {
           title: "68k Macintosh C Programming - Hello World",
           Component: MacintoshCHelloWorldPost,
           date: date("12/07/2021"),
+        },
+        "macintosh-c-advanced-hello-world": {
+          title: "68k Macintosh C Programming - More Advanced Hello World",
+          Component: MacintoshCAdvancedHelloWorld,
+          date: date("12/28/2021"),
         },
       },
     },
