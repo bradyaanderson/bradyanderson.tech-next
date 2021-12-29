@@ -29,7 +29,7 @@ function Code({ language, path, filename }: Props) {
   return (
     <div
       style={{
-        maxWidth: "36rem",
+        maxWidth: "48rem",
         margin: "auto",
       }}
     >

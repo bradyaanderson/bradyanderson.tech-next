@@ -91,7 +91,7 @@ const blogMap: BlogMap = {
           date: date("12/07/2021"),
         },
         "macintosh-c-advanced-hello-world": {
-          title: "68k Macintosh C Programming - More Advanced Hello World",
+          title: "68k Macintosh C Programming - A More Advanced Hello World",
           Component: MacintoshCAdvancedHelloWorld,
           date: date("12/28/2021"),
         },
