@@ -26,6 +26,7 @@ import TakingAndConvertingScreenshotsPost from "./categories/retro-computing/pos
 import CartridgeCleaningPost from "./categories/retro-gaming/posts/CartridgeCleaningPost";
 import MacintoshCHelloWorldPost from "./categories/retro-computing/posts/MacintoshCHelloWorldPost";
 import MacintoshCAdvancedHelloWorld from "./categories/retro-computing/posts/MacintoshCAdvancedHelloWorld";
+import USBKeyboardWithCompactMac from "./categories/retro-computing/posts/USBKeyboardWithCompactMac";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);
@@ -95,6 +96,11 @@ const blogMap: BlogMap = {
           Component: MacintoshCAdvancedHelloWorld,
           date: date("12/28/2021"),
         },
+        "usb-keyboard-with-compact-mac": {
+          title: "Using a USB keyboard with a Compact Macintosh",
+          Component: USBKeyboardWithCompactMac,
+          date: date("01/15/2022"),
+        }
       },
     },
     /* Retro Gaming Blog Category */
