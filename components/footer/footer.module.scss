@@ -1,0 +1,17 @@
+@import "../../styles/variables.module";
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+
+  padding: 0.625rem 0;
+  display: flex;
+  justify-content: center;
+  color: $primary-light;
+
+  a {
+    color: $primary-light;
+  }
+}

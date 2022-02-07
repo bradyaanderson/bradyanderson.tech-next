@@ -1,0 +1,10 @@
+@import "../styles/variables.module";
+
+.mainContainer {
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  padding-bottom: $footer-height;;
+}
