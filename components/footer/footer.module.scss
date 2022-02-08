@@ -1,15 +1,19 @@
 @import "../../styles/variables.module";
 
 .footer {
+  color: $primary-light;
+  font-size: 1em;
+  
+  // keep footer at the bottom of the page
   position: absolute;
+  padding: 0;
   bottom: 0;
   width: 100%;
   height: $footer-height;
 
-  padding: 0.625rem 0;
+  // center content
   display: flex;
   justify-content: center;
-  color: $primary-light;
 
   a {
     color: $primary-light;

@@ -1,9 +1,7 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import styles from '../styles/home.module.scss';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
@@ -13,17 +11,20 @@ const Home: NextPage = () => {
           <link rel="icon" href="/favicon.ico"/>
         </Head>
         <main>
-          <Container className="home-container">
-            <Row className="home-content text-center">
-              <Col>
-                <Image
-                    className="logo rounded mx-auto d-block"
-                    src="/logos/logo1024.png"
-                />
-                <h1 className="title">Welcome to the new bradyanderson.tech</h1>
-              </Col>
-            </Row>
-          </Container>
+          <div className={styles.homeContainer}>
+            <div className={styles.logoContainer}>
+              <Image
+                  src="/logos/logo1024-White.png"
+                  alt="Logo"
+                  height={'100%'}
+                  width={'100%'}
+                  layout={'responsive'}
+              />
+            </div>
+            <div className={styles.titleContainer}>
+              <h1>Welcome to bradyanderson.tech.</h1>
+            </div>
+          </div>
         </main>
       </div>
   )

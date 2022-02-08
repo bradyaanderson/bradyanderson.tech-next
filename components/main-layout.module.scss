@@ -1,10 +1,13 @@
 @import "../styles/variables.module";
 
-.mainContainer {
+.appContainer {
+  // ensures that app will be at least the height of window.
   min-height: 100vh;
   position: relative;
 }
 
-.content {
-  padding-bottom: $footer-height;;
+.mainContainer {
+  margin: 0;
+  // bottom Padding ensures that footer does not overlap main content.
+  padding: 0 0 $footer-height;
 }

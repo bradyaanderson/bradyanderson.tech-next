@@ -10,9 +10,9 @@ interface Props {
 function MainLayout({children}: Props) {
   return (
       <>
-        <div className={styles.mainContainer}>
+        <div className={styles.appContainer}>
           <Nav/>
-          <main>{children}</main>
+          <main className={styles.mainContainer}>{children}</main>
           <Footer/>
         </div>
       </>
