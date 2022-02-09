@@ -10,7 +10,7 @@ interface Props {
 function CategoryHeadNavigator({
   currentCategoryTitle,
   currentPostTitle,
-    category
+  category,
 }: Props) {
   console.log(category);
   return (

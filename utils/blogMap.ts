@@ -25,7 +25,7 @@ import CartridgeCleaningPost from "../components/blog/blog-posts/retro-gaming/po
 import MacintoshCHelloWorldPost from "../components/blog/blog-posts/retro-computing/posts/MacintoshCHelloWorldPost";
 import MacintoshCAdvancedHelloWorld from "../components/blog/blog-posts/retro-computing/posts/MacintoshCAdvancedHelloWorld";
 import USBKeyboardWithCompactMac from "../components/blog/blog-posts/retro-computing/posts/USBKeyboardWithCompactMac";
-import {BlogMap} from "../types/Sitemap";
+import { BlogMap } from "../types/Sitemap";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);
@@ -81,7 +81,7 @@ const blogMap: BlogMap = {
         },
         "taking-and-converting-screenshots": {
           title:
-              "Taking Screenshots on System 7 and Converting to a Modern Format",
+            "Taking Screenshots on System 7 and Converting to a Modern Format",
           Component: TakingAndConvertingScreenshotsPost,
           date: date("11/15/2021"),
         },
@@ -129,7 +129,7 @@ const blogMap: BlogMap = {
         },
         "cart-cleaning": {
           title:
-              "Cartridge Cleaning - Removing Permanent Marker and Cleaning Contacts",
+            "Cartridge Cleaning - Removing Permanent Marker and Cleaning Contacts",
           Component: CartridgeCleaningPost,
           date: date("12/01/2021"),
         },

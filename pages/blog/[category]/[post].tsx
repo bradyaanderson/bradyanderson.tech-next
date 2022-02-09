@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 import { BlogPostTemplateProps } from "../../../types/Sitemap";
 import PostHeadNavigator from "../../../components/blog/navigation/PostHeadNavigator";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 import blogMap from "../../../utils/blogMap";
 
 /** Blog post template. */
@@ -16,7 +16,7 @@ const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
   const postData = categoryData.routes[postBaseName];
   if (postData == null) return null;
   const { title: categoryTitle } = categoryData;
-  const {title, date, Component} = postData;
+  const { title, date, Component } = postData;
 
   return (
     <div className={"blog-content"}>
@@ -26,11 +26,11 @@ const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
           currentPostTitle={title}
           category={categoryBasename}
         />
-        <h1 className={`blog-title ${category}-accent-text`}>
-          {title}
-        </h1>
+        <h1 className={`blog-title ${category}-accent-text`}>{title}</h1>
         <span className="blog-date">{moment(date).format("MM/DD/YYYY")}</span>
-        <div className="blog-children"><Component /></div>
+        <div className="blog-children">
+          <Component />
+        </div>
       </div>
     </div>
   );
