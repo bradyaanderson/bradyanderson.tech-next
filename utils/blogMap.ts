@@ -26,7 +26,6 @@ import MacintoshCHelloWorldPost from "../components/blog/blog-posts/retro-comput
 import MacintoshCAdvancedHelloWorld from "../components/blog/blog-posts/retro-computing/posts/MacintoshCAdvancedHelloWorld";
 import USBKeyboardWithCompactMac from "../components/blog/blog-posts/retro-computing/posts/USBKeyboardWithCompactMac";
 import {BlogMap} from "../types/Sitemap";
-import BlogIndex from "../pages/blog";
 
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);

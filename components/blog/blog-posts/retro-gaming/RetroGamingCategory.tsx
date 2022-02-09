@@ -1,11 +1,9 @@
-import { BlogCategoryProps } from "../../../../types/Sitemap";
 import Paragraph from "../../../general/Paragraph";
-import BlogCategory from "../../page-templates/BlogCategory";
 
 /** Index for Retro Gaming blog section */
-function RetroGamingCategory(props: BlogCategoryProps) {
+function RetroGamingCategory() {
   return (
-    <BlogCategory {...props}>
+    <div>
       <Paragraph>
         Retro game consoles are retro computers, but I've decided to break posts
         about gaming into their own category. Retro gaming fascinates me for the
@@ -26,7 +24,7 @@ function RetroGamingCategory(props: BlogCategoryProps) {
         it's like to develop games for these consoles. This is what this section
         of the blog will be dedicated to.
       </Paragraph>
-    </BlogCategory>
+    </div>
   );
 }
 

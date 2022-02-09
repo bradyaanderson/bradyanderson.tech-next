@@ -1,11 +1,9 @@
-import { BlogCategoryProps } from "../../../../types/Sitemap";
 import Paragraph from "../../../general/Paragraph";
-import BlogCategory from "../../page-templates/BlogCategory";
 
 /** Index for Retro Computing blog category */
-function RetroComputingCategory(props: BlogCategoryProps) {
+function RetroComputingCategory() {
   return (
-    <BlogCategory {...props}>
+    <div>
       <Paragraph>
         I love all computers, but to me, there is something special about retro
         computing. I was born in 1998, so it's not nostalgia that drives my love
@@ -20,7 +18,7 @@ function RetroComputingCategory(props: BlogCategoryProps) {
         blog will allow me to document some of my adventures in retro computing
         in a more permanent way.
       </Paragraph>
-    </BlogCategory>
+    </div>
   );
 }
 

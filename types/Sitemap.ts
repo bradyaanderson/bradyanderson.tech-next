@@ -36,7 +36,7 @@ export interface BlogRoute extends BlogComponentProps {
 
 /** Blog Category Route */
 export interface BlogCategoryRoute extends BlogRoute {
-  Component: (props: BlogCategoryProps) => JSX.Element;
+  Component: () => JSX.Element;
   routes: BlogPostRoutes;
 }
 

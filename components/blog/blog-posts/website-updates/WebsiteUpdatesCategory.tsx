@@ -1,12 +1,10 @@
-import { BlogCategoryProps } from "../../../../types/Sitemap";
 import Paragraph from "../../../general/Paragraph";
 import ExternalLink from "../../../general/ExternalLink";
-import BlogCategory from "../../page-templates/BlogCategory";
 
 /** Index for Website Update blog category */
-function WebsiteUpdatesCategory(props: BlogCategoryProps) {
+function WebsiteUpdatesCategory() {
   return (
-    <BlogCategory {...props}>
+    <div>
       <div>
         <Paragraph>
           I bought the domain name bradyanderson.tech several years ago. I used
@@ -39,7 +37,7 @@ function WebsiteUpdatesCategory(props: BlogCategoryProps) {
           .
         </Paragraph>
       </div>
-    </BlogCategory>
+    </div>
   );
 }
 

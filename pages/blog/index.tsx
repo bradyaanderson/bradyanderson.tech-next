@@ -4,9 +4,10 @@ import blogMap from "../../utils/blogMap";
 import CategoryNavigationContainer from "../../components/blog/navigation/CategoryNavigationContainer";
 import {getCategoryToLink, getRecentPostDetails} from "../../utils/navigationUtils";
 import PostNavigationContainer from "../../components/blog/navigation/PostNavigationContainer";
+import {NextPage} from "next";
 
 /** Index for blog. */
-function BlogIndex() {
+const BlogIndex: NextPage = () => {
   const {routes} = blogMap;
   return (
         <div className="blog-content">
