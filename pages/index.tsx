@@ -3,9 +3,9 @@ import Head from 'next/head'
 import styles from '../styles/home.module.scss';
 import Image from 'next/image';
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
-      <div>
+      <>
         <Head>
           <title>bradyanderson.tech</title>
           <link rel="icon" href="/favicon.ico"/>
@@ -26,8 +26,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </main>
-      </div>
+      </>
   )
 }
 
-export default Home
+export default HomePage;

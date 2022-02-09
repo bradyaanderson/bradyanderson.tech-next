@@ -12,7 +12,7 @@ function MainLayout({children}: Props) {
       <>
         <div className={styles.appContainer}>
           <Nav/>
-          <main className={styles.mainContainer}>{children}</main>
+          <div className={styles.mainContainer}>{children}</div>
           <Footer/>
         </div>
       </>

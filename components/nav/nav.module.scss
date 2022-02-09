@@ -20,7 +20,10 @@
     text-decoration: none;
   }
 
-  a, a:link, a:hover, a:active {
+  a,
+  a:link,
+  a:hover,
+  a:active {
     color: $primary-text-color;
   }
 
