@@ -7,11 +7,13 @@ import blogMap from "../../../utils/blogMap";
 
 /** Blog post template. */
 const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
-  const router = useRouter();
-  const { query } = router;
+  const { query } = useRouter();
   const { category, post } = query;
-  const categoryData = blogMap.routes[category];
-  const postData = categoryData.routes[post];
+  const categoryBasename = Array.isArray(category) ? category[0] : category;
+  const postBaseName = Array.isArray(post) ? post[0] : post;
+  const categoryData = blogMap.routes[categoryBasename];
+  if (categoryData == null) return null;
+  const postData = categoryData.routes[postBaseName];
   if (postData == null) return null;
   const { title: categoryTitle } = categoryData;
   const {title, date, Component} = postData;
@@ -22,6 +24,7 @@ const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
         <PostHeadNavigator
           currentCategoryTitle={categoryTitle}
           currentPostTitle={title}
+          category={categoryBasename}
         />
         <h1 className={`blog-title ${category}-accent-text`}>
           {title}
