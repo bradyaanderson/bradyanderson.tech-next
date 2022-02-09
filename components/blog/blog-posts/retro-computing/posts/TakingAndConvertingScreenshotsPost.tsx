@@ -9,7 +9,7 @@ function TakingAndConvertingScreenshotsPost() {
   return (
     <div>
       <Paragraph>
-        My <Link href={"./se30-ftp-connection"}>last blog post</Link>, was the
+        My <Link href={"/blog/retro-computing/se30-ftp-connection"}>last blog post</Link>, was the
         first time I used screenshots taken on my Macintosh SE/30. At first, I
         was going to use an emulator to grab screenshots, but I figured that
         using screenshots taken on the actual hardware would be better. Getting
@@ -70,7 +70,7 @@ function TakingAndConvertingScreenshotsPost() {
         I recently set up an FTP client on the SE/30 so I can easily move files
         between computers. This was by far easier than using a floppy disk for
         transfers. For more details on the FTP, check out this{" "}
-        <Link href={"./se30-ftp-connection"}>post</Link>.
+        <Link href={"/blog/retro-computing/se30-ftp-connection"}>post</Link>.
       </Paragraph>
       <Image
         path={`${baseAssetPath}/Fetch.png`}

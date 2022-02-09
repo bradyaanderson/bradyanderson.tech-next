@@ -24,7 +24,7 @@ const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
         <PostHeadNavigator
           currentCategoryTitle={categoryTitle}
           currentPostTitle={title}
-          category={categoryBasename}
+          categoryBasename={categoryBasename}
         />
         <h1 className={`blog-title ${category}-accent-text`}>{title}</h1>
         <span className="blog-date">{moment(date).format("MM/DD/YYYY")}</span>

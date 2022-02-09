@@ -2,16 +2,18 @@ import Link from "next/link";
 import * as path from "path";
 
 interface Props {
-  categoryName: string;
-  categoryPath: string;
+  /** The title of the category to be displayed to user. */
+  readonly categoryTitle: string;
+  /** The URL path to the category/ */
+  readonly categoryPath: string;
 }
 
 /** Navigates to a blog category. */
-function CategoryNavigator({ categoryName, categoryPath }: Props) {
+function CategoryNavigator({ categoryTitle, categoryPath }: Props) {
   const baseName = path.basename(categoryPath);
   return (
     <li className={`${baseName}-category-navigation`}>
-      <Link href={categoryPath}>{categoryName}</Link>
+      <Link href={categoryPath}>{categoryTitle}</Link>
     </li>
   );
 }

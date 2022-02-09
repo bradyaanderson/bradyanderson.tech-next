@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
 
-function FixingFloppyDrive({ BlogPost }: BlogPostProps) {
+function FixingFloppyDrive() {
   const baseImagePath =
     "/blog/categories/retro-computing/posts/floppy-drive-fix";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         After retrobrighting my Macintosh SE/30’s case, I reinstalled all the
         internal components back into the case. I spent some time testing some
@@ -114,7 +113,7 @@ function FixingFloppyDrive({ BlogPost }: BlogPostProps) {
         now I can finally spend less time on fixing the hardware of this machine
         and start experimenting with the software.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

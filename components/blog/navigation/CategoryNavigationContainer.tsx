@@ -2,7 +2,8 @@ import CategoryNavigator from "./CategoryNavigator";
 import { NameToPathMap } from "../../../types/Blog";
 
 interface Props {
-  categoryNameToPath: NameToPathMap;
+  /** A map of category name to URL path. */
+  readonly categoryNameToPath: NameToPathMap;
 }
 
 /** A container that allows for navigation to different blog categories. */
@@ -13,7 +14,7 @@ function CategoryNavigationContainer({ categoryNameToPath }: Props) {
       <ul>
         {Object.keys(categoryNameToPath).map((categoryName) => (
           <CategoryNavigator
-            categoryName={categoryName}
+            categoryTitle={categoryName}
             categoryPath={categoryNameToPath[categoryName]}
             key={categoryName}
           />

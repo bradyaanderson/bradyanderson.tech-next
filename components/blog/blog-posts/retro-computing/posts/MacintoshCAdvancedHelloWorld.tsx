@@ -8,7 +8,7 @@ function MacintoshCAdvancedHelloWorld() {
   return (
     <div>
       <Paragraph>
-        In my <Link href={"macintosh-c-hello-world"}>last post</Link>, I created
+        In my <Link href={"/blog/retro-computing/macintosh-c-hello-world"}>last post</Link>, I created
         a very simple Hello World C program on my Macintosh SE/30 using THINK C.
         This program used printf to print out to the screen. While this worked,
         it isn't the Macintosh-way of doing things. So I'll be taking advantage
@@ -69,6 +69,11 @@ function MacintoshCAdvancedHelloWorld() {
         closely follows how 68k Macintosh programs were written. I'm hoping to
         continue building more advanced programs soon.
       </Paragraph>
+
+      <h2>Resource</h2>
+      <ul>
+        <li><ExternalLink link={"https://gist.github.com/bradyaanderson/356d7017e3efc71bcbe427e0798de627"}>Source Code</ExternalLink></li>
+      </ul>
     </div>
   );
 }

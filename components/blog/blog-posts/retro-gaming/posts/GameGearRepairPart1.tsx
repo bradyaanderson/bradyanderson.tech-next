@@ -165,7 +165,7 @@ function GameGearRepairPart1() {
         capacitors.
       </Paragraph>
       <Paragraph>
-        <Link href={"game-gear-repair-part-2"}>Continued in part 2.</Link>
+        <Link href={"/blog/retro-gaming/game-gear-repair-part-2"}>Continued in part 2.</Link>
       </Paragraph>
     </div>
   );
