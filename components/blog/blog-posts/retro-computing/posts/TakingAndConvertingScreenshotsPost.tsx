@@ -1,14 +1,13 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 import Link from "next/link";
 import Code from "../../../../general/Code";
 
-function TakingAndConvertingScreenshotsPost({ BlogPost }: BlogPostProps) {
+function TakingAndConvertingScreenshotsPost() {
   const baseAssetPath = `/blog/categories/retro-computing/posts/taking-and-converting-screenshots`;
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         My <Link href={"./se30-ftp-connection"}>last blog post</Link>, was the
         first time I used screenshots taken on my Macintosh SE/30. At first, I
@@ -147,7 +146,7 @@ function TakingAndConvertingScreenshotsPost({ BlogPost }: BlogPostProps) {
         how simple the command-line interface is. I bet I will use this tool a
         lot in the future.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

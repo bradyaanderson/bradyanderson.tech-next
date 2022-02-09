@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function FixingSE30SoundStruggle({ BlogPost }: BlogPostProps) {
+function FixingSE30SoundStruggle() {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/fixing-macintosh-se30-sound-struggle";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         I often tell people I'm a software engineer because I'm too clumsy to
         work with real things. Writing code feels natural, but I struggle to
@@ -153,7 +152,7 @@ function FixingSE30SoundStruggle({ BlogPost }: BlogPostProps) {
           </ExternalLink>
         </li>
       </ul>
-    </BlogPost>
+    </div>
   );
 }
 

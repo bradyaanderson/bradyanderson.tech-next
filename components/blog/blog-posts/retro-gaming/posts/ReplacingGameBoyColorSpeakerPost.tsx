@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
 
-function ReplacingGameBoyColorSpeakerPost({ BlogPost }: BlogPostProps) {
+function ReplacingGameBoyColorSpeakerPost() {
   const imageBasePath =
     "/blog/categories/retro-gaming/replacing-game-boy-color-speaker";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         A few years ago, I got a Game Boy Color. Unfortunately, the speaker
         never worked. However, The headphone jack worked, so I wasn't too
@@ -97,7 +96,7 @@ function ReplacingGameBoyColorSpeakerPost({ BlogPost }: BlogPostProps) {
         easy and cheap, so I would highly recommend giving it a shot if you are
         facing the same issue with your console.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

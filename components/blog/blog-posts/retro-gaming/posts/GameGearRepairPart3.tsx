@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Link from "next/link";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
 
-function GameGearRepairPart3({ BlogPost }: BlogPostProps) {
+function GameGearRepairPart3() {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-3";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         In <Link href={"game-gear-repair-part-2"}>part 2</Link>, I replaced the
         capacitors on the power PCB of my Game Gear and one capacitor (C68) on
@@ -144,7 +143,7 @@ function GameGearRepairPart3({ BlogPost }: BlogPostProps) {
         to play. I’ve started playing Sonic 2, and I’m looking forward to
         playing some of the other games I own like Ecco the Dolphin and NBA Jam.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

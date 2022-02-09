@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 
 const imageBasePath =
   "/blog/categories/retro-computing/posts/se30-keyboard-fix";
 
-function FixingKeyboardPost({ BlogPost }: BlogPostProps) {
+function FixingKeyboardPost() {
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         When trying to solve a problem, I can sometimes fail to see the simple
         solution right in front of me. This time, however, I'm glad to admit
@@ -113,7 +112,7 @@ function FixingKeyboardPost({ BlogPost }: BlogPostProps) {
         simple solutions like this, but maybe I'll remember how I fixed my Apple
         Keyboard II and check the simple things before I dive in too deep.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

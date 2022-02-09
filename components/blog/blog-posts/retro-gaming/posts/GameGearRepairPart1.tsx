@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Link from "next/link";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
 
-function GameGearRepairPart1({ BlogPost }: BlogPostProps) {
+function GameGearRepairPart1() {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-1";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         The Sega Game Gear came out in 1990, less than 2 years after the
         Nintendo Game Boy. Unlike the Game Boy, though, the Game Gear has a
@@ -168,7 +167,7 @@ function GameGearRepairPart1({ BlogPost }: BlogPostProps) {
       <Paragraph>
         <Link href={"game-gear-repair-part-2"}>Continued in part 2.</Link>
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

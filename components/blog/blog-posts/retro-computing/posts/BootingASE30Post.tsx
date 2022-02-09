@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function BootingASE30Post({ BlogPost }: BlogPostProps) {
+function BootingASE30Post() {
   const imageDirectory =
     "/blog/categories/retro-computing/posts/booting-an-se30";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         In my last post, I wrote about how I discovered my Macintosh SE/30
         didn't have a hard drive. This explained why the computer didn't boot to
@@ -128,7 +127,7 @@ function BootingASE30Post({ BlogPost }: BlogPostProps) {
         built-in apps. I noticed my keyboard didn't work though... But that
         would be a problem for a different night.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

@@ -1,15 +1,14 @@
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Image from "../../../../general/S3Image";
 import ExternalLink from "../../../../general/ExternalLink";
 import Code from "../../../../general/Code";
 
-function EasilySettingCustomTitlePost({ BlogPost }: BlogPostProps) {
+function EasilySettingCustomTitlePost() {
   const baseAssetPath =
     "/blog/categories/bradyanderson-tech/posts/dynamically-updating-html-title";
 
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         On this website, I use{" "}
         <ExternalLink link="https://github.com/facebook/react">
@@ -125,7 +124,7 @@ ef688a4031c5b/public/index.html"
         add it to my list of packages that I should include in any future
         projects.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

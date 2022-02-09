@@ -1,11 +1,10 @@
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Image from "../../../../general/S3Image";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function SettingUpImageStoragePost({ BlogPost }: BlogPostProps) {
+function SettingUpImageStoragePost() {
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         I want to post a lot of images on this blog, but my current setup won't
         make that easy. Right now, I'm storing all images in my Git repository.
@@ -69,7 +68,7 @@ function SettingUpImageStoragePost({ BlogPost }: BlogPostProps) {
         for some posts on a Macintosh SE/30 that I recently picked up. I'm
         pretty excited to share what I've learned.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

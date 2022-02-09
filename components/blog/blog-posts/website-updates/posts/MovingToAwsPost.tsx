@@ -1,10 +1,9 @@
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function MovingToAwsPost({ BlogPost }: BlogPostProps) {
+function MovingToAwsPost() {
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         Well, that didn't last long... I was planning some upcoming posts for
         this blog and I realized that I'm going to need ample space to post
@@ -41,7 +40,7 @@ function MovingToAwsPost({ BlogPost }: BlogPostProps) {
         domain name. This will save me $10 dollars a year! It should also be
         slightly easier to configure the domain, so that's a plus.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

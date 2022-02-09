@@ -1,11 +1,10 @@
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Image from "../../../../general/S3Image";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function CustomHoverDomainForHerokuAppPost({ BlogPost }: BlogPostProps) {
+function CustomHoverDomainForHerokuAppPost() {
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         When you create an application in{" "}
         <ExternalLink link="https://www.heroku.com/">Heroku</ExternalLink>, you
@@ -111,7 +110,7 @@ function CustomHoverDomainForHerokuAppPost({ BlogPost }: BlogPostProps) {
           </ExternalLink>
         </li>
       </ul>
-    </BlogPost>
+    </div>
   );
 }
 

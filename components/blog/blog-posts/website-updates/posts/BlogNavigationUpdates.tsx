@@ -1,12 +1,11 @@
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Image from "../../../../general/S3Image";
 
-function BlogNavigationUpdates({ BlogPost }: BlogPostProps) {
+function BlogNavigationUpdates() {
   const baseImagePath =
     "/blog/categories/website-updates/posts/blog-navigation-updates";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         When I launched this blog, I created a sidebar to allow for quick
         navigation between posts. This worked pretty well, but it had a few
@@ -78,7 +77,7 @@ function BlogNavigationUpdates({ BlogPost }: BlogPostProps) {
         white or black like before. I’m still finalizing the colors scheme of
         this website so there may be some more updates soon.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

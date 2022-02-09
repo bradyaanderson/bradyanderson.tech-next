@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 import Link from "next/link";
 
-function USBKeyboardWithCompactMac({ BlogPost }: BlogPostProps) {
+function USBKeyboardWithCompactMac() {
   const baseAssetPath = `/blog/categories/retro-computing/posts/usb-keyboard-with-compact-mac`;
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         As I learn to write code for my Macintosh SE/30, I’ve tried to pretend
         that I am a programmer in the 90s. Instead of learning from the
@@ -105,7 +104,7 @@ function USBKeyboardWithCompactMac({ BlogPost }: BlogPostProps) {
         computers, just like me. Using the Wombat and my HHKB should make
         programming even more enjoyable on SE/30.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Link from "next/link";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function MacintoshCAdvancedHelloWorld({ BlogPost }: BlogPostProps) {
+function MacintoshCAdvancedHelloWorld() {
   const baseAssetPath = `/blog/categories/retro-computing/posts/macintosh-c-advanced-hello-world`;
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         In my <Link href={"macintosh-c-hello-world"}>last post</Link>, I created
         a very simple Hello World C program on my Macintosh SE/30 using THINK C.
@@ -70,7 +69,7 @@ function MacintoshCAdvancedHelloWorld({ BlogPost }: BlogPostProps) {
         closely follows how 68k Macintosh programs were written. I'm hoping to
         continue building more advanced programs soon.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

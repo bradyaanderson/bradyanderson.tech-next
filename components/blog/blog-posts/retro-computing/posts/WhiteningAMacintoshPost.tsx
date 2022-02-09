@@ -1,13 +1,12 @@
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 
-function WhiteningAMacintoshPost({ BlogPost }: BlogPostProps) {
+function WhiteningAMacintoshPost() {
   const baseImagePath = `/blog/categories/retro-computing/posts/whitening-a-macintosh`;
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         When exposed to UV light, the plastic on some older electronics will
         turn yellow over time. The discoloration on doesn’t affect the
@@ -122,7 +121,7 @@ function WhiteningAMacintoshPost({ BlogPost }: BlogPostProps) {
           />
         </Col>
       </Row>
-    </BlogPost>
+    </div>
   );
 }
 

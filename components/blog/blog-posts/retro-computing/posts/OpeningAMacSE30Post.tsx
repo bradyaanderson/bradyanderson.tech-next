@@ -1,14 +1,13 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function OpeningAMacSE30Post({ BlogPost }: BlogPostProps) {
+function OpeningAMacSE30Post() {
   const imageBasePath =
     "/blog/categories/retro-computing/posts/opening-a-mac-se-30";
 
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         On June 13th, I saw a Macintosh SE/30 at an antique store by my
         apartment. I've always wanted a retro Apple computer, but I knew almost
@@ -123,7 +122,7 @@ function OpeningAMacSE30Post({ BlogPost }: BlogPostProps) {
           </ExternalLink>
         </li>
       </ul>
-    </BlogPost>
+    </div>
   );
 }
 

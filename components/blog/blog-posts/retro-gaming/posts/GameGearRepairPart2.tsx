@@ -1,14 +1,13 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Link from "next/link";
 import ExternalLink from "../../../../general/ExternalLink";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
 
-function GameGearRepairPart2({ BlogPost }: BlogPostProps) {
+function GameGearRepairPart2() {
   const baseImagePath = "/blog/categories/retro-gaming/game-gear-repair-part-2";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         In <Link href={"game-gear-repair-part-1"}>part 1</Link>, I started my
         repair of a broken Game Gear by disassembling it and cleaning corrosion
@@ -153,7 +152,7 @@ function GameGearRepairPart2({ BlogPost }: BlogPostProps) {
       <Paragraph>
         <Link href={"game-gear-repair-part-3"}>Continued in part 3.</Link>
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

@@ -1,11 +1,10 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 
-function CartridgeCleaningPost({ BlogPost }: BlogPostProps) {
+function CartridgeCleaningPost() {
   const baseImagePath = "/blog/categories/retro-gaming/cart-cleaning";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         Every so often, I come across a poorly listed eBay auction that’s priced
         significantly lower than the value of what’s being sold. Last week I
@@ -184,7 +183,7 @@ function CartridgeCleaningPost({ BlogPost }: BlogPostProps) {
         completely working. I think I can confidently say this is the best eBay
         auction I have ever won.
       </Paragraph>
-    </BlogPost>
+    </div>
   );
 }
 

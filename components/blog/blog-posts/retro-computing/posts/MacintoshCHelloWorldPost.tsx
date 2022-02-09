@@ -1,13 +1,12 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function MacintoshCHelloWorldPost({ BlogPost }: BlogPostProps) {
+function MacintoshCHelloWorldPost() {
   const baseImagePath =
     "/blog/categories/retro-computing/posts/macintosh-c-hello-world";
   return (
-    <BlogPost>
+    <div>
       <Paragraph>
         I’m not an expert at C programming, but I love C. It sometimes feels a
         little antiquated compared to languages like Java or C#, but it’s
@@ -120,7 +119,7 @@ function MacintoshCHelloWorldPost({ BlogPost }: BlogPostProps) {
         maxWidth="32rem"
         caption='"Hello World!" printed on screen'
       />
-    </BlogPost>
+    </div>
   );
 }
 

@@ -1,12 +1,11 @@
 import Image from "../../../../general/S3Image";
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function SE30FTPConnectionPost({ BlogPost }: BlogPostProps) {
+function SE30FTPConnectionPost() {
   const imageBasePath = `/blog/categories/retro-computing/posts/se30-ftp-connection`;
   return (
-    <BlogPost>
+    <div>
       <Image
         path={`${imageBasePath}/ExpansionCard.jpg`}
         maxWidth="16rem"
@@ -126,7 +125,7 @@ function SE30FTPConnectionPost({ BlogPost }: BlogPostProps) {
         maxWidth="24rem"
         caption="The PS Vita makes an amazing FTP server."
       />
-    </BlogPost>
+    </div>
   );
 }
 

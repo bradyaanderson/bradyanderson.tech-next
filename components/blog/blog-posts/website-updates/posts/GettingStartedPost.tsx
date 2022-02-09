@@ -1,11 +1,10 @@
-import { BlogPostProps } from "../../../../../types/Sitemap";
 import Paragraph from "../../../../general/Paragraph";
 import Image from "../../../../general/S3Image";
 import ExternalLink from "../../../../general/ExternalLink";
 
-function GettingStartedPost({ BlogPost }: BlogPostProps) {
+function GettingStartedPost() {
   return (
-    <BlogPost>
+    <div>
       <Image
         path="/blog/categories/bradyanderson-tech/posts/getting-started/homepage.png"
         caption="The homepage on 07/25/2021."
@@ -91,7 +90,7 @@ function GettingStartedPost({ BlogPost }: BlogPostProps) {
           <ExternalLink link="https://www.heroku.com/">Heroku</ExternalLink>
         </li>
       </ul>
-    </BlogPost>
+    </div>
   );
 }
 
