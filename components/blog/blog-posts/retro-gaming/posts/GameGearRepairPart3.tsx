@@ -8,12 +8,13 @@ function GameGearRepairPart3() {
   return (
     <div>
       <Paragraph>
-        In <Link href={"/blog/retro-gaming/game-gear-repair-part-2"}>part 2</Link>, I replaced the
-        capacitors on the power PCB of my Game Gear and one capacitor (C68) on
-        the main PCB. After these replacements, I could power the console on and
-        even boot into a game. I knew that even though the console worked now, I
-        should replace all the other original capacitors to prevent possible
-        future failures.
+        In{" "}
+        <Link href={"/blog/retro-gaming/game-gear-repair-part-2"}>part 2</Link>,
+        I replaced the capacitors on the power PCB of my Game Gear and one
+        capacitor (C68) on the main PCB. After these replacements, I could power
+        the console on and even boot into a game. I knew that even though the
+        console worked now, I should replace all the other original capacitors
+        to prevent possible future failures.
       </Paragraph>
       <Paragraph>
         I started with the main PCB. This board has a lot of capacitors. My PCB,

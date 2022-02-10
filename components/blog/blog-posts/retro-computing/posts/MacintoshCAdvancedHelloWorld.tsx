@@ -8,11 +8,15 @@ function MacintoshCAdvancedHelloWorld() {
   return (
     <div>
       <Paragraph>
-        In my <Link href={"/blog/retro-computing/macintosh-c-hello-world"}>last post</Link>, I created
-        a very simple Hello World C program on my Macintosh SE/30 using THINK C.
-        This program used printf to print out to the screen. While this worked,
-        it isn't the Macintosh-way of doing things. So I'll be taking advantage
-        of the Macintosh Toolbox to create a more advanced Hello World program.
+        In my{" "}
+        <Link href={"/blog/retro-computing/macintosh-c-hello-world"}>
+          last post
+        </Link>
+        , I created a very simple Hello World C program on my Macintosh SE/30
+        using THINK C. This program used printf to print out to the screen.
+        While this worked, it isn't the Macintosh-way of doing things. So I'll
+        be taking advantage of the Macintosh Toolbox to create a more advanced
+        Hello World program.
       </Paragraph>
       <Paragraph>
         First, what is the Macintosh Toolbox? As the name implies, it's a set of
@@ -72,7 +76,15 @@ function MacintoshCAdvancedHelloWorld() {
 
       <h2>Resource</h2>
       <ul>
-        <li><ExternalLink link={"https://gist.github.com/bradyaanderson/356d7017e3efc71bcbe427e0798de627"}>Source Code</ExternalLink></li>
+        <li>
+          <ExternalLink
+            link={
+              "https://gist.github.com/bradyaanderson/356d7017e3efc71bcbe427e0798de627"
+            }
+          >
+            Source Code
+          </ExternalLink>
+        </li>
       </ul>
     </div>
   );

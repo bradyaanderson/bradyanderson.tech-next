@@ -12,11 +12,11 @@ interface Props {
   caption?: string;
   /** The max width that the image will be displayed at. */
   maxWidth?: string;
-  /** The border to put around the image */
+  /** The border to put around the image. */
   imageBorder?: string;
 }
 
-/** Component for easily displaying images in blog */
+/** Component for easily displaying images in blog. */
 function Image({ path, caption, maxWidth, imageBorder }: Props) {
   return (
     <div className={styles.container}>

@@ -1,6 +1,7 @@
 import styles from "./footer.module.scss";
 import ExternalLink from "../general/ExternalLink";
 
+/** Footer displayed at the bottom of all pages. */
 function Footer() {
   const year = new Date().getFullYear();
   return (

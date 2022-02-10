@@ -12,6 +12,7 @@ interface Props {
   filename: string;
 }
 
+/** Component for displaying code. */
 function Code({ language, path, filename }: Props) {
   const [code, setCode] = useState("");
 

@@ -9,12 +9,13 @@ function GameGearRepairPart2() {
   return (
     <div>
       <Paragraph>
-        In <Link href={"/blog/retro-gaming/game-gear-repair-part-1"}>part 1</Link>, I started my
-        repair of a broken Game Gear by disassembling it and cleaning corrosion
-        off of its PCBs. I mentioned how even after the cleaning, the Game Gear
-        would only stay powered on for about a second, which was probably
-        because of old capacitors (a very common problem with Game Gears). Now
-        it was time to try replacing the capacitors.
+        In{" "}
+        <Link href={"/blog/retro-gaming/game-gear-repair-part-1"}>part 1</Link>,
+        I started my repair of a broken Game Gear by disassembling it and
+        cleaning corrosion off of its PCBs. I mentioned how even after the
+        cleaning, the Game Gear would only stay powered on for about a second,
+        which was probably because of old capacitors (a very common problem with
+        Game Gears). Now it was time to try replacing the capacitors.
       </Paragraph>
       <Paragraph>
         I figured I’d start with recapping the power PCB first. If I had more
@@ -150,7 +151,9 @@ function GameGearRepairPart2() {
         called it a night, but I would return to replace the rest soon.
       </Paragraph>
       <Paragraph>
-        <Link href={"/blog/retro-gaming/game-gear-repair-part-3"}>Continued in part 3.</Link>
+        <Link href={"/blog/retro-gaming/game-gear-repair-part-3"}>
+          Continued in part 3.
+        </Link>
       </Paragraph>
     </div>
   );

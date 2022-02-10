@@ -30,6 +30,7 @@ import { BlogMap } from "../types/Sitemap";
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);
 
+/** Map of blog containing data on structure of blog. */
 const blogMap: BlogMap = {
   title: "Blog",
   Component: () => null,

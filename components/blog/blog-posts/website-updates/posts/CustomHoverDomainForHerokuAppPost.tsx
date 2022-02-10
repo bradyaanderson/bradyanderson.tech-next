@@ -8,9 +8,13 @@ function CustomHoverDomainForHerokuAppPost() {
       <Paragraph>
         When you create an application in{" "}
         <ExternalLink link="https://www.heroku.com/">Heroku</ExternalLink>, you
-        also get a Heroku domain where you can access the app.<span style={{textDecoration: "line-through"}}> In the case of
-        bradyanderson.tech, you can also find this site at bradyanderson-tech-new.herokuapp.com
-        .</span> The Heroku domain was great for when I first started because I could
+        also get a Heroku domain where you can access the app.
+        <span style={{ textDecoration: "line-through" }}>
+          {" "}
+          In the case of bradyanderson.tech, you can also find this site at
+          bradyanderson-tech-new.herokuapp.com .
+        </span>{" "}
+        The Heroku domain was great for when I first started because I could
         simply pull up this URL on my phone and test out how easy it was to use
         the site on a mobile device. Now that I'm ready for others to visit this
         site though, it's time to set the custom domain.

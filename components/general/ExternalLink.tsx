@@ -1,9 +1,11 @@
 import React from "react";
 
 interface Props {
+  /** URL to navigate to. */
   link: string;
 }
 
+/** Opens external link in a new tab. */
 const ExternalLink: React.FunctionComponent<Props> = ({ link, children }) => {
   return (
     <>

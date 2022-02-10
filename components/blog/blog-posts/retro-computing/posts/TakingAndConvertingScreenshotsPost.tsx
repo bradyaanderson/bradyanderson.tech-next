@@ -9,11 +9,14 @@ function TakingAndConvertingScreenshotsPost() {
   return (
     <div>
       <Paragraph>
-        My <Link href={"/blog/retro-computing/se30-ftp-connection"}>last blog post</Link>, was the
-        first time I used screenshots taken on my Macintosh SE/30. At first, I
-        was going to use an emulator to grab screenshots, but I figured that
-        using screenshots taken on the actual hardware would be better. Getting
-        the screenshots to my Windows PC and then converting them to
+        My{" "}
+        <Link href={"/blog/retro-computing/se30-ftp-connection"}>
+          last blog post
+        </Link>
+        , was the first time I used screenshots taken on my Macintosh SE/30. At
+        first, I was going to use an emulator to grab screenshots, but I figured
+        that using screenshots taken on the actual hardware would be better.
+        Getting the screenshots to my Windows PC and then converting them to
         modern/web-friendly format was not trivial however. Here is what I
         learned:
       </Paragraph>

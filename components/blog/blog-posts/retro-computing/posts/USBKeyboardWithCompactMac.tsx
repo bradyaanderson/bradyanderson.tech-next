@@ -22,11 +22,14 @@ function USBKeyboardWithCompactMac() {
       />
 
       <Paragraph>
-        One of my <Link href={"/blog/retro-computing/apple-ii-keyboard-fix"}>first posts</Link> on
-        this blog was about the Apple Keyboard II that came with my mac. Besides
-        the layout of the arrow keys, it looks and functions just like any
-        modern keyboard that Apple makes. What’s not modern about this keyboard
-        is its keyswitches.
+        One of my{" "}
+        <Link href={"/blog/retro-computing/apple-ii-keyboard-fix"}>
+          first posts
+        </Link>{" "}
+        on this blog was about the Apple Keyboard II that came with my mac.
+        Besides the layout of the arrow keys, it looks and functions just like
+        any modern keyboard that Apple makes. What’s not modern about this
+        keyboard is its keyswitches.
       </Paragraph>
 
       <Image

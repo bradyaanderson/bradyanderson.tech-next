@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PostDetails } from "../../../types/Blog";
 
 interface Props {
+  /** Details about the post */
   postDetails: PostDetails;
 }
 

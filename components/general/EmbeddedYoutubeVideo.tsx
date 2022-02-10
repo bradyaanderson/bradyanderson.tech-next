@@ -5,6 +5,8 @@ interface Props {
   /** The URL of the YouTube video to embed. */
   url: string;
 }
+
+/** Component for embedding/displaying a YouTube video. */
 function EmbeddedYouTubeVideo({ url }: Props) {
   return (
     <div className={styles.blogEmbeddedYoutubeVideo}>

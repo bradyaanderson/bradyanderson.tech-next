@@ -2,6 +2,7 @@ import PostNavigator from "./PostNavigator";
 import { PostDetails } from "../../../types/Blog";
 
 interface Props {
+  /** List of post details. */
   postDetailsList: PostDetails[];
 }
 
