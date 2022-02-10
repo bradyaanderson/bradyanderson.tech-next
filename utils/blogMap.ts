@@ -26,17 +26,18 @@ import MacintoshCHelloWorldPost from "../components/blog/blog-posts/retro-comput
 import MacintoshCAdvancedHelloWorld from "../components/blog/blog-posts/retro-computing/posts/MacintoshCAdvancedHelloWorld";
 import USBKeyboardWithCompactMac from "../components/blog/blog-posts/retro-computing/posts/USBKeyboardWithCompactMac";
 import { BlogMap } from "../types/Sitemap";
+import { CategoryBasename } from "../constants/constants";
 
+const { RETRO_COMPUTING, RETRO_GAMING, WEBSITE_UPDATES } = CategoryBasename;
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);
 
 /** Map of blog containing data on structure of blog. */
 const blogMap: BlogMap = {
   title: "Blog",
-  Component: () => null,
   routes: {
     /* Retro Computing Blog Category */
-    "retro-computing": {
+    [RETRO_COMPUTING]: {
       title: "Retro Computing",
       Component: RetroComputingCategory,
       routes: {
@@ -104,7 +105,7 @@ const blogMap: BlogMap = {
       },
     },
     /* Retro Gaming Blog Category */
-    "retro-gaming": {
+    [RETRO_GAMING]: {
       title: "Retro Gaming",
       Component: RetroGamingCategory,
       routes: {
@@ -137,7 +138,7 @@ const blogMap: BlogMap = {
       },
     },
     /* Website Updates Blog Category */
-    "website-updates": {
+    [WEBSITE_UPDATES]: {
       title: "Website Updates",
       Component: WebsiteUpdatesCategory,
       routes: {

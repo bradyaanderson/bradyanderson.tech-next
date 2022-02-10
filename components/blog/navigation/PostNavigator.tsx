@@ -1,6 +1,8 @@
 import moment from "moment";
 import Link from "next/link";
 import { PostDetails } from "../../../types/Blog";
+import styles from "./blog-navigator.module.scss";
+import { blogCategoryToColorMap } from "../../../constants/constants";
 
 interface Props {
   /** Details about the post */
@@ -14,10 +16,11 @@ function PostNavigator({ postDetails }: Props) {
   return (
     <Link href={link} passHref>
       <div
-        className={`blog-post-navigator-link blog-post-navigator-container ${category}-post-navigation`}
+        className={styles.blogPostNavigatorLink}
+        style={{ background: blogCategoryToColorMap[category] }}
       >
-        <span className="blog-post-navigator-title">{title}</span>
-        <span className="blog-post-navigator-date">{dateString}</span>
+        <span className={styles.blogPostNavigatorTitle}>{title}</span>
+        <span className={styles.blogPostNavigatorDate}>{dateString}</span>
       </div>
     </Link>
   );

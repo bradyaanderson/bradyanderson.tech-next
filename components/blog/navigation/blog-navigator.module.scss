@@ -1,0 +1,52 @@
+@import "../../../styles/variables.module";
+
+.blogPostNavigatorLink {
+  color: $primary-text-color;
+  background: $complement;
+  margin: 1.5rem 3% 0;
+  padding: 0.625rem;
+  border: 3px solid $primary-dark;
+
+  &:hover {
+    cursor: pointer;
+    .blogPostNavigatorTitle {
+      text-decoration: underline;
+    }
+  }
+
+  .blogPostNavigatorTitle {
+    font-size: 1rem;
+    display: block;
+  }
+
+  .blogPostNavigatorDate {
+    font-size: 0.75rem;
+    display: block;
+    text-align: right;
+  }
+}
+
+.categoryNavigationContainer,
+.postNavigationContainer {
+  h2 {
+    font-size: 1.6em;
+    text-decoration: underline;
+  }
+}
+
+.headNavigator {
+  font-size: 0.9em;
+  padding-bottom: 0.65rem;
+
+  .headNavigatorCurrentLocation {
+    text-decoration: underline;
+  }
+
+  a {
+    color: $primary-text-color;
+  }
+
+  a:hover {
+    text-decoration: underline $link;
+  }
+}

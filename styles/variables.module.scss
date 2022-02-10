@@ -29,3 +29,18 @@ $desktop: 1024px;
 
 // Other values
 $footer-height: 4rem;
+
+:export {
+  primaryColor: $primary;
+  primaryLightColor: $primary-light;
+  primaryDarkColor: $primary-dark;
+  secondaryColor: $secondary;
+  secondaryLightColor: $secondary-light;
+  secondaryDarkColor: $secondary-dark;
+  complementColor: $complement;
+  complementDarkColor: $complement-dark;
+  linkColor: $link;
+  retroGamingColor: $retro-gaming;
+  retroComputingColor: $retro-computing;
+  websiteUpdatesColor: $website-updates;
+}

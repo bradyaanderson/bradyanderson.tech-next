@@ -1,5 +1,6 @@
 import Link from "next/link";
 import * as path from "path";
+import { blogCategoryToColorMap } from "../../../constants/constants";
 
 interface Props {
   /** The title of the category to be displayed to user. */
@@ -10,10 +11,14 @@ interface Props {
 
 /** Navigates to a blog category. */
 function CategoryNavigator({ categoryTitle, categoryPath }: Props) {
-  const baseName = path.basename(categoryPath);
+  const basename = path.basename(categoryPath);
   return (
-    <li className={`${baseName}-category-navigation`}>
-      <Link href={categoryPath}>{categoryTitle}</Link>
+    <li>
+      <Link href={categoryPath}>
+        <a style={{ color: blogCategoryToColorMap[basename] }}>
+          {categoryTitle}
+        </a>
+      </Link>
     </li>
   );
 }

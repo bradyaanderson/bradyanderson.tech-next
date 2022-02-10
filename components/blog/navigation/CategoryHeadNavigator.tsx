@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./blog-navigator.module.scss";
 
 interface Props {
   /** The title of the current category. Will be displayed to user. */
@@ -8,12 +9,12 @@ interface Props {
 /** Component for navigating back to blog home from category found at the top of category pages. */
 function CategoryHeadNavigator({ currentCategoryTitle }: Props) {
   return (
-    <div className="head-navigator category-head-navigator">
+    <div className={styles.headNavigator}>
       <span>
         <Link href={"/blog"}>Blog Home</Link>
       </span>
       <span> / </span>
-      <span className="head-navigator-current-location">
+      <span className={styles.headNavigatorCurrentLocation}>
         {currentCategoryTitle}
       </span>
     </div>

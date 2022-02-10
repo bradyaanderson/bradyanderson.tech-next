@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./blog-navigator.module.scss";
 
 interface Props {
   /** The title of the current category. Will be displayed to user. */
@@ -16,7 +17,7 @@ function CategoryHeadNavigator({
   categoryBasename,
 }: Props) {
   return (
-    <div className="head-navigator category-head-navigator">
+    <div className={styles.headNavigator}>
       <span>
         <Link href={"/blog"}>Blog Home</Link>
       </span>
@@ -25,7 +26,7 @@ function CategoryHeadNavigator({
         <Link href={`/blog/${categoryBasename}`}>{currentCategoryTitle}</Link>
       </span>
       <span> / </span>
-      <span className="head-navigator-current-location">
+      <span className={styles.headNavigatorCurrentLocation}>
         {currentPostTitle}
       </span>
     </div>

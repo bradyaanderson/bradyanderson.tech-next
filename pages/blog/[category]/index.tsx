@@ -5,28 +5,34 @@ import CategoryHeadNavigator from "../../../components/blog/navigation/CategoryH
 import PostNavigationContainer from "../../../components/blog/navigation/PostNavigationContainer";
 import blogMap from "../../../utils/blogMap";
 import { getRecentCategoryPostDetails } from "../../../utils/navigationUtils";
+import {
+  blogCategoryToColorMap,
+  CategoryBasename,
+} from "../../../constants/constants";
+import styles from "../../../styles/blog/blog.module.scss";
 
-/** Blog category template. */
+/** Blog category page. */
 const BlogCategory: NextPage = () => {
   const router = useRouter();
   const { query, asPath: pathname } = router;
-  const { category } = query;
-  const categoryData = blogMap.routes[category];
-  if (categoryData == null) return null;
+  const { category: categoryBasename }: { category: CategoryBasename } = query;
+  const categoryData = blogMap.routes[categoryBasename];
+  if (!categoryData) return null;
   const { title, routes, Component } = categoryData;
 
   return (
-    <div className={"blog-content"}>
-      <div className="blog-category">
-        <CategoryHeadNavigator currentCategoryTitle={title} />
-        <h1 className={`blog-title ${category}-accent-text`}>{title}</h1>
-        <div className="blog-children">
-          <Component />
-        </div>
-        <PostNavigationContainer
-          postDetailsList={getRecentCategoryPostDetails(pathname, routes)}
-        />
-      </div>
+    <div className={styles.blogContent}>
+      <CategoryHeadNavigator currentCategoryTitle={title} />
+      <h1
+        className={styles.blogTitle}
+        style={{ color: blogCategoryToColorMap[categoryBasename] }}
+      >
+        {title}
+      </h1>
+      <Component />
+      <PostNavigationContainer
+        postDetailsList={getRecentCategoryPostDetails(pathname, routes)}
+      />
     </div>
   );
 };

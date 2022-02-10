@@ -9,7 +9,7 @@ interface Props {
 /** A container that allows for navigation to different blog categories. */
 function CategoryNavigationContainer({ categoryNameToPath }: Props) {
   return (
-    <div className="category-navigation-container">
+    <div>
       <h2>Categories</h2>
       <ul>
         {Object.keys(categoryNameToPath).map((categoryName) => (

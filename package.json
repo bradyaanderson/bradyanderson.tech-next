@@ -32,7 +32,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "temp-prettier": "prettier --write components/ pages/ styles/ types/ utils/"
+    "temp-prettier": "prettier --write components/ pages/ styles/ types/ utils/ constants/"
   },
   "browserslist": {
     "production": [
