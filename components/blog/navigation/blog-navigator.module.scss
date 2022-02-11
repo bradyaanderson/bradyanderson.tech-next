@@ -42,8 +42,10 @@
     text-decoration: underline;
   }
 
-  a {
-    color: $primary-text-color;
+  span {
+    a {
+      color: $primary-text-color;
+    }
   }
 
   a:hover {
