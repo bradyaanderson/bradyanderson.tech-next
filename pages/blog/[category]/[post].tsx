@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import blogMap from "../../../utils/blogMap";
 import styles from "../../../styles/blog/blog.module.scss";
 import { blogCategoryToColorMap } from "../../../constants/constants";
+import Head from "next/head";
 
 /** Blog post page. */
 const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
@@ -21,23 +22,30 @@ const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
   const { title, date, Component } = postData;
 
   return (
-    <div className={styles.blogContent}>
-      <PostHeadNavigator
-        currentCategoryTitle={categoryTitle}
-        currentPostTitle={title}
-        categoryBasename={categoryBasename}
-      />
-      <h1
-        className={styles.blogTitle}
-        style={{ color: blogCategoryToColorMap[categoryBasename] }}
-      >
-        {title}
-      </h1>
-      <span className={styles.blogDate}>
-        {moment(date).format("MM/DD/YYYY")}
-      </span>
-      <Component />
-    </div>
+    <>
+      <Head>
+        <title>
+          {title} - {categoryTitle} - Blog
+        </title>
+      </Head>
+      <div className={styles.blogContent}>
+        <PostHeadNavigator
+          currentCategoryTitle={categoryTitle}
+          currentPostTitle={title}
+          categoryBasename={categoryBasename}
+        />
+        <h1
+          className={styles.blogTitle}
+          style={{ color: blogCategoryToColorMap[categoryBasename] }}
+        >
+          {title}
+        </h1>
+        <span className={styles.blogDate}>
+          {moment(date).format("MM/DD/YYYY")}
+        </span>
+        <Component />
+      </div>
+    </>
   );
 };
 

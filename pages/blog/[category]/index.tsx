@@ -10,6 +10,7 @@ import {
   CategoryBasename,
 } from "../../../constants/constants";
 import styles from "../../../styles/blog/blog.module.scss";
+import Head from "next/head";
 
 /** Blog category page. */
 const BlogCategory: NextPage = () => {
@@ -21,19 +22,24 @@ const BlogCategory: NextPage = () => {
   const { title, routes, Component } = categoryData;
 
   return (
-    <div className={styles.blogContent}>
-      <CategoryHeadNavigator currentCategoryTitle={title} />
-      <h1
-        className={styles.blogTitle}
-        style={{ color: blogCategoryToColorMap[categoryBasename] }}
-      >
-        {title}
-      </h1>
-      <Component />
-      <PostNavigationContainer
-        postDetailsList={getRecentCategoryPostDetails(pathname, routes)}
-      />
-    </div>
+    <>
+      <Head>
+        <title>{title} - Blog</title>
+      </Head>
+      <div className={styles.blogContent}>
+        <CategoryHeadNavigator currentCategoryTitle={title} />
+        <h1
+          className={styles.blogTitle}
+          style={{ color: blogCategoryToColorMap[categoryBasename] }}
+        >
+          {title}
+        </h1>
+        <Component />
+        <PostNavigationContainer
+          postDetailsList={getRecentCategoryPostDetails(pathname, routes)}
+        />
+      </div>
+    </>
   );
 };
 

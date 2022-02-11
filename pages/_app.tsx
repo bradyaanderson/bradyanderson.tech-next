@@ -2,12 +2,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/app.scss";
 import type { AppProps } from "next/app";
 import MainLayout from "../components/MainLayout";
+import Head from "next/head";
 
 function _App({ Component, pageProps }: AppProps) {
   return (
-    <MainLayout>
-      <Component {...pageProps} />
-    </MainLayout>
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </>
   );
 }
 

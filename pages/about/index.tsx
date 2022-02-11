@@ -9,7 +9,6 @@ const AboutPage: NextPage = () => {
     <>
       <Head>
         <title>About - bradyanderson.tech</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <div className={styles.aboutContainer}>
