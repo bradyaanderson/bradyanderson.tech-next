@@ -1,7 +1,4 @@
-import v from "../styles/variables.module.scss";
-
-// TODO: Fix types so this isn't necessary.
-const variables: ScssVariables = v;
+import variables from "../styles/variables.module.scss";
 
 export enum CategoryBasename {
   RETRO_GAMING = "retro-gaming",
@@ -10,7 +7,7 @@ export enum CategoryBasename {
 }
 
 /** Maps blog category (example: retro-gaming) to color value. */
-export const blogCategoryToColorMap = {
+export const blogCategoryToColorMap: { [key: string]: string } = {
   [CategoryBasename.RETRO_COMPUTING]: variables.retroComputingColor,
   [CategoryBasename.RETRO_GAMING]: variables.retroGamingColor,
   [CategoryBasename.WEBSITE_UPDATES]: variables.websiteUpdatesColor,

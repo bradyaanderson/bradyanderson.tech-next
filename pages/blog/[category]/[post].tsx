@@ -1,19 +1,19 @@
 import React from "react";
 import moment from "moment";
-import { BlogPostTemplateProps } from "../../../types/Sitemap";
 import PostHeadNavigator from "../../../components/blog/navigation/PostHeadNavigator";
-import { useRouter } from "next/router";
 import blogMap from "../../../utils/blogMap";
 import styles from "../../../styles/blog/blog.module.scss";
 import { blogCategoryToColorMap } from "../../../constants/constants";
 import Head from "next/head";
+import { GetStaticPaths, GetStaticProps } from "next";
+
+interface Props {
+  categoryBasename: string;
+  postBasename: string;
+}
 
 /** Blog post page. */
-const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
-  const { query } = useRouter();
-  const { category, post } = query;
-  const categoryBasename = Array.isArray(category) ? category[0] : category;
-  const postBasename = Array.isArray(post) ? post[0] : post;
+const BlogPost = ({ categoryBasename, postBasename }: Props) => {
   const categoryData = blogMap.routes[categoryBasename];
   if (!categoryData) return null;
   const postData = categoryData.routes[postBasename];
@@ -47,6 +47,32 @@ const BlogPost: React.FunctionComponent<BlogPostTemplateProps> = () => {
       </div>
     </>
   );
+};
+
+type path = { params: { category: string; post: string } };
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths: path[] = [];
+
+  const categoryRoutes = blogMap.routes;
+  Object.keys(categoryRoutes).forEach((categoryRoute) => {
+    const postRoutes = categoryRoutes[categoryRoute].routes;
+    Object.keys(postRoutes).forEach((postRoute) => {
+      paths.push({ params: { category: categoryRoute, post: postRoute } });
+    });
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const { post: postBasename, category: categoryBasename } =
+    context.params || {};
+  return {
+    props: { categoryBasename, postBasename },
+  };
 };
 
 export default BlogPost;

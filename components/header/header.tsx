@@ -13,6 +13,7 @@ function Header() {
             height={"100%"}
             width={"100%"}
             layout={"responsive"}
+            priority={true}
           />
         </div>
       </div>
