@@ -1,6 +1,5 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { NextPage } from "next";
 import CategoryHeadNavigator from "../../../components/blog/navigation/CategoryHeadNavigator";
 import PostNavigationContainer from "../../../components/blog/navigation/PostNavigationContainer";
 import blogMap from "../../../utils/blogMap";
@@ -12,11 +11,31 @@ import {
 import styles from "../../../styles/blog/blog.module.scss";
 import Head from "next/head";
 
+interface Props {
+  categoryBasename: string;
+}
+
+export async function getStaticPaths() {
+  const paths = Object.values(CategoryBasename).map((basename) => ({
+    params: {category: basename}
+  }))
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(context) {
+  const categoryBasename = context.params.category;
+  return {
+    props: {categoryBasename}
+  }
+}
+
 /** Blog category page. */
-const BlogCategory: NextPage = () => {
+const BlogCategory = ({categoryBasename}: Props) => {
   const router = useRouter();
-  const { query, asPath: pathname } = router;
-  const { category: categoryBasename }: { category: CategoryBasename } = query;
+  const { asPath: pathname } = router;
   const categoryData = blogMap.routes[categoryBasename];
   if (!categoryData) return null;
   const { title, routes, Component } = categoryData;

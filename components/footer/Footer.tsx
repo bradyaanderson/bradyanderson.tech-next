@@ -3,7 +3,6 @@ import ExternalLink from "../general/ExternalLink";
 
 /** Footer displayed at the bottom of all pages. */
 function Footer() {
-  const year = new Date().getFullYear();
   return (
     <footer>
       <div id="footer" className={styles.footer}>
@@ -22,7 +21,7 @@ function Footer() {
               Github
             </ExternalLink>
           </div>
-          <div id={"footer-copyright"}>&copy; {year} bradyanderson.tech</div>
+          <div id={"footer-copyright"}>&copy; 2022 bradyanderson.tech</div>
         </div>
       </div>
     </footer>
