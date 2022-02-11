@@ -1,0 +1,23 @@
+@import "../../styles/variables.module";
+
+.footer {
+  color: $primary-light;
+  font-size: 1em;
+
+  // keep footer at the bottom of the page
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+
+  // center content
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  a {
+    color: $primary-light;
+  }
+}

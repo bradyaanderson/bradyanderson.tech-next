@@ -1,0 +1,47 @@
+@import "../variables.module";
+
+.blogContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 0.625rem;
+  word-wrap: anywhere;
+  margin-bottom: 1.5rem;
+  font-size: 1em;
+  white-space: pre-wrap;
+  color: $primary-text-color;
+
+  h2 {
+    font-size: 1.5em;
+    text-decoration: underline;
+  }
+
+  a {
+    color: $link;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 0 5%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 10%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 18%;
+  }
+}
+
+.blogTitle {
+  font-size: 2em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.blogDate {
+  font-size: 0.75em;
+  display: block;
+  padding-top: 0.2rem;
+  margin-top: 0;
+}

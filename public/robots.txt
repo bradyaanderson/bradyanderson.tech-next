@@ -1,4 +1,10 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
-sitemap: https://www.bradyanderson.tech/sitemap.txt
+Allow: /
+
+# Host
+Host: https://bradyanderson.tech
+
+# Sitemaps
+Sitemap: https://bradyanderson.tech/sitemap.xml
+Sitemap: https://bradyanderson.tech/sitemap-0.xml

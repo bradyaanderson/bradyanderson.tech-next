@@ -1,5 +1,6 @@
 import moment from "moment";
 import { FunctionComponent } from "react";
+import { CategoryBasename } from "../constants/constants";
 
 /** Props for all components in blog map */
 export interface BlogComponentProps {
@@ -36,13 +37,13 @@ export interface BlogRoute extends BlogComponentProps {
 
 /** Blog Category Route */
 export interface BlogCategoryRoute extends BlogRoute {
-  Component: (props: BlogCategoryProps) => JSX.Element;
+  Component: () => JSX.Element;
   routes: BlogPostRoutes;
 }
 
 /** Blog Post Route */
 export interface BlogPostRoute extends BlogRoute {
-  Component: (props: BlogPostProps) => JSX.Element;
+  Component: () => JSX.Element;
   date: moment.Moment;
 }
 
@@ -57,6 +58,4 @@ export interface BlogPostRoutes {
 }
 
 /** Structure of blog routes */
-export interface BlogMap extends BlogIndexProps {
-  Component: (props: BlogIndexProps) => JSX.Element;
-}
+export interface BlogMap extends BlogIndexProps {}

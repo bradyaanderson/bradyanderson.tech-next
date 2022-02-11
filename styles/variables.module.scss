@@ -1,0 +1,46 @@
+// Primary Application Colors
+$primary: #212121;
+$primary-light: #484848;
+$primary-dark: #000000;
+$primary-text-color: #ffffff;
+
+// Secondary Application Colors
+$secondary: #f5f5f5;
+$secondary-light: #ffffff;
+$secondary-dark: #c2c2c2;
+$secondary-text: #000000;
+
+// Complement Colors
+$complement: #856640;
+$complement-dark: #383026;
+
+// Misc Colors
+$link: #ff7824;
+
+// Category Colors
+$retro-gaming: #135b92;
+$retro-computing: #19c25f;
+$website-updates: #ef2c67;
+
+// Breakpoints for responsive design
+$phone: 640px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Other values
+$footer-height: 4rem;
+
+:export {
+  primaryColor: $primary;
+  primaryLightColor: $primary-light;
+  primaryDarkColor: $primary-dark;
+  secondaryColor: $secondary;
+  secondaryLightColor: $secondary-light;
+  secondaryDarkColor: $secondary-dark;
+  complementColor: $complement;
+  complementDarkColor: $complement-dark;
+  linkColor: $link;
+  retroGamingColor: $retro-gaming;
+  retroComputingColor: $retro-computing;
+  websiteUpdatesColor: $website-updates;
+}
