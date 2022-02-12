@@ -27,6 +27,7 @@ import MacintoshCAdvancedHelloWorld from "../components/blog/blog-posts/retro-co
 import USBKeyboardWithCompactMac from "../components/blog/blog-posts/retro-computing/posts/USBKeyboardWithCompactMac";
 import { BlogMap } from "../types/Sitemap";
 import { CategoryBasename } from "../constants/constants";
+import The404RabbitHoldPost from "../components/blog/blog-posts/website-updates/posts/The404RabbitHoldPost";
 
 const { RETRO_COMPUTING, RETRO_GAMING, WEBSITE_UPDATES } = CategoryBasename;
 const DATE_FORMAT = "MM/DD/YYYY";
@@ -171,6 +172,11 @@ const blogMap: BlogMap = {
           title: "Blog Navigation Updates",
           Component: BlogNavigationUpdates,
           date: date("10/18/2021"),
+        },
+        "the-404-rabbit-hole": {
+          title: "The 404 Rabbit Hole",
+          Component: The404RabbitHoldPost,
+          date: date("02/11/2022"),
         },
       },
     },
