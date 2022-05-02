@@ -9,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: $background;
   color: $primary-text-color;
+  word-break: break-word;
 }
 
 code {
