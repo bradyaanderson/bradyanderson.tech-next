@@ -28,22 +28,24 @@ const BlogPost = ({ categoryBasename, postBasename }: Props) => {
           {title} - {categoryTitle} - Blog
         </title>
       </Head>
-      <div className={styles.blogContent}>
-        <PostHeadNavigator
-          currentCategoryTitle={categoryTitle}
-          currentPostTitle={title}
-          categoryBasename={categoryBasename}
-        />
-        <h1
-          className={styles.blogTitle}
-          style={{ color: blogCategoryToColorMap[categoryBasename] }}
-        >
-          {title}
-        </h1>
-        <span className={styles.blogDate}>
-          {moment(date).format("MM/DD/YYYY")}
-        </span>
-        <Component />
+      <div className={styles.blogContainer}>
+        <div className={styles.blogContent}>
+          <PostHeadNavigator
+            currentCategoryTitle={categoryTitle}
+            currentPostTitle={title}
+            categoryBasename={categoryBasename}
+          />
+          <h1
+            className={styles.blogTitle}
+            style={{ color: blogCategoryToColorMap[categoryBasename] }}
+          >
+            {title}
+          </h1>
+          <span className={styles.blogDate}>
+            {moment(date).format("MM/DD/YYYY")}
+          </span>
+          <Component />
+        </div>
       </div>
     </>
   );

@@ -29,18 +29,20 @@ const BlogCategory = ({ categoryBasename }: Props) => {
       <Head>
         <title>{title} - Blog</title>
       </Head>
-      <div className={styles.blogContent}>
-        <CategoryHeadNavigator currentCategoryTitle={title} />
-        <h1
-          className={styles.blogTitle}
-          style={{ color: blogCategoryToColorMap[categoryBasename] }}
-        >
-          {title}
-        </h1>
-        <Component />
-        <PostNavigationContainer
-          postDetailsList={getRecentCategoryPostDetails(pathname, routes)}
-        />
+      <div className={styles.blogContainer}>
+        <div className={styles.blogContent}>
+          <CategoryHeadNavigator currentCategoryTitle={title} />
+          <h1
+            className={styles.blogTitle}
+            style={{ color: blogCategoryToColorMap[categoryBasename] }}
+          >
+            {title}
+          </h1>
+          <Component />
+          <PostNavigationContainer
+            postDetailsList={getRecentCategoryPostDetails(pathname, routes)}
+          />
+        </div>
       </div>
     </>
   );

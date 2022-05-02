@@ -19,19 +19,21 @@ const BlogIndex: NextPage = () => {
       <Head>
         <title>Blog - bradyanderson.tech</title>
       </Head>
-      <div className={styles.blogContent}>
-        <h1 className={styles.blogTitle}>Blog</h1>
-        <Paragraph>
-          Welcome to my blog! I use this blog as way to journal what I've been
-          working or new things I've learned. I've broken up these posts into
-          different categories. You'll also find a list of recent posts.
-        </Paragraph>
-        <CategoryNavigationContainer
-          categoryNameToPath={getCategoryToLink(routes)}
-        />
-        <PostNavigationContainer
-          postDetailsList={getRecentPostDetails(routes)}
-        />
+      <div className={styles.blogContainer}>
+        <div className={styles.blogContent}>
+          <h1 className={styles.blogTitle}>Blog</h1>
+          <Paragraph>
+            Welcome to my blog! I use this blog as way to journal what I've been
+            working or new things I've learned. I've broken up these posts into
+            different categories. You'll also find a list of recent posts.
+          </Paragraph>
+          <CategoryNavigationContainer
+            categoryNameToPath={getCategoryToLink(routes)}
+          />
+          <PostNavigationContainer
+            postDetailsList={getRecentPostDetails(routes)}
+          />
+        </div>
       </div>
     </>
   );
