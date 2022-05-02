@@ -6,7 +6,9 @@ function Nav() {
   return (
     <div className={styles.navContainer}>
       <div className={styles.navLinks}>
-        <Link href="/">Home</Link> | <Link href="/blog">Blog</Link> |{" "}
+        <Link href="/">Home</Link>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <Link href="/blog">Blog</Link>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
         <Link href="/about">About</Link>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import styles from "../../styles/about.module.scss";
 import Head from "next/head";
-import Image from "next/image";
 import Paragraph from "../../components/general/Paragraph";
+import Image from "../../components/general/S3Image";
 
 const AboutPage: NextPage = () => {
   return (
@@ -16,13 +16,7 @@ const AboutPage: NextPage = () => {
             <h1>About</h1>
           </div>
           <div className={styles.profile}>
-            <Image
-              src="/about/Profile.jpg"
-              alt="Logo"
-              height="100%"
-              width="100%"
-              layout={"responsive"}
-            />
+            <Image path={`/about/profileAbout.jpg`} maxWidth="14rem" />
           </div>
           <div className={styles.body}>
             <div>

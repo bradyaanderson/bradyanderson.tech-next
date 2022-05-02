@@ -11,12 +11,12 @@ function Footer() {
           <div id="footer-social">
             <a href="mailto:contact@bradyanderson.tech" target="_top">
               Email
-            </a>{" "}
-            |{" "}
+            </a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
             <ExternalLink link="https://www.linkedin.com/in/bradyaanderson/">
               Linkedin
-            </ExternalLink>{" "}
-            |{" "}
+            </ExternalLink>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
             <ExternalLink link="https://github.com/bradyaanderson">
               Github
             </ExternalLink>

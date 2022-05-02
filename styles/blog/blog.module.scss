@@ -1,15 +1,19 @@
 @import "../variables.module";
 
-.blogContent {
+.blogContainer {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  margin-top: 0.625rem;
-  word-wrap: anywhere;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  font-size: 1em;
-  white-space: pre-wrap;
+}
+
+.blogContent {
+  font-size: 1.125em;
   color: $primary-text-color;
+  max-width: 800px;
+  padding: 0 32px;
 
   h2 {
     font-size: 1.5em;
@@ -18,18 +22,6 @@
 
   a {
     color: $link;
-  }
-
-  @media screen and (max-width: $tablet) {
-    padding: 0 5%;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding: 0 10%;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding: 0 18%;
   }
 }
 
