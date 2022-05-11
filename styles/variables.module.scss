@@ -6,7 +6,7 @@ $accent3: #00798c;
 $accent4: #7b9e89;
 $accent5: #c06e52;
 
-  // Primary Application Colors
+// Primary Application Colors
 $primary: #212121;
 $primary-light: #484848;
 $primary-dark: #000000;
@@ -24,7 +24,7 @@ $link: $accent2;
 // Category Colors
 $retro-gaming: $accent1;
 $retro-computing: $accent3;
-$website-updates: $accent4;
+$development: $accent4;
 
 // Breakpoints for responsive design
 $phone: 640px;
@@ -44,5 +44,5 @@ $footer-height: 4rem;
   linkColor: $link;
   retroGamingColor: $retro-gaming;
   retroComputingColor: $retro-computing;
-  websiteUpdatesColor: $website-updates;
+  developmentColor: $development;
 }

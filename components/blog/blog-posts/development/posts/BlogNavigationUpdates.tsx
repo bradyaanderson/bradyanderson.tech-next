@@ -3,7 +3,7 @@ import Image from "../../../../general/S3Image";
 
 function BlogNavigationUpdates() {
   const baseImagePath =
-    "/blog/categories/website-updates/posts/blog-navigation-updates";
+    "/blog/categories/development/posts/blog-navigation-updates";
   return (
     <div>
       <Paragraph>
