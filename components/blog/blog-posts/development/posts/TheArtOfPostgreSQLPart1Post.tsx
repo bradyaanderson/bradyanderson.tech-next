@@ -1,16 +1,21 @@
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 import Image from "../../../../general/S3Image";
+import InlineCode from "../../../../general/InlineCode";
+import BlockQuote from "../../../../general/BlockQuote";
 
-function The404RabbitHoldPost() {
+function TheArtOfPostgreSQLPart1Post() {
   return (
     <div>
       <Paragraph>
         As a full-stack developer, I’ve always had a weird relationship with
-        SQL. Rarely do I need to write need a query more complex than “SELECT *
-        FROM &lt;table&gt; WHERE &lt;some-condition&gt;”. Occasionally I may
-        need to join some data, but outside of that, I’ve never needed to know
-        too much about SQL. When I code, I’ve often worked on systems that use{" "}
+        SQL. Rarely do I need to write need a query more complex than{" "}
+        <InlineCode>
+          SELECT * FROM &lt;table&gt; WHERE &lt;some-condition&gt;
+        </InlineCode>
+        . Occasionally I may need to join some data, but outside of that, I’ve
+        never needed to know too much about SQL. When I code, I’ve often worked
+        on systems that use{" "}
         <ExternalLink
           link={
             "https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping"
@@ -106,14 +111,14 @@ function The404RabbitHoldPost() {
       </Paragraph>
 
       <Paragraph>
-        <blockquote>
+        <BlockQuote cite={"https://theartofpostgresql.com/"}>
           "When working with SQL, as a developer we relatedly work with a type
           system and a kind of relational algebra. We write code to retrieve and
           process the data we are interested into, in the specific way we need.
           RDBMS and SQL are forcing developers to think in terms of data
           structure, and to declare both the data structure and the data set we
           want to get via our queries."
-        </blockquote>
+        </BlockQuote>
       </Paragraph>
 
       <Paragraph>
@@ -270,4 +275,4 @@ function The404RabbitHoldPost() {
   );
 }
 
-export default The404RabbitHoldPost;
+export default TheArtOfPostgreSQLPart1Post;
