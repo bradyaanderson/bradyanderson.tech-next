@@ -1,6 +1,5 @@
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
-import Image from "../../../../general/S3Image";
 import InlineCode from "../../../../general/InlineCode";
 import BlockQuote from "../../../../general/BlockQuote";
 
