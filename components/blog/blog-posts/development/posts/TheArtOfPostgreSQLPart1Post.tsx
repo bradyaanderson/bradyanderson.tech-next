@@ -9,36 +9,37 @@ function TheArtOfPostgreSQLPart1Post() {
     <div>
       <Paragraph>
         As a full-stack developer, I’ve always had a weird relationship with
-        SQL. Rarely do I need to write need a query more complex than{" "}
+        SQL. Rarely do I need to write a query more complex than{" "}
         <InlineCode>
-          SELECT * FROM &lt;table&gt; WHERE &lt;some-condition&gt;
+          SELECT * FROM &lt;table&gt; WHERE &lt;condition&gt;
         </InlineCode>
-        . Occasionally I may need to join some data, but outside of that, I’ve
-        never needed to know too much about SQL. When I code, I’ve often worked
-        on systems that use{" "}
+        . Occasionally I may need to join data, but outside of that, I’ve never
+        needed to know too much SQL. When I code, I’m often working on systems
+        that use{" "}
         <ExternalLink
           link={
             "https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping"
           }
         >
-          Object-relational mapping
-        </ExternalLink>{" "}
-        meaning I can sometimes weeks without seeing or writing actual SQL. This
-        relationship with SQL has left me never truly feeling comfortable with
-        the language and that’s something I want to change.
+          object-relational mapping
+        </ExternalLink>
+        , this means I can sometimes go weeks without seeing or writing actual
+        SQL. This relationship with SQL has left me never truly feeling
+        comfortable with the language and that’s something I want to change.
       </Paragraph>
 
       <Paragraph>
-        I recently picked up the book,{" "}
+        I recently picked up{" "}
         <ExternalLink link={"https://theartofpostgresql.com/"}>
           <em>The Art of PostgreSQL</em>
         </ExternalLink>{" "}
-        by Dimitri Fontaine and have spent a few hours every week reading
-        through the book. I’ve read about half of the book and wanted to share
-        what I’ve liked, haven’t liked, and my biggest takeaways so far.
+        by Dimitri Fontaine and have spent a few hours every week reading the
+        book and practicing what I've learned. I’ve finished about half of the
+        book so far and wanted to share what I’ve liked, haven’t liked, and my
+        biggest takeaways.
       </Paragraph>
 
-      <h2>What have I liked so far?</h2>
+      <h2>What have I liked?</h2>
 
       <Paragraph>
         The author of this book, Dimitri Fontaine, provides a unique perspective
@@ -46,22 +47,23 @@ function TheArtOfPostgreSQLPart1Post() {
         PostgreSQL over other database management systems. Fontaine is a
         contributor to the PostgreSQL project, so he definitely knows what he is
         talking about when it comes to Postgres. What I’ve liked best about
-        Fontaine, however, is that because he is a developer, he knows how to
-        evangelize SQL to other developers. He knows that thinking in SQL can be
-        hard for developers who are used to working with languages that differ
-        from SQL. He specifically tailors his examples to be useful software
-        developers, occasionally even comparing SQL queries to equivalent code.
+        Fontaine is that because he is a developer, he knows how to evangelize
+        SQL to other developers like me. He knows that thinking in SQL can be
+        hard for developers who are used to working with languages that are
+        often different from SQL. He specifically tailors his examples to be
+        useful software developers, occasionally even comparing SQL queries
+        directly to equivalent code.
       </Paragraph>
       <Paragraph>
-        I learn best from examples and this book not only provides plenty of
-        query examples but also large real-world datasets for me to practice on.
-        When I’ve tried to learn SQL in the past, I’ve worked with small,
-        self-created datasets. Not only is this time-consuming to create tables
-        and populate them, but having such a limited set of data is unrealistic.
-        The datasets that come with “The Art of PostgreSQL” are not only large,
-        but also fun to query data from. As a fan of Formula 1, it delighted me
-        that one of the example datasets is an F1 database containing loads of
-        data on the sport dating back decades.
+        This book provides plenty of queries to analyze and large real-world
+        datasets to practice on. When I’ve tried to learn SQL in the past, I’ve
+        worked with small, self-created datasets. Not only is it time-consuming
+        to create tables and populate them, but having such a limited set of
+        data is unrealistic. The datasets that come with{" "}
+        <em>The Art of PostgreSQL</em> are not only large, but also fun to query
+        data from. As a fan of Formula 1, it delighted me that one of the
+        example datasets included is an F1 database containing loads of data,
+        dating back decades, on the sport.
       </Paragraph>
 
       <h2>What could have been better?</h2>
@@ -71,10 +73,10 @@ function TheArtOfPostgreSQLPart1Post() {
         absolutely need to do additional reading outside of this book before I
         will feel like I’ve mastered SQL. Topics such as relations, aggregates,
         and indexes are given some time in the book, but there is more that can
-        be said. Luckily, the author often provides additional resources when
-        the book is lacking in explanation or examples. I have also not
-        encountered any practice questions so far. I think having these would
-        really be beneficial as I find I learn best when problem solving.
+        be said. Luckily, additional resources are often provided when the book
+        is lacking in explanation or examples. I have also not encountered any
+        practice questions so far. I think having these would really be
+        beneficial as I find I learn best when problem solving.
       </Paragraph>
 
       <h2>What are my biggest takeaways?</h2>
@@ -84,11 +86,10 @@ function TheArtOfPostgreSQLPart1Post() {
         is a better understanding of how to use PostgreSQL to store and query
         data. This will come in handy at my job and when I’m working on personal
         projects. Almost any good SQL resource will teach basic syntax though,
-        so I want to focus on three of my biggest takeaways that you may not
-        find in other resources.
+        so I want to focus on three of my biggest takeaways outside of this.
       </Paragraph>
 
-      <h3>Imperative vs Declarative</h3>
+      <h3>SQL is declarative</h3>
 
       <Paragraph>
         In very simple terms, with an imperative language, you write a program
@@ -100,24 +101,25 @@ function TheArtOfPostgreSQLPart1Post() {
       </Paragraph>
       <Paragraph>
         SQL, on the other-hand, is a declarative language. When you write an SQL
-        statement, you are telling the RDBMS what you want to occur, but you do
-        not specify exactly how it should happen. Instead, the RDBMS devises a
-        plan for how to fulfill your request and then executes that plan.
+        statement, you are telling the relational database management system
+        (RDBMS) what you want to occur, but you do not specify how the system
+        should do this. Instead, the RDBMS devises a plan for how to fulfill
+        your request and then executes that plan.
       </Paragraph>
       <Paragraph>
-        As I mentioned before, Fontaine is a developer and knows that most of us
-        think approach development imperatively. In the very first chapter, he
+        As I mentioned, Fontaine is a developer and knows that most developers
+        think to write code imperatively. In the very first chapter, he makes
         stresses the need to think of SQL declaratively:
       </Paragraph>
 
       <Paragraph>
         <BlockQuote cite={"https://theartofpostgresql.com/"}>
-          "When working with SQL, as a developer we relatedly work with a type
+          When working with SQL, as a developer we relatedly work with a type
           system and a kind of relational algebra. We write code to retrieve and
           process the data we are interested into, in the specific way we need.
           RDBMS and SQL are forcing developers to think in terms of data
           structure, and to declare both the data structure and the data set we
-          want to get via our queries."
+          want to get via our queries.
         </BlockQuote>
       </Paragraph>
 
@@ -130,18 +132,18 @@ function TheArtOfPostgreSQLPart1Post() {
         writing SQL.
       </Paragraph>
 
-      <h3>Let SQL work for you</h3>
+      <h3>SQL is powerful</h3>
 
       <Paragraph>
-        One of Fontaine’s strongest (and perhaps a bit controversial) opinion is
-        that SQL queries are extremely powerful, so why not use it to contain{" "}
+        One of Fontaine’s strongest (and perhaps a bit controversial) opinions
+        is that SQL queries should contain{" "}
         <ExternalLink link={"https://en.wikipedia.org/wiki/Business_logic"}>
           business logic
         </ExternalLink>
         . This is in contrast to a lot of other opinions you’ll find on the
         internet which say to keep business logic out of SQL. Fontaine proposes
-        that one well-formed, slightly more complex SQL query can ensure both
-        correctness and increase efficiency.
+        that one well-formed, slightly-more-complex SQL query can ensure both
+        correctness and increase efficiency in your application.
       </Paragraph>
       <Paragraph>
         Let’s say your API has an endpoint which requires your server to compile
@@ -149,7 +151,7 @@ function TheArtOfPostgreSQLPart1Post() {
         process, your server makes several calls to your database. It then
         combines this data and sends it back to the user. It is very possible
         that during the time your server makes its first call to the database
-        and last, data has changed somewhere in the database. Have you accounted
+        and last, data has changed somewhere in the dataset. Have you accounted
         for this? If not, you may occasionally experience unexpected behavior
         and this bug could be very hard to track down. If you could combine this
         logic into a single SQL query, this would not be an issue. An individual
@@ -157,24 +159,23 @@ function TheArtOfPostgreSQLPart1Post() {
       </Paragraph>
       <Paragraph>
         Besides correctness, when you use SQL to its fullest potential, it can
-        often be more efficient. Unsurprised, SQL is extremely good at working
-        with relational data and with mathematical operations. By taking
-        advantage of SQL’s strengths, you may cut down overall runtime by moving
-        it to SQL rather than having it performed on your server. However,
-        efficiency can also come from other places. Sending requests to a
-        database and receiving data back via a network can be slow. If you can
-        replace multiple SQL calls with one, you’ll wait less for data to pass
-        between your server and database. Finally, a few extra lines of SQL
-        might replace dozens of lines of application code. Assuming this code is
-        well-written and robust, this can save time in development and
-        maintenance overtime.
+        often be more efficient. Unsurprisingly, SQL is extremely good at
+        working with relational data and mathematical operations. By taking
+        advantage of SQL’s strengths, you may cut down the overall runtime of a
+        process. However, efficiency can also come from other places. Sending
+        requests to a database and receiving data back via a network can be
+        slow. If you can replace multiple SQL calls with one, you’ll wait less
+        for data to pass between your server and database. Finally, a few extra
+        lines of SQL might replace dozens of lines of application code. Assuming
+        this code is well-written and robust, this can save time in development
+        and maintenance overtime.
       </Paragraph>
       <Paragraph>
         I’ve kept SQL to a minimum in most applications I’ve worked on and
         relied on other services to handle most processing. While I’m still
         forming my own opinions on how much business logic to include in my
-        queries, I will not be strongly considering whether I can use SQL to
-        make my code more correct and efficient. I really enjoyed reading
+        queries, I will be strongly considering whether I can use SQL to make my
+        code more correct and efficient in the future. I really enjoyed reading
         Fontaine’s perspective on business logic in SQL, especially because it
         differs from a lot of other opinions you may find.{" "}
         <ExternalLink
@@ -186,19 +187,20 @@ function TheArtOfPostgreSQLPart1Post() {
         reasoning yourself.
       </Paragraph>
 
-      <h3>Postgres is awesome</h3>
+      <h3>Postgres extends SQL to make it even more powerful</h3>
 
       <Paragraph>
-        Until now, I’ve talked a lot about SQL, but not a lot about PostgreSQL.
-        Luckily, “The Art of PostgreSQL” did a great job of explaining why
-        Postgres is awesome.
+        Until now, I’ve talked a lot about SQL, but not about what makes
+        PostgreSQL unique. Luckily, <em>The Art of PostgreSQL</em> did a great
+        job of explaining what Postgres adds to SQL and why it's a powerful
+        system.
       </Paragraph>
       <Paragraph>
         Unlike other popular RDBMSs, PostgreSQL is open-source and maintained by
-        a group of very dedicated developers (Fountaine being one of those
-        developers). There is not one behemoth company that gets to dictate how
-        development on Postgres should continue. Postgres is made by developers,
-        for other developers
+        a group of very dedicated developers (Fountaine being one of them).
+        There is not one behemoth company that gets to dictate how development
+        on Postgres should continue. Postgres is made by developers, for other
+        developers.
       </Paragraph>
       <Paragraph>
         Documentation for open-source projects can sometimes be lacking.
@@ -209,10 +211,10 @@ function TheArtOfPostgreSQLPart1Post() {
       </Paragraph>
       <Paragraph>
         Perhaps the best thing about Postgres is the extra extensibility and
-        helpful features it includes. If you’re unaware, SQL is a standard. When
-        making basic queries, you are most likely writing standard SQL which
-        could run against almost any database. PostgreSQL implements almost all
-        the SQL standard (
+        helpful features it includes. SQL is a standard. When making basic
+        queries, you are most likely writing standard SQL which could run
+        against almost any database. PostgreSQL implements almost all the SQL
+        standard (
         <ExternalLink
           link={"https://www.postgresql.org/docs/current/features.html"}
         >
@@ -262,14 +264,26 @@ function TheArtOfPostgreSQLPart1Post() {
         </ul>
       </Paragraph>
 
-      <h2>Am I going to keep reading The Art of PostgreSQL?</h2>
+      <Paragraph>
+        On top of all of this, there is so much more that Postgres adds on top
+        of SQL. I haven't even mentioned the great tooling included with
+        Postgres like the command line application, PostgreSQL Client, and the
+        GUI tool, pgAdmin, which have their own extensive set of features
+        allowing you to take full advantage of Postgres. Take some time to look
+        at the Postgres documentation. It may surprise you what you find.
+      </Paragraph>
+
+      <h2>
+        Am I going to keep reading <em>The Art of PostgreSQL</em>?
+      </h2>
 
       <Paragraph>
-        Absolutely. While I don’t think The Art of PostgreSQL is for everyone, I
-        think it is perfect for developers like me. Fontaine’s pacing,
-        experience as a developer, and insights into how to use SQL to its
+        Absolutely. While I don’t think <em>The Art of PostgreSQL</em> is for
+        everyone, I think it is perfect for developers like me. Fontaine’s
+        experience as a developer and insights into how to use SQL to its
         fullest in software development have kept me interested and wanting to
-        learn more. I’m looking forward to continuing The Art of PostgreSQL.
+        learn more. I’m looking forward to continuing{" "}
+        <em>The Art of PostgreSQL</em>.
       </Paragraph>
     </div>
   );
