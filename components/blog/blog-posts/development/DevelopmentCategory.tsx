@@ -1,8 +1,8 @@
 import Paragraph from "../../../general/Paragraph";
 import ExternalLink from "../../../general/ExternalLink";
 
-/** Index for Website Update blog category */
-function WebsiteUpdatesCategory() {
+/** Index for Development blog category */
+function DevelopmentCategory() {
   return (
     <div>
       <div>
@@ -36,9 +36,14 @@ function WebsiteUpdatesCategory() {
           </ExternalLink>
           .
         </Paragraph>
+
+        <Paragraph>
+          I'm also expanding this category to not only include website updates,
+          but posts on how I'm working to become a better developer.
+        </Paragraph>
       </div>
     </div>
   );
 }
 
-export default WebsiteUpdatesCategory;
+export default DevelopmentCategory;

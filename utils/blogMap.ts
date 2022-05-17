@@ -8,17 +8,17 @@ import FixingSE30SoundStruggle from "../components/blog/blog-posts/retro-computi
 import WhiteningAMacintoshPost from "../components/blog/blog-posts/retro-computing/posts/WhiteningAMacintoshPost";
 import RetroGamingCategory from "../components/blog/blog-posts/retro-gaming/RetroGamingCategory";
 import ReplacingGameBoyColorSpeakerPost from "../components/blog/blog-posts/retro-gaming/posts/ReplacingGameBoyColorSpeakerPost";
-import WebsiteUpdatesCategory from "../components/blog/blog-posts/website-updates/WebsiteUpdatesCategory";
-import GettingStartedPost from "../components/blog/blog-posts/website-updates/posts/GettingStartedPost";
-import CustomHoverDomainForHerokuAppPost from "../components/blog/blog-posts/website-updates/posts/CustomHoverDomainForHerokuAppPost";
-import MovingToAwsPost from "../components/blog/blog-posts/website-updates/posts/MovingToAwsPost";
-import SettingUpImageStoragePost from "../components/blog/blog-posts/website-updates/posts/SettingUpImageStoragePost";
-import EasilySettingCustomTitlePost from "../components/blog/blog-posts/website-updates/posts/EasilySettingCustomTitlePost";
+import DevelopmentCategory from "../components/blog/blog-posts/development/DevelopmentCategory";
+import GettingStartedPost from "../components/blog/blog-posts/development/posts/GettingStartedPost";
+import CustomHoverDomainForHerokuAppPost from "../components/blog/blog-posts/development/posts/CustomHoverDomainForHerokuAppPost";
+import MovingToAwsPost from "../components/blog/blog-posts/development/posts/MovingToAwsPost";
+import SettingUpImageStoragePost from "../components/blog/blog-posts/development/posts/SettingUpImageStoragePost";
+import EasilySettingCustomTitlePost from "../components/blog/blog-posts/development/posts/EasilySettingCustomTitlePost";
 import FixingFloppyDrive from "../components/blog/blog-posts/retro-computing/posts/FixingFloppyDrive";
 import GameGearRepairPart1 from "../components/blog/blog-posts/retro-gaming/posts/GameGearRepairPart1";
 import GameGearRepairPart2 from "../components/blog/blog-posts/retro-gaming/posts/GameGearRepairPart2";
 import GameGearRepairPart3 from "../components/blog/blog-posts/retro-gaming/posts/GameGearRepairPart3";
-import BlogNavigationUpdates from "../components/blog/blog-posts/website-updates/posts/BlogNavigationUpdates";
+import BlogNavigationUpdates from "../components/blog/blog-posts/development/posts/BlogNavigationUpdates";
 import SE30FTPConnectionPost from "../components/blog/blog-posts/retro-computing/posts/SE30FTPConnectionPost";
 import TakingAndConvertingScreenshotsPost from "../components/blog/blog-posts/retro-computing/posts/TakingAndConvertingScreenshotsPost";
 import CartridgeCleaningPost from "../components/blog/blog-posts/retro-gaming/posts/CartridgeCleaningPost";
@@ -27,9 +27,10 @@ import MacintoshCAdvancedHelloWorld from "../components/blog/blog-posts/retro-co
 import USBKeyboardWithCompactMac from "../components/blog/blog-posts/retro-computing/posts/USBKeyboardWithCompactMac";
 import { BlogMap } from "../types/Sitemap";
 import { CategoryBasename } from "../constants/constants";
-import The404RabbitHoldPost from "../components/blog/blog-posts/website-updates/posts/The404RabbitHoldPost";
+import The404RabbitHoldPost from "../components/blog/blog-posts/development/posts/The404RabbitHoldPost";
+import TheArtOfPostgreSQLPart1Post from "../components/blog/blog-posts/development/posts/TheArtOfPostgreSQLPart1Post";
 
-const { RETRO_COMPUTING, RETRO_GAMING, WEBSITE_UPDATES } = CategoryBasename;
+const { RETRO_COMPUTING, RETRO_GAMING, DEVELOPMENT } = CategoryBasename;
 const DATE_FORMAT = "MM/DD/YYYY";
 const date = (dateString: string) => moment(dateString, DATE_FORMAT);
 
@@ -138,10 +139,10 @@ const blogMap: BlogMap = {
         },
       },
     },
-    /* Website Updates Blog Category */
-    [WEBSITE_UPDATES]: {
-      title: "Website Updates",
-      Component: WebsiteUpdatesCategory,
+    /* Development Blog Category */
+    [DEVELOPMENT]: {
+      title: "Development",
+      Component: DevelopmentCategory,
       routes: {
         "getting-started": {
           title: "Getting Started",
@@ -177,6 +178,11 @@ const blogMap: BlogMap = {
           title: "The 404 Rabbit Hole",
           Component: The404RabbitHoldPost,
           date: date("02/11/2022"),
+        },
+        "the-art-of-postgresql-part1": {
+          title: "Review of The Art of Postgres SQL - Part 1",
+          Component: TheArtOfPostgreSQLPart1Post,
+          date: date("05/11/2022"),
         },
       },
     },

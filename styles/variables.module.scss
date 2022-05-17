@@ -1,22 +1,27 @@
 // Color Update
 $background: #0e131f;
+$background-dark: #06090e;
+$background-light: #e2e8f3;
 $accent1: #9c58c6;
 $accent2: #d1495B;
 $accent3: #00798c;
 $accent4: #7b9e89;
 $accent5: #c06e52;
 
-  // Primary Application Colors
+// text-colors
+$primary-text-color: #ffffff;
+$secondary-text: #000000;
+$terminal-green-text: #41ff00;
+
+// Primary Application Colors
 $primary: #212121;
 $primary-light: #484848;
 $primary-dark: #000000;
-$primary-text-color: #ffffff;
 
 // Secondary Application Colors
 $secondary: #f5f5f5;
 $secondary-light: #ffffff;
 $secondary-dark: #c2c2c2;
-$secondary-text: #000000;
 
 // Misc Colors
 $link: $accent2;
@@ -24,7 +29,7 @@ $link: $accent2;
 // Category Colors
 $retro-gaming: $accent1;
 $retro-computing: $accent3;
-$website-updates: $accent4;
+$development: $accent4;
 
 // Breakpoints for responsive design
 $phone: 640px;
@@ -44,5 +49,5 @@ $footer-height: 4rem;
   linkColor: $link;
   retroGamingColor: $retro-gaming;
   retroComputingColor: $retro-computing;
-  websiteUpdatesColor: $website-updates;
+  developmentColor: $development;
 }

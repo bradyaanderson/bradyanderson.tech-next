@@ -1,0 +1,11 @@
+@import "../styles/variables.module";
+
+.inlineCode {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid white;
+  padding: 2px;
+  background: $background-dark;
+  color: $terminal-green-text;
+}

@@ -1,0 +1,9 @@
+@import "../styles/variables.module";
+
+.blockQuote {
+  background: $background-dark;
+  border-left: 8px solid $background-light;
+  margin: 1.5em 0.75em;
+  padding: 0.5rem 0.75rem;
+}
+
