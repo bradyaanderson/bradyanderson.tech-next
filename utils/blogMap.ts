@@ -182,7 +182,7 @@ const blogMap: BlogMap = {
         "the-art-of-postgresql-part1": {
           title: "Review of The Art of Postgres SQL - Part 1",
           Component: TheArtOfPostgreSQLPart1Post,
-          date: date("05/11/2022"),
+          date: date("05/16/2022"),
         },
       },
     },
