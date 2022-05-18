@@ -8,7 +8,7 @@ function TheArtOfPostgreSQLPart1Post() {
     <div>
       <Paragraph>
         As a full-stack developer, I’ve always had a weird relationship with
-        SQL. Rarely do I need to write a query more complex than{" "}
+        SQL. Rarely have I needed to write queries more complex than{" "}
         <InlineCode>
           SELECT * FROM &lt;table&gt; WHERE &lt;condition&gt;
         </InlineCode>
@@ -22,7 +22,7 @@ function TheArtOfPostgreSQLPart1Post() {
         >
           object-relational mapping
         </ExternalLink>
-        , this means I can sometimes go weeks without seeing or writing actual
+        . This means I can sometimes go weeks without seeing or writing actual
         SQL. This relationship with SQL has left me never truly feeling
         comfortable with the language and that’s something I want to change.
       </Paragraph>
@@ -264,8 +264,8 @@ function TheArtOfPostgreSQLPart1Post() {
       </Paragraph>
 
       <Paragraph>
-        On top of all of this, there is so much more that Postgres adds on top
-        of SQL. I haven't even mentioned the great tooling included with
+        There is so much more that Postgres adds on top of SQL than what I have
+        listed here. I haven't even mentioned the great tooling included with
         Postgres like the command line application, PostgreSQL Client, and the
         GUI tool, pgAdmin, which have their own extensive set of features
         allowing you to take full advantage of Postgres. Take some time to look
