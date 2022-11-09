@@ -34,6 +34,7 @@ function Code({ language, path, filename }: Props) {
         margin: "auto",
       }}
     >
+      {/* @ts-ignore */}
       <SyntaxHighlighter language={language} style={irBlack}>
         {code}
       </SyntaxHighlighter>

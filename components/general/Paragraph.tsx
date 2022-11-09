@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./paragraph.module.scss";
 
+interface Props {
+  children: React.ReactNode;
+}
+
 /** Paragraph of blog post. Will allow for easier updates in the future. */
-const Paragraph: React.FunctionComponent = ({ children }) => {
+const Paragraph: React.FunctionComponent<Props> = ({ children }) => {
   return <span className={styles.paragraph}>{children}</span>;
 };
 

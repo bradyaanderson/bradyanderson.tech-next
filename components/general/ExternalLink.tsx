@@ -3,6 +3,7 @@ import React from "react";
 interface Props {
   /** URL to navigate to. */
   link: string;
+  children: React.ReactNode;
 }
 
 /** Opens external link in a new tab. */
