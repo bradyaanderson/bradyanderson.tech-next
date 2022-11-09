@@ -7,4 +7,3 @@ Host: https://bradyanderson.tech
 
 # Sitemaps
 Sitemap: https://bradyanderson.tech/sitemap.xml
-Sitemap: https://bradyanderson.tech/sitemap-0.xml

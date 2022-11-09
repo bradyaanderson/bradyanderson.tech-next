@@ -15,15 +15,13 @@ function PostNavigator({ postDetails }: Props) {
   const dateString = moment(date).format("MM/DD/YYYY");
   return (
     <Link href={link} passHref>
-      <a>
-        <div
-          className={styles.blogPostNavigatorLink}
-          style={{ background: blogCategoryToColorMap[category] }}
-        >
-          <span className={styles.blogPostNavigatorTitle}>{title}</span>
-          <span className={styles.blogPostNavigatorDate}>{dateString}</span>
-        </div>
-      </a>
+      <div
+        className={styles.blogPostNavigatorLink}
+        style={{ background: blogCategoryToColorMap[category] }}
+      >
+        <span className={styles.blogPostNavigatorTitle}>{title}</span>
+        <span className={styles.blogPostNavigatorDate}>{dateString}</span>
+      </div>
     </Link>
   );
 }

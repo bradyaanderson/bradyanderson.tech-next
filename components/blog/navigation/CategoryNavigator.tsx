@@ -14,10 +14,11 @@ function CategoryNavigator({ categoryTitle, categoryPath }: Props) {
   const basename = path.basename(categoryPath);
   return (
     <li>
-      <Link href={categoryPath}>
-        <a style={{ color: blogCategoryToColorMap[basename] }}>
-          {categoryTitle}
-        </a>
+      <Link
+        href={categoryPath}
+        style={{ color: blogCategoryToColorMap[basename] }}
+      >
+        {categoryTitle}
       </Link>
     </li>
   );
