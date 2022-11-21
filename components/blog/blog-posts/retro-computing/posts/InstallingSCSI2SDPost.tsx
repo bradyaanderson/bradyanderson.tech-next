@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
@@ -21,9 +21,10 @@ function InstallingSCSI2SDPost() {
         Macintosh.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/SCSI2SD.jpg`}
-        maxWidth="16rem"
+        width={256}
+        height={287}
         caption="The SCSI2SD device."
       />
 
@@ -47,9 +48,10 @@ function InstallingSCSI2SDPost() {
         the SCSI2SD to the system which other tutorials did not talk about.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/Materials.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={381}
         caption="The materials needed to install the SCSI2SD."
       />
 
@@ -112,24 +114,28 @@ function InstallingSCSI2SDPost() {
         and installed macOS 7 on it, I got to work installing the SCSI2SD:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/Power2Analog.jpg`}
-        maxWidth="24rem"
+        width={384}
+        height={512}
         caption="First I connected the Molex 1x4 cable to the analog board."
       />
-      <Image
+      <Figure
         path={`${imageBasePath}/PowerCables.jpg`}
-        maxWidth="24rem"
+        width={384}
+        height={512}
         caption="Next, I connected the 4 Pin Molex to 3.5 Floppy to the Molex 1x4 power cable."
       />
-      <Image
+      <Figure
         path={`${imageBasePath}/SCSIToLogicBoard.jpg`}
-        maxWidth="24rem"
+        width={384}
+        height={288}
         caption="I connected the 50-pin SCSI ribbon cabel to the logic board."
       />
-      <Image
+      <Figure
         path={`${imageBasePath}/ConnectedSCSI2SD.jpg`}
-        maxWidth="24rem"
+        width={384}
+        height={288}
         caption="Last, I connected the power and SCSI cables to the SCSI2SD."
       />
       <Paragraph>

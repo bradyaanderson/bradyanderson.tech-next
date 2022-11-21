@@ -1,0 +1,16 @@
+@import "../styles/variables.module";
+
+.container {
+  width: 100%;
+}
+
+.figure {
+  max-width: 82vw;
+  margin: 0 auto;
+}
+
+.caption {
+  color: $secondary-dark;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}

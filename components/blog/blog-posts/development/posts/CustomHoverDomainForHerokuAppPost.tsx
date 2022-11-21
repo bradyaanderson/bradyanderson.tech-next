@@ -1,5 +1,5 @@
 import Paragraph from "../../../../general/Paragraph";
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import ExternalLink from "../../../../general/ExternalLink";
 
 function CustomHoverDomainForHerokuAppPost() {
@@ -8,10 +8,10 @@ function CustomHoverDomainForHerokuAppPost() {
       <Paragraph>
         When you create an application in{" "}
         <ExternalLink link="https://www.heroku.com/">Heroku</ExternalLink>, you
-        also get a Heroku domain where you can access the app.
+        also get a Heroku domain where you can access the app.{" "}
         <span style={{ textDecoration: "line-through" }}>
           In the case of bradyanderson.tech, you can also find this site at
-          bradyanderson-tech-new.herokuapp.com .
+          development-new.herokuapp.com .
         </span>
         The Heroku domain was great for when I first started because I could
         simply pull up this URL on my phone and test out how easy it was to use
@@ -33,10 +33,11 @@ function CustomHoverDomainForHerokuAppPost() {
         application. Domain settings are found on the application dashboard
         within the settings tab.
       </Paragraph>
-      <Image
-        path="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/herokuDomainSettings.png"
+      <Figure
+        path="/blog/categories/development/posts/custom-hover-domain-for-heroku-app/herokuDomainSettings.png"
         caption="Heroku domain settings."
-        maxWidth="48rem"
+        width={736}
+        height={133}
       />
       <Paragraph>
         I clicked "Add Domain" and added "www.bradyanderson.tech" as the domain
@@ -50,10 +51,11 @@ function CustomHoverDomainForHerokuAppPost() {
         Next, I configured the Hover DNS settings. These settings are found in
         the Hover control panel in the DNS tab.
       </Paragraph>
-      <Image
-        path="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/hoverDNSSettings.png"
+      <Figure
+        path="/blog/categories/development/posts/custom-hover-domain-for-heroku-app/hoverDNSSettings.png"
         caption="Hover DNS Settings."
-        maxWidth="48rem"
+        width={736}
+        height={227}
       />
       <Paragraph>
         The important thing here was that Type CNAME with Host www is set to
@@ -70,10 +72,11 @@ function CustomHoverDomainForHerokuAppPost() {
         be reached. It's not surprising that this happens due to how I
         configured the DNS.
       </Paragraph>
-      <Image
-        path="/blog/categories/bradyanderson-tech/posts/custom-hover-domain-for-heroku-app/hoverForward.png"
+      <Figure
+        path="/blog/categories/development/posts/custom-hover-domain-for-heroku-app/hoverForward.png"
         caption="Hover Forward Settings."
-        maxWidth="48rem"
+        width={736}
+        height={123}
       />
       <Paragraph>
         Luckily the fix is pretty easy. I simply set up a forward on Hover so

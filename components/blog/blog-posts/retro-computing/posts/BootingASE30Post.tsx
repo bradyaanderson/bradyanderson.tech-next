@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
@@ -25,10 +25,11 @@ function BootingASE30Post() {
         drive from Amazon.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageDirectory}/floppies.jpg`}
         caption="My stack of recycled floppies. A lot of them are old Windows disks."
-        maxWidth="24rem"
+        width={384}
+        height={288}
       />
 
       <Paragraph>
@@ -51,10 +52,11 @@ function BootingASE30Post() {
         suited for systems without hard drives.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageDirectory}/write.jpg`}
         caption="The cheap USB floppy drive that I got off Amazon."
-        maxWidth="24rem"
+        width={384}
+        height={288}
       />
 
       <Paragraph>
@@ -103,10 +105,11 @@ function BootingASE30Post() {
         </ul>
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageDirectory}/welcome.jpg`}
         caption="The welcome message. The weird camera angle is to try and reduce some of the lines you see when trying to capture a picture of a CRT."
-        maxWidth="16rem"
+        width={256}
+        height={341}
       />
 
       <Paragraph>

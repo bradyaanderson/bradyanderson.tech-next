@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
@@ -28,9 +28,10 @@ function MacintoshCHelloWorldPost() {
         , meaning it was easy to get and another reason I chose THINK C.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/ThinkCInstall.png`}
-        maxWidth="32rem"
+        width={512}
+        height={342}
         caption="Besides the application, THINK C came with several folders of content."
       />
 
@@ -41,9 +42,10 @@ function MacintoshCHelloWorldPost() {
         my new project..
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/NewProject.png`}
-        maxWidth="32rem"
+        width={512}
+        height={342}
         caption="The new project dialog. I’m choosing to name this new project HelloWorld."
       />
 
@@ -52,9 +54,10 @@ function MacintoshCHelloWorldPost() {
         empty right now, but that’s soon to change.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/EmptyProject.png`}
-        maxWidth="32rem"
+        width={512}
+        height={342}
         caption="The empty project window."
       />
 
@@ -64,9 +67,10 @@ function MacintoshCHelloWorldPost() {
         whistles to this program. All I want to do is print some text.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/Code.png`}
-        maxWidth="32rem"
+        width={512}
+        height={342}
         caption="Here’s my basic Hello World. As you can see, there’s nothing special here. If you wanted, you could compile this code on any modern computer and get the same results."
       />
 
@@ -94,9 +98,10 @@ function MacintoshCHelloWorldPost() {
         “C Libraries” folder).
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/Project.png`}
-        maxWidth="32rem"
+        width={512}
+        height={342}
         caption="My Hello World project after adding hello.c and ANSI library."
       />
 
@@ -114,9 +119,10 @@ function MacintoshCHelloWorldPost() {
         the new application to open it and saw “Hello World!” appear on screen.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/HelloWorld.png`}
-        maxWidth="32rem"
+        width={512}
+        height={342}
         caption='"Hello World!" printed on screen'
       />
     </div>

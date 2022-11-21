@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import Link from "next/link";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
@@ -26,9 +26,10 @@ function GameGearRepairPart1() {
         trying.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGear.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={299}
         caption="The broken Game Gear I purchased."
       />
 
@@ -47,9 +48,10 @@ function GameGearRepairPart1() {
         for a few dollars.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGearBacksideInk.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={299}
         caption="Back side of the Game Gear. I've marked Phillips-head screws that need to be removed in red and the 4.5mm GameBit screw in green."
       />
 
@@ -59,9 +61,10 @@ function GameGearRepairPart1() {
         audio PCB:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGearBackOpen.jpg`}
-        maxWidth="26rem"
+        width={416}
+        height={344}
         caption="The Game Gear after opening the back. On the bottom is the main PCB. The sound and power PCBs are located in the other part."
       />
 
@@ -74,9 +77,10 @@ function GameGearRepairPart1() {
         on the main board.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGearMainBoardAttached.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={330}
         caption="The main PCB still attached to the case. The whole board is corroded, but it is especially evident on the left-side."
       />
 
@@ -90,9 +94,10 @@ function GameGearRepairPart1() {
         corrosion had even reached the front of the board.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGearMainBoardFront.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={273}
         caption="The front of the main PCB with corrosion."
       />
 
@@ -112,9 +117,10 @@ function GameGearRepairPart1() {
         what it looked like when I finished:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGearMainBoardCleaned.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={315}
         caption="The main PCB after being cleaned."
       />
 
@@ -122,9 +128,10 @@ function GameGearRepairPart1() {
         Now it was time to move onto the sound and power PCBs:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGearPowerAndSoundAttached.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={306}
         caption="The back side of the Game Gear with sound and power PCBs still attached."
       />
 
@@ -134,9 +141,10 @@ function GameGearRepairPart1() {
         screws holding the power PCB to the case.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGearPowerBoard.jpg`}
-        maxWidth="26rem"
+        width={416}
+        height={316}
         caption="The power PCB."
       />
 
@@ -150,9 +158,10 @@ function GameGearRepairPart1() {
         board attached to the case.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/GameGearSoundBoard.jpg`}
-        maxWidth="26rem"
+        width={416}
+        height={295}
         caption="The sound PCB."
       />
 

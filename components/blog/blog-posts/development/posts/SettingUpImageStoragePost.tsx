@@ -1,5 +1,5 @@
 import Paragraph from "../../../../general/Paragraph";
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import ExternalLink from "../../../../general/ExternalLink";
 
 function SettingUpImageStoragePost() {
@@ -45,9 +45,10 @@ function SettingUpImageStoragePost() {
           </ul>
         </ol>
       </Paragraph>
-      <Image
-        path="/blog/categories/bradyanderson-tech/posts/setting-up-image-storage/public-permission.png"
-        maxWidth="32rem"
+      <Figure
+        path="/blog/categories/development/posts/setting-up-image-storage/public-permission.png"
+        width={512}
+        height={379}
         caption="'Grant public-read access' is set so anyone can view."
       />
       <Paragraph>

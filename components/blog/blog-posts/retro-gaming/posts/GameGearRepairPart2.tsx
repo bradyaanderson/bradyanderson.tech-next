@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import Link from "next/link";
 import ExternalLink from "../../../../general/ExternalLink";
@@ -34,10 +34,11 @@ function GameGearRepairPart2() {
         looked like this:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/CapacitorsRemoved.jpg`}
         caption="The Power PCB with capacitors removed."
-        maxWidth="24rem"
+        width={384}
+        height={302}
       />
 
       <Paragraph>
@@ -93,10 +94,11 @@ function GameGearRepairPart2() {
         multimeter.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/Breadboard.jpg`}
         caption="The Power PCB connected to a breadboard. Here I'm testing the pin which should read 34 volts."
-        maxWidth="16rem"
+        width={256}
+        height={341}
       />
 
       <Paragraph>
@@ -113,10 +115,11 @@ function GameGearRepairPart2() {
         struggle to hold the capacitor in place.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/ReplacedCapacitors.jpg`}
         caption="The Power PCB with new capacitors installed."
-        maxWidth="24rem"
+        width={384}
+        height={270}
       />
 
       <Paragraph>
@@ -129,10 +132,11 @@ function GameGearRepairPart2() {
         regulating power, so I replaced it.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/MainBoardReplacement.jpg`}
         caption="Here you can see the new capacitor I've installed in place of C68 next to the blue jumper wire connector."
-        maxWidth="24rem"
+        width={384}
+        height={288}
       />
       <Paragraph>
         I wasn’t expecting this to work, so it surprised me when I reattached

@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/home.module.scss";
-import Image from "../components/general/S3Image";
+import Figure from "../components/general/Figure";
 
 const HomePage: NextPage = () => {
   return (
@@ -12,7 +12,12 @@ const HomePage: NextPage = () => {
       <main>
         <div className={styles.homeContainer}>
           <div className={styles.logoContainer}>
-            <Image path={`/index/profileIndex.jpg`} maxWidth="32rem" />
+            <Figure
+              path={`/index/profileIndex.jpg`}
+              height={300}
+              width={300}
+              priority
+            />
           </div>
           <div className={styles.titleContainer}>
             <h1>Welcome to bradyanderson.tech.</h1>

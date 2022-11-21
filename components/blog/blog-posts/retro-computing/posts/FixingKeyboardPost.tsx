@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 
 const imageBasePath =
@@ -21,9 +21,10 @@ function FixingKeyboardPost() {
         trying to fix the keyboard myself.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/keyboard.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={206}
         caption="The Apple II Keyboard that came with my SE/30."
       />
 
@@ -37,9 +38,10 @@ function FixingKeyboardPost() {
         it snapped... Whoops.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/bentPin.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={321}
         caption="You can see the bent pin here. I did my best to try and make it as clear as possible, but I do not have a good macro camera."
       />
 
@@ -69,9 +71,10 @@ function FixingKeyboardPost() {
         eventually found an S-Video cable.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/messOfCables.jpg`}
-        maxWidth="16rem"
+        width={256}
+        height={341}
         caption="My mess of cables. There is an S-Video cable in here somewhere."
       />
 
@@ -81,9 +84,10 @@ function FixingKeyboardPost() {
         keyboard also confirmed this.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/comparison.jpg`}
-        maxWidth="24rem"
+        width={384}
+        height={270}
         caption="ADB compared to S-Video. Again, I've adjusted some settings to try and make the pinouts more visible, but it's still pretty hard to see."
       />
       <Paragraph>
@@ -93,9 +97,10 @@ function FixingKeyboardPost() {
         that's exactly what I did.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/helloWorld.jpg`}
-        maxWidth="20rem"
+        width={320}
+        height={567}
         caption='"Hello World" typed into the text editor on the SE/30.'
       />
 

@@ -1,14 +1,16 @@
 import Paragraph from "../../../../general/Paragraph";
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import ExternalLink from "../../../../general/ExternalLink";
 
 function GettingStartedPost() {
   return (
     <div>
-      <Image
-        path="/blog/categories/bradyanderson-tech/posts/getting-started/homepage.png"
+      <Figure
+        path="/blog/categories/development/posts/getting-started/homepage.png"
         caption="The homepage on 07/25/2021."
-        maxWidth="32rem"
+        width={512}
+        height={251}
+        priority
       />
 
       <Paragraph>

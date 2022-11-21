@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
@@ -17,9 +17,10 @@ function OpeningAMacSE30Post() {
         purchase the computer.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/MacSE30.jpg`}
-        maxWidth={"16rem"}
+        width={256}
+        height={341}
         caption="My Macintosh SE/30."
       />
 
@@ -33,9 +34,10 @@ function OpeningAMacSE30Post() {
         enough to open the case.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/NoBoot.jpg`}
-        maxWidth={"16rem"}
+        width={256}
+        height={341}
         caption="This is the image that shows when the SE/30 does not have any media to boot from."
       />
 
@@ -46,9 +48,10 @@ function OpeningAMacSE30Post() {
         would have been okay with a 6-inch screwdriver.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/OpeningCase.jpg`}
-        maxWidth={"16rem"}
+        width={256}
+        height={341}
         caption="Using a 12-inch T15 screwdriver to reach the hard to reach screws."
       />
 
@@ -60,9 +63,10 @@ function OpeningAMacSE30Post() {
         components.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/CRT.jpg`}
-        maxWidth={"24rem"}
+        width={384}
+        height={288}
         caption="The CRT (Needs some cleaning)."
       />
 
@@ -76,9 +80,10 @@ function OpeningAMacSE30Post() {
         why the machine won't boot to an operating system.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/NoHardDrive.jpg`}
-        maxWidth={"16rem"}
+        width={256}
+        height={341}
         caption="If there was a hard drive, it would sit under the CRT."
       />
 
@@ -88,9 +93,10 @@ function OpeningAMacSE30Post() {
         to do more with these components later.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/LogicBoard.jpg`}
-        maxWidth={"24rem"}
+        width={384}
+        height={288}
         caption="If there was a hard drive, it would sit under the CRT."
       />
 
@@ -99,9 +105,10 @@ function OpeningAMacSE30Post() {
         processor.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/Processor.jpg`}
-        maxWidth={"16rem"}
+        width={256}
+        height={341}
         caption="The Motorola 68030."
       />
 

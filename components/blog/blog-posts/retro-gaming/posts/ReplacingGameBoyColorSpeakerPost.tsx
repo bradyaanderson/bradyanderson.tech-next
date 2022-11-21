@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
 
@@ -13,10 +13,11 @@ function ReplacingGameBoyColorSpeakerPost() {
         bothered by this. But I decided it was finally time to fix the speaker.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/GameBoyColor.jpg`}
         caption="My Game Boy Color before replacing the speaker."
-        maxWidth="16rem"
+        width={256}
+        height={369}
       />
 
       <Paragraph>
@@ -39,10 +40,11 @@ function ReplacingGameBoyColorSpeakerPost() {
         panel.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/BackCoverRemoved.jpg`}
         caption="The Game Boy Color with back panel removed."
-        maxWidth="24rem"
+        width={384}
+        height={296}
       />
 
       <Paragraph>
@@ -57,10 +59,11 @@ function ReplacingGameBoyColorSpeakerPost() {
         That explains why it no longer worked.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/OldSpeaker.jpg`}
         caption="The old speaker, rusted from water damage."
-        maxWidth="16rem"
+        width={256}
+        height={221}
       />
 
       <Paragraph>
@@ -70,10 +73,11 @@ function ReplacingGameBoyColorSpeakerPost() {
         not sure if it mattered.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/NewSpeaker.jpg`}
         caption="The new speaker after soldering it to speaker wires."
-        maxWidth="16rem"
+        width={256}
+        height={466}
       />
 
       <Paragraph>

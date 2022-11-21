@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import Link from "next/link";
 import ExternalLink from "../../../../general/ExternalLink";
@@ -48,9 +48,10 @@ function MacintoshCAdvancedHelloWorld() {
         Library to my project. This library contains functions and variables
         related to the Mac Toolbox.
       </Paragraph>
-      <Image
+      <Figure
         path={`${baseAssetPath}/project.png`}
-        maxWidth={"32rem"}
+        width={512}
+        height={342}
         caption={"The project with c file and MacTraps Library."}
       />
 
@@ -59,9 +60,10 @@ function MacintoshCAdvancedHelloWorld() {
         application. Here's what it looked like when I ran it:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseAssetPath}/HelloWorld.jpg`}
-        maxWidth={"32rem"}
+        width={512}
+        height={399}
         caption={
           "I couldn't take a screenshot of the program because of the way I'm handling events. As I write programs to handle more advanced events, I hope to fix this."
         }

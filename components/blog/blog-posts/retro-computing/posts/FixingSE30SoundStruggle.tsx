@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
@@ -33,10 +33,11 @@ function FixingSE30SoundStruggle() {
         capacitors on the logic board should restore the sound.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/Capacitors.jpg`}
         caption="Capacitors C3 - C6. You can see they no longer appear flat against the board due to age."
-        maxWidth="16rem"
+        width={256}
+        height={341}
       />
 
       <Paragraph>
@@ -48,10 +49,11 @@ function FixingSE30SoundStruggle() {
         soldering iron to clean up the residual solder left by the capacitors.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/RemovedCapacitors.jpg`}
         caption="Capacitors C3 - C6 removed. Looking back, I can see that I didn't do a great job."
-        maxWidth="16rem"
+        width={256}
+        height={273}
       />
 
       <Paragraph>
@@ -80,10 +82,11 @@ function FixingSE30SoundStruggle() {
         working.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/RemovedCapacitorsFull.jpg`}
         caption="The logic board after removing all non-through-hold capacitors."
-        maxWidth="24rem"
+        width={384}
+        height={400}
       />
 
       <Paragraph>
@@ -111,10 +114,11 @@ function FixingSE30SoundStruggle() {
         but I went ahead, packaged it up, and got it sent out.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/ReplacedCapacitors.jpg`}
         caption="The board after being returned from capacitor replacement and cleaning."
-        maxWidth="24rem"
+        width={384}
+        height={407}
       />
 
       <Paragraph>
