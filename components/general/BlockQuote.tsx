@@ -4,10 +4,11 @@ import styles from "./BlockQuote.module.scss";
 interface Props {
   /* The source of the quotation. */
   cite?: string;
+  children: React.ReactNode;
 }
 
 /** Block Quotes for long quotes. */
-const BlockQuote: React.FunctionComponent<Props> = ({ children, cite }) => {
+const BlockQuote = ({ children, cite }: Props) => {
   return (
     <blockquote cite={cite} className={styles.blockQuote}>
       {children}

@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./InlineCode.module.scss";
 
+interface Props {
+  children: React.ReactNode;
+}
+
 /** Component for displaying inline code. */
-const InlineCode: React.FunctionComponent = ({ children }) => {
+const InlineCode = ({ children }: Props) => {
   return <code className={styles.inlineCode}>{children}</code>;
 };
 

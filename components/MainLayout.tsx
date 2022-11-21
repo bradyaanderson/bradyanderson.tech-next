@@ -3,8 +3,12 @@ import Footer from "./footer/Footer";
 import styles from "./main-layout.module.scss";
 import Header from "./header/header";
 
+interface Props {
+  children: React.ReactNode;
+}
+
 /** Main layout for website. Includes nav and footer. */
-const MainLayout: React.FunctionComponent = ({ children }) => {
+const MainLayout = ({ children }: Props) => {
   return (
     <>
       <div className={styles.appContainer}>
