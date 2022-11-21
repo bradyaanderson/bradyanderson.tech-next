@@ -1,5 +1,5 @@
 import NextImage from "next/image";
-import { join } from "path";
+import {join} from "path";
 import styles from "./figure.module.scss";
 
 /** The URL where images are hosted */
@@ -23,8 +23,8 @@ interface Props {
 function Figure({ path, caption, width, height, priority }: Props) {
   return (
     <div className={styles.container}>
-      <div style={{ width }} className={styles.figure}>
-        <figure>
+      <div style={{ width }} className={styles.figureBox}>
+        <figure style={{margin: 0, padding: 0}}>
           <NextImage
             src={join(PUBLIC_IMAGE_URL, path)}
             height={height}

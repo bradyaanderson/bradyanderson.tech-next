@@ -10,6 +10,7 @@ body {
   background: $background;
   color: $primary-text-color;
   word-break: break-word;
+  line-height: 29px;
 }
 
 code {
@@ -21,4 +22,13 @@ code {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
 }
