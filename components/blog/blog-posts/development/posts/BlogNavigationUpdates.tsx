@@ -1,5 +1,5 @@
 import Paragraph from "../../../../general/Paragraph";
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 
 function BlogNavigationUpdates() {
   const baseImagePath =
@@ -17,11 +17,12 @@ function BlogNavigationUpdates() {
         more posts to this blog.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/Sidebar.png`}
         caption="The blog with sidebar before navigation updates."
-        maxWidth="42rem"
-        imageBorder="solid white"
+        width={672}
+        height={252}
+        priority
       />
 
       <Paragraph>
@@ -31,11 +32,11 @@ function BlogNavigationUpdates() {
         navigation between different categories in the blog.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/CategoryNav.png`}
         caption="The new category navigator."
-        maxWidth="16rem"
-        imageBorder="solid white"
+        width={256}
+        height={171}
       />
 
       <Paragraph>
@@ -46,11 +47,11 @@ function BlogNavigationUpdates() {
         for that category.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/RecentNav.png`}
         caption="The new recent posts navigator that can be found on the blog home page."
-        maxWidth="42rem"
-        imageBorder="solid white"
+        width={672}
+        height={280}
       />
 
       <Paragraph>
@@ -61,11 +62,11 @@ function BlogNavigationUpdates() {
         pages.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/HeadNav.png`}
         caption="The new header navigator that can be found on blog categories and posts."
-        maxWidth="42rem"
-        imageBorder="solid white"
+        width={672}
+        height={37}
       />
 
       <Paragraph>

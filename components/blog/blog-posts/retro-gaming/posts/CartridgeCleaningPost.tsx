@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 
 function CartridgeCleaningPost() {
@@ -24,9 +24,10 @@ function CartridgeCleaningPost() {
         arrived not with 32 NES games like I was expecting, but 47:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/Lot.jpg`}
-        maxWidth="38rem"
+        width={608}
+        height={338}
         caption="The 47 games I received. All games are in decent condition, but need some clean up."
       />
 
@@ -49,9 +50,10 @@ function CartridgeCleaningPost() {
         price on a cartridge.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/CartBefore.jpg`}
-        maxWidth="16rem"
+        width={256}
+        height={341}
         caption="Super Mario Bros 3 before cleaning."
       />
 
@@ -63,9 +65,10 @@ function CartridgeCleaningPost() {
         permanent marker would need some additional work.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/CartMagicEraser.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={384}
         caption="Super Mario Bros 3 after Magic Eraser."
       />
 
@@ -75,9 +78,10 @@ function CartridgeCleaningPost() {
         permanent markers with a lot of scrubbing.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/CartAlcohol.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={384}
         caption="Super Mario Bros 3 after isopropyl alcohol."
       />
 
@@ -89,14 +93,16 @@ function CartridgeCleaningPost() {
         damp rag to remove it.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/CartMarkerBefore.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={384}
         caption="Super Mario Bros 3 with dry erase marker applied."
       />
-      <Image
+      <Figure
         path={`${baseImagePath}/CartMarkerAfter.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={384}
         caption="Super Mario Bros 3 after whipping off dry erase marker."
       />
 
@@ -107,9 +113,10 @@ function CartridgeCleaningPost() {
         removed it.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/CartAfter.jpg`}
-        maxWidth="16rem"
+        width={256}
+        height={341}
         caption="Super Mario Bros 3 after multiple cleaning passes. The markings are almost gone, but I may come back later to do more."
       />
 
@@ -130,9 +137,10 @@ function CartridgeCleaningPost() {
         on most carts).
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/CartOpen.jpg`}
-        maxWidth="20rem"
+        width={320}
+        height={317}
         caption="Back of an NES cartridge with the Gamebit screwdriver."
       />
 
@@ -143,9 +151,10 @@ function CartridgeCleaningPost() {
         works pretty well, but these carts were more stubborn than most.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/PinsAlcohol.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={384}
         caption="Applying isopropyl alcohol to contact pins."
       />
 
@@ -157,9 +166,10 @@ function CartridgeCleaningPost() {
         with a bit of isopropyl alcohol.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/PinsPolish.jpg`}
-        maxWidth="32rem"
+        width={512}
+        height={384}
         caption="Polishing contact pins with wadding metal polish."
       />
 
@@ -168,9 +178,10 @@ function CartridgeCleaningPost() {
         game to start the next time I put it into the system.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/NESOn.jpg`}
-        maxWidth="26rem"
+        width={416}
+        height={348}
         caption="Super Mario Bros 3 working after contact cleaning."
       />
 

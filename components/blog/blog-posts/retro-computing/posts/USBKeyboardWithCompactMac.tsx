@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 import Link from "next/link";
@@ -15,10 +15,12 @@ function USBKeyboardWithCompactMac() {
         one thing that has really bothered me: the keyboard.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseAssetPath}/AppleKeyboardII.jpg`}
-        maxWidth={"32rem"}
+        width={512}
+        height={203}
         caption={"My Apple Keyboard II."}
+        priority
       />
 
       <Paragraph>
@@ -32,9 +34,10 @@ function USBKeyboardWithCompactMac() {
         keyboard is its keyswitches.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseAssetPath}/switches.jpg`}
-        maxWidth={"24rem"}
+        width={384}
+        height={257}
         caption={
           "The buckling rubber sleeve switches on the Apple Keyboard II."
         }
@@ -48,9 +51,10 @@ function USBKeyboardWithCompactMac() {
         when you spend hours every day using one, you have some preferences.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseAssetPath}/HHKB.jpg`}
-        maxWidth={"24rem"}
+        width={384}
+        height={255}
         caption={"The keyboard I use everyday: The Happy Hacking Keyboard."}
       />
 
@@ -81,9 +85,10 @@ function USBKeyboardWithCompactMac() {
         and ordered one myself.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseAssetPath}/Wombat.jpg`}
-        maxWidth={"16rem"}
+        width={256}
+        height={341}
         caption={"The ADB-USB Wombat."}
       />
 
@@ -96,9 +101,10 @@ function USBKeyboardWithCompactMac() {
         type on my SE/30 with my HHKB.{" "}
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseAssetPath}/HHKBWithMac.jpg`}
-        maxWidth={"18rem"}
+        width={256}
+        height={341}
         caption={"Using the Wombat to connect my HHKB to the SE/30."}
       />
 

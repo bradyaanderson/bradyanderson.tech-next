@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import styles from "../../styles/about.module.scss";
 import Head from "next/head";
 import Paragraph from "../../components/general/Paragraph";
-import Image from "../../components/general/S3Image";
+import Figure from "../../components/general/Figure";
 
 const AboutPage: NextPage = () => {
   return (
@@ -16,7 +16,12 @@ const AboutPage: NextPage = () => {
             <h1>About</h1>
           </div>
           <div className={styles.profile}>
-            <Image path={`/about/profileAbout.jpg`} maxWidth="14rem" />
+            <Figure
+              path={`/about/profileAbout.jpg`}
+              height={224}
+              width={224}
+              priority
+            />
           </div>
           <div className={styles.body}>
             <div>

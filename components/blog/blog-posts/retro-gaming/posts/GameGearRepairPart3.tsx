@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import Link from "next/link";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
@@ -37,10 +37,11 @@ function GameGearRepairPart3() {
         </ul>
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/MainBoardBefore.jpg`}
         caption="The main PCB before recapping (almost). I forgot to take a picture before starting, so you'll notice that some capacitors have already been replaced."
-        maxWidth="28rem"
+        width={448}
+        height={336}
       />
 
       <Paragraph>
@@ -73,10 +74,11 @@ function GameGearRepairPart3() {
         do this.After an hour, I had replaced every capacitor:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/MainBoardAfter.jpg`}
         caption="The main PCB after recapping. My soldering isn't the best, but everything is attached."
-        maxWidth="28rem"
+        width={448}
+        height={336}
       />
 
       <Paragraph>
@@ -104,10 +106,11 @@ function GameGearRepairPart3() {
         finished result:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/SoundBoardAfter.jpg`}
         caption="The sound PCB after recapping."
-        maxWidth="28rem"
+        width={448}
+        height={336}
       />
 
       <Paragraph>
@@ -119,10 +122,11 @@ function GameGearRepairPart3() {
         sticking out more than they used to, but otherwise it went smoothly.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/BackOfCase.jpg`}
         caption="Here's sound and power PCB attached to the case. You can see where I had to snip the metal shielding to make run for the new capacitors."
-        maxWidth="28rem"
+        width={448}
+        height={336}
       />
 
       <Paragraph>

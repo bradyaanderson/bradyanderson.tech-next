@@ -1,11 +1,11 @@
 import Paragraph from "../../../../general/Paragraph";
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import ExternalLink from "../../../../general/ExternalLink";
 import Code from "../../../../general/Code";
 
 function EasilySettingCustomTitlePost() {
   const baseAssetPath =
-    "/blog/categories/bradyanderson-tech/posts/dynamically-updating-html-title";
+    "/blog/categories/development/posts/dynamically-updating-html-title";
 
   return (
     <div>
@@ -58,9 +58,10 @@ ef688a4031c5b/public/index.html"
         the page as “bradyanderson.tech”.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseAssetPath}/BeforeTitleUpdate.png`}
-        maxWidth="28rem"
+        width={448}
+        height={70}
         caption='Each route displays "bradyanderson.tech".'
       />
 
@@ -112,9 +113,10 @@ ef688a4031c5b/public/index.html"
         visit.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseAssetPath}/AfterTitleUpdate.png`}
-        maxWidth="28rem"
+        width={448}
+        height={66}
         caption="Each route now has a unique title."
       />
 

@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 import Link from "next/link";
@@ -30,9 +30,10 @@ function TakingAndConvertingScreenshotsPost() {
         If you’re a Mac user, you may realize that this is the same command used
         to take full screen screenshots on modern macOS as well.
       </Paragraph>
-      <Image
+      <Figure
         path={`${baseAssetPath}/TestScreenshot.png`}
-        maxWidth="32rem"
+        width={468}
+        height={313}
         caption="A screenshot taken on my SE/30."
       />
 
@@ -45,9 +46,10 @@ function TakingAndConvertingScreenshotsPost() {
         reader on my Windows PC, however, I found I could copy any of the images
         off the disk.
       </Paragraph>
-      <Image
+      <Figure
         path={`${baseAssetPath}/DiskFormat.png`}
-        maxWidth="12rem"
+        width={192}
+        height={349}
         caption="Formatting a floppy disk on Windows."
       />
       <Paragraph>
@@ -62,9 +64,10 @@ function TakingAndConvertingScreenshotsPost() {
         format old Mac’s used to save screenshots as. The format is mostly
         unsupported nowadays.
       </Paragraph>
-      <Image
+      <Figure
         path={`${baseAssetPath}/FileExplorer.png`}
-        maxWidth="32rem"
+        width={512}
+        height={168}
         caption="Here’s what the files looked like before I transferred them off the floppy disk. You can see how the DOS format has shortened their original names."
       />
 
@@ -75,9 +78,10 @@ function TakingAndConvertingScreenshotsPost() {
         transfers. For more details on the FTP, check out this{" "}
         <Link href={"/blog/retro-computing/se30-ftp-connection"}>post</Link>.
       </Paragraph>
-      <Image
+      <Figure
         path={`${baseAssetPath}/Fetch.png`}
-        maxWidth="32rem"
+        width={468}
+        height={313}
         caption="Transferring files via FTP."
       />
 
@@ -94,9 +98,10 @@ function TakingAndConvertingScreenshotsPost() {
         PNG. In my time searching the internet for how to convert PICT files, I
         had never seen this listed as an option, so this was a surprise.
       </Paragraph>
-      <Image
+      <Figure
         path={`${baseAssetPath}/Word.png`}
-        maxWidth="24rem"
+        width={384}
+        height={407}
         caption="Saving a PICT file in Microsoft Word."
       />
       <Paragraph>
@@ -111,9 +116,10 @@ function TakingAndConvertingScreenshotsPost() {
       </Paragraph>
 
       <h2>Converting PICT Screenshots to PNG (ImageMagick)</h2>
-      <Image
+      <Figure
         path={`${baseAssetPath}/Convert.png`}
-        maxWidth="42rem"
+        width={672}
+        height={190}
         caption="Converting a directory of screenshots using ImageMagick and Ubuntu WSL."
       />
       <Paragraph>

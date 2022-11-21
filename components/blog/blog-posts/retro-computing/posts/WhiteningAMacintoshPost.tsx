@@ -1,10 +1,9 @@
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 
 function WhiteningAMacintoshPost() {
-  const baseImagePath = `/blog/categories/retro-computing/posts/whitening-a-macintosh`;
+  const baseImagePath =
+    "/blog/categories/retro-computing/posts/whitening-a-macintosh";
   return (
     <div>
       <Paragraph>
@@ -15,22 +14,18 @@ function WhiteningAMacintoshPost() {
         hoping to restore it to its original color.
       </Paragraph>
 
-      <Row>
-        <Col sm>
-          <Image
-            path={`${baseImagePath}/BeforeFront.jpg`}
-            maxWidth="16rem"
-            caption="The front-side of my Macintosh before whitening."
-          />
-        </Col>
-        <Col sm>
-          <Image
-            path={`${baseImagePath}/BeforeBack.jpg`}
-            maxWidth="16rem"
-            caption="The back-side of my Macintosh before whitening."
-          />
-        </Col>
-      </Row>
+      <Figure
+        path={`${baseImagePath}/BeforeFront.jpg`}
+        width={256}
+        height={341}
+        caption="The front-side of my Macintosh before whitening."
+      />
+      <Figure
+        path={`${baseImagePath}/BeforeBack.jpg`}
+        width={256}
+        height={341}
+        caption="The back-side of my Macintosh before whitening."
+      />
 
       <Paragraph>
         Many retro computer enthusiasts are familiar with retrobright, a mixture
@@ -49,9 +44,10 @@ function WhiteningAMacintoshPost() {
         instructions to create the retrobright gel.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/Retrobright.jpg`}
-        maxWidth="16rem"
+        width={256}
+        height={322}
         caption="The retrobright gel mixture."
       />
 
@@ -68,9 +64,10 @@ function WhiteningAMacintoshPost() {
         throughout the day.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/PartsInSun.jpg`}
-        maxWidth="24rem"
+        width={384}
+        height={261}
         caption="The retrobright gel mixture."
       />
 
@@ -81,9 +78,10 @@ function WhiteningAMacintoshPost() {
         the process and had bright-white marks on my fingers for several hours.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/Skin.jpg`}
-        maxWidth="20rem"
+        width={320}
+        height={322}
         caption="My hand after applying retrobright mixture. I washed and scrubbed thoroughly, but that didn't help. "
       />
 
@@ -98,29 +96,24 @@ function WhiteningAMacintoshPost() {
         first time retrobrighting a computer.
       </Paragraph>
 
-      <Row>
-        <Col sm>
-          <Image
-            path={`${baseImagePath}/AfterFront.jpg`}
-            maxWidth="16rem"
-            caption="The front-side after retrobright. It's a little splotchy, but the the yellowing is gone."
-          />
-        </Col>
-        <Col sm>
-          <Image
-            path={`${baseImagePath}/AfterBack.jpg`}
-            maxWidth="16rem"
-            caption="The back-side after retrobright. It's also a little splotchy."
-          />
-        </Col>
-        <Col sm>
-          <Image
-            path={`${baseImagePath}/AfterFrontOnly.jpg`}
-            maxWidth="16rem"
-            caption="The front panel after retrobright. I'm pretty happy with how this turned out."
-          />
-        </Col>
-      </Row>
+      <Figure
+        path={`${baseImagePath}/AfterFront.jpg`}
+        width={256}
+        height={341}
+        caption="The front-side after retrobright. It's a little splotchy, but the the yellowing is gone."
+      />
+      <Figure
+        path={`${baseImagePath}/AfterBack.jpg`}
+        width={256}
+        height={341}
+        caption="The back-side after retrobright. It's also a little splotchy."
+      />
+      <Figure
+        path={`${baseImagePath}/AfterFrontOnly.jpg`}
+        width={256}
+        height={341}
+        caption="The front panel after retrobright. I'm pretty happy with how this turned out."
+      />
     </div>
   );
 }

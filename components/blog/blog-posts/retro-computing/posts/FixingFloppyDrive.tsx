@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import EmbeddedYouTubeVideo from "../../../../general/EmbeddedYoutubeVideo";
 
@@ -29,9 +29,10 @@ function FixingFloppyDrive() {
         inside:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/FloppyDriveInCase.jpg`}
-        maxWidth="26rem"
+        width={416}
+        height={312}
         caption="The 1.4 MB SuperDrive still in metal cage."
       />
 
@@ -48,9 +49,10 @@ function FixingFloppyDrive() {
         the auto-eject motor:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/FloppyDriveInk.jpg`}
-        maxWidth="26rem"
+        width={416}
+        height={312}
         caption="Floppy drive with auto-eject motor outlined."
       />
 
@@ -58,9 +60,10 @@ function FixingFloppyDrive() {
         I removed the motor and opened it up to reveal the gears inside:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/EjectMotor.jpg`}
-        maxWidth="26rem"
+        width={416}
+        height={233}
         caption="The eject motor after removing cover and exposing gears."
       />
 
@@ -71,9 +74,10 @@ function FixingFloppyDrive() {
         until I removed it to inspect:
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/Gears.jpg`}
-        maxWidth="26rem"
+        width={416}
+        height={286}
         caption="A regular motor gear next to the broken yellow gear."
       />
 
@@ -88,9 +92,10 @@ function FixingFloppyDrive() {
         3D printer some day.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${baseImagePath}/3DPrintedGear.jpg`}
-        maxWidth="18rem"
+        width={288}
+        height={291}
         caption="The 3D printed gear that I purchased."
       />
 

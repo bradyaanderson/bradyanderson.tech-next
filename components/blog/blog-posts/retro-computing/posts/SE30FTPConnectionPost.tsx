@@ -1,4 +1,4 @@
-import Image from "../../../../general/S3Image";
+import Figure from "../../../../general/Figure";
 import Paragraph from "../../../../general/Paragraph";
 import ExternalLink from "../../../../general/ExternalLink";
 
@@ -6,10 +6,12 @@ function SE30FTPConnectionPost() {
   const imageBasePath = `/blog/categories/retro-computing/posts/se30-ftp-connection`;
   return (
     <div>
-      <Image
+      <Figure
         path={`${imageBasePath}/ExpansionCard.jpg`}
-        maxWidth="16rem"
+        width={256}
+        height={341}
         caption="The expansion card with ethernet that came with my SE/30."
+        priority
       />
 
       <Paragraph>
@@ -22,9 +24,10 @@ function SE30FTPConnectionPost() {
         anything.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/macEnvy.png`}
-        maxWidth="32rem"
+        width={512}
+        height={342}
         caption="When the card is plugged into the logic board, I see it listed as “Ethernet A-Series” in MacEnvy, but searching for this also doesn’t bring up any results."
       />
 
@@ -53,9 +56,10 @@ function SE30FTPConnectionPost() {
         Transport Networking”.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/openTransport.png`}
-        maxWidth="32rem"
+        width={512}
+        height={342}
         caption="Selecting “Use Open Transport Networking” from the Network Software Selector enables TCP/IP communication."
       />
 
@@ -66,9 +70,10 @@ function SE30FTPConnectionPost() {
         address automatically from my router.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/tcpip.png`}
-        maxWidth="32rem"
+        width={512}
+        height={341}
         caption="For a while, this window didn’t show me as having an IP address, but I could proceed with setting up the FTP. When I came back later, I saw it had filled the IP address in."
       />
 
@@ -83,9 +88,10 @@ function SE30FTPConnectionPost() {
         where I could set up a new FTP connection.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/FetchNewConnection.png`}
-        maxWidth="32rem"
+        width={512}
+        height={341}
         caption="In the “Host” input, I’ve put the IP address of the FTP server I want to connect to. I’m leaving “User ID” and “Password” blank since the server doesn’t require this. Pressing the drop-down arrow provides a few more options that can be configured, such as the port you want to connect to."
       />
 
@@ -96,9 +102,10 @@ function SE30FTPConnectionPost() {
         had connected to.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/FTPConnection.png`}
-        maxWidth="32rem"
+        width={512}
+        height={341}
         caption="I placed a file called “HelloWorld.txt” on my FTP server so that I could verify the connection was established correctly."
       />
 
@@ -120,9 +127,10 @@ function SE30FTPConnectionPost() {
         year-old-computer establishing a connection with a Vita.
       </Paragraph>
 
-      <Image
+      <Figure
         path={`${imageBasePath}/PSVita.jpg`}
-        maxWidth="24rem"
+        width={384}
+        height={512}
         caption="The PS Vita makes an amazing FTP server."
       />
     </div>
