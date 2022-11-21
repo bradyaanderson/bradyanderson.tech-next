@@ -10,8 +10,8 @@ function Header() {
           <Image
             src="/logos/logo1024-White.png"
             alt="Logo"
-            height={"100%"}
-            width={"100%"}
+            height={30}
+            width={30}
             layout={"responsive"}
             priority={true}
           />

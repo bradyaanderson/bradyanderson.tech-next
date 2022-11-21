@@ -3,10 +3,11 @@ import React from "react";
 interface Props {
   /** URL to navigate to. */
   link: string;
+  children: React.ReactNode;
 }
 
 /** Opens external link in a new tab. */
-const ExternalLink: React.FunctionComponent<Props> = ({ link, children }) => {
+const ExternalLink = ({ link, children }: Props) => {
   return (
     <>
       <a href={link} target="_blank" rel="noreferrer">

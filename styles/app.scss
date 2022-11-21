@@ -10,7 +10,7 @@ body {
   background: $background;
   color: $primary-text-color;
   word-break: break-word;
-  line-height: 29px;
+  line-height: 1.5;
 }
 
 code {
@@ -27,6 +27,7 @@ code {
 h1, h2, h3 {
   margin: 0;
   font-weight: 500;
+  line-height: 1.2;
 }
 
 a {
