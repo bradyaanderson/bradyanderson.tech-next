@@ -22,6 +22,7 @@ function OpeningAMacSE30Post() {
         width={256}
         height={341}
         caption="My Macintosh SE/30."
+        priority
       />
 
       <Paragraph>

@@ -11,6 +11,7 @@ function SE30FTPConnectionPost() {
         width={256}
         height={341}
         caption="The expansion card with ethernet that came with my SE/30."
+        priority
       />
 
       <Paragraph>

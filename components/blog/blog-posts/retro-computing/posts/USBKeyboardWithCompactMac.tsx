@@ -20,6 +20,7 @@ function USBKeyboardWithCompactMac() {
         width={512}
         height={203}
         caption={"My Apple Keyboard II."}
+        priority
       />
 
       <Paragraph>

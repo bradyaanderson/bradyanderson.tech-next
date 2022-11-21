@@ -26,6 +26,7 @@ function InstallingSCSI2SDPost() {
         width={256}
         height={287}
         caption="The SCSI2SD device."
+        priority
       />
 
       <Paragraph>

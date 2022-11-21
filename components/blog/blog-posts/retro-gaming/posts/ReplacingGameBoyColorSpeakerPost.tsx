@@ -18,6 +18,7 @@ function ReplacingGameBoyColorSpeakerPost() {
         caption="My Game Boy Color before replacing the speaker."
         width={256}
         height={369}
+        priority
       />
 
       <Paragraph>
