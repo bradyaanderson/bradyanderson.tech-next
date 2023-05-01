@@ -47,9 +47,15 @@ function EasilySettingCustomTitlePost() {
       />
 
       <Paragraph>
-        In the code for this website, I only had an HTML head in one place:
-        index.html . So, no matter where you navigated, you would always see the
-        title of the page as “bradyanderson.tech”.
+        In the code for this website, I only had an HTML head in one place:{" "}
+        <ExternalLink
+          link="https://github.com/bradyaanderson/bradyanderson.tech-next/blob/ef1805cd928237d5139163ebbb5
+ef688a4031c5b/public/index.html"
+        >
+          index.html
+        </ExternalLink>
+        . So, no matter where you navigated, you would always see the title of
+        the page as “bradyanderson.tech”.
       </Paragraph>
 
       <Figure
@@ -85,11 +91,14 @@ function EasilySettingCustomTitlePost() {
       />
 
       <Paragraph>
-        For this site, I have a BlogPost component which acts as a base
-        component for every blog post you see. This component has a title prop,
-        which is a string that displays at the top of every post. I updated this
-        component so that this the title would also be populated as the HTML
-        title:
+        For this site, I have a{" "}
+        <ExternalLink link="https://github.com/bradyaanderson/bradyanderson.tech-next/blob/05d18b341f6ae31b4c8f2c0c1245659a11f6c6af/src/blog/blog-components/BlogPost.tsx">
+          BlogPost
+        </ExternalLink>{" "}
+        component which acts as a base component for every blog post you see.
+        This component has a title prop, which is a string that displays at the
+        top of every post. I updated this component so that this the title would
+        also be populated as the HTML title:
       </Paragraph>
 
       <Code

@@ -22,11 +22,6 @@ const nextConfig = {
         destination: "/blog/development/:path",
         permanent: true,
       },
-      {
-        source: "/wedding",
-        destination: "https://weduploader.com/upload/7EhUIzCpSoI496eo",
-        permanent: false,
-      },
     ];
   },
 };

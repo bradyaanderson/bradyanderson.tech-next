@@ -73,6 +73,11 @@ function GettingStartedPost() {
       <h2>Links</h2>
       <ul>
         <li>
+          <ExternalLink link="https://github.com/bradyaanderson/bradyanderson.tech-next">
+            bradyanderson.tech GitHub Repo
+          </ExternalLink>
+        </li>
+        <li>
           <ExternalLink link="https://reactjs.org/">React</ExternalLink>
         </li>
         <li>
