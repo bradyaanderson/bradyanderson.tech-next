@@ -10,5 +10,5 @@ export enum CategoryBasename {
 export const blogCategoryToColorMap: { [key: string]: string } = {
   [CategoryBasename.RETRO_COMPUTING]: variables.retroComputingColor,
   [CategoryBasename.RETRO_GAMING]: variables.retroGamingColor,
-  [CategoryBasename.DEVELOPMENT]: variables.developmentColor
+  [CategoryBasename.DEVELOPMENT]: variables.developmentColor,
 };

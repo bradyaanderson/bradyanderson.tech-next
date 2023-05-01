@@ -54,17 +54,10 @@ function The404RabbitHoldPost() {
         >
           dynamic routes
         </ExternalLink>
-        , I was able to recreate this structure{" "}
-        <ExternalLink
-          link={
-            "https://github.com/bradyaanderson/bradyanderson.tech-next/tree/main/pages/blog"
-          }
-        >
-          here
-        </ExternalLink>
-        . This will ensure that each category page and blog post will share a
-        common template, while also giving me the flexibility to dynamically
-        display different content for each page.
+        , I was able to recreate this structure . This will ensure that each
+        category page and blog post will share a common template, while also
+        giving me the flexibility to dynamically display different content for
+        each page.
       </Paragraph>
 
       <h2>SSG (Static Site Generation)</h2>
@@ -93,18 +86,6 @@ function The404RabbitHoldPost() {
         yourself! Access the network tab in your browser's developer tools and
         type in a random route. Sure enough, you’ll see a status code of 404
         returned.
-      </Paragraph>
-      <Paragraph>
-        And that’s how I created a real 404 page. If you want to view the commit
-        with all these changes, you can find that{" "}
-        <ExternalLink
-          link={
-            "https://github.com/bradyaanderson/bradyanderson.tech-next/pull/31"
-          }
-        >
-          here
-        </ExternalLink>
-        .
       </Paragraph>
       <Paragraph>
         In the end, this was much more than just creating a 404 page for my
