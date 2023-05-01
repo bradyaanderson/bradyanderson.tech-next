@@ -29,6 +29,15 @@ function DevelopmentCategory() {
         </Paragraph>
 
         <Paragraph>
+          If you want to check out any of the code for this website, it can be
+          found here:{" "}
+          <ExternalLink link="https://github.com/bradyaanderson/bradyanderson.tech-next">
+            https://github.com/bradyaanderson/bradyanderson.tech-next
+          </ExternalLink>
+          .
+        </Paragraph>
+
+        <Paragraph>
           I'm also expanding this category to not only include website updates,
           but posts on how I'm working to become a better developer.
         </Paragraph>
