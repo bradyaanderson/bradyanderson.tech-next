@@ -54,12 +54,9 @@ function SettingUpImageStoragePost() {
       <Paragraph>
         Now that S3 storage was set up, the last thing I needed to do was update
         the `src` attribute on all of my image elements to point to the URL of
-        the image in Amazon S3. So I created a{" "}
-        <ExternalLink link="https://github.com/bradyaanderson/bradyanderson.tech-next/blob/4b05c24a195c458818f4baed8974f9321fd43d65/src/common/BlogImage.tsx">
-          Blog Image
-        </ExternalLink>{" "}
-        React component that will allow me to simply pass the path to the image
-        in the S3 bucket and it will take care of all the styling.
+        the image in Amazon S3. So I created a Blog Image React component that
+        will allow me to simply pass the path to the image in the S3 bucket and
+        it will take care of all the styling.
       </Paragraph>
       <hr />
       <Paragraph>
